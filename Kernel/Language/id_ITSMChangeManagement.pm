@@ -585,505 +585,144 @@ sub Data {
     $Self->{Translation}->{'Ok'} = 'Ok';
 
     # SysConfig
-    $Self->{Translation}->{'A list of the agents who have permission to take workorders. Key is a login name. Content is 0 or 1.'} =
-        'Sebuah daftar agen yang memiliki izin untuk menerima perintah kerja. Key adalah nama login. Konten adalah 0 atau 1.';
-    $Self->{Translation}->{'A list of workorder states, at which the ActualStartTime of a workorder will be set if it was empty at this point.'} =
-        'Daftar status perintah kerja di mana sebenarnya Start Time dari workorder akan ditetapkan apakah itu kosong pada saat ini.';
-    $Self->{Translation}->{'Actual end time'} = '';
-    $Self->{Translation}->{'Actual start time'} = '';
-    $Self->{Translation}->{'Add Workorder'} = 'Tambahkan Work Order';
-    $Self->{Translation}->{'Add Workorder (from Template)'} = '';
-    $Self->{Translation}->{'Add a change from template.'} = 'Tambah perubahan dari template';
-    $Self->{Translation}->{'Add a change.'} = 'Tambah perubahan';
-    $Self->{Translation}->{'Add a workorder (from template) to the change.'} = '';
-    $Self->{Translation}->{'Add a workorder to the change.'} = '';
-    $Self->{Translation}->{'Add from template'} = 'Tambahkan dari template';
-    $Self->{Translation}->{'Admin of the CIP matrix.'} = 'Matriks CIP admin';
-    $Self->{Translation}->{'Admin of the state machine.'} = 'Mesin state admin';
-    $Self->{Translation}->{'Agent interface notification module to see the number of change advisory boards.'} =
-        'module notifikasi agen antar muka untuk melihat nomor dari perubahan';
-    $Self->{Translation}->{'Agent interface notification module to see the number of changes managed by the user.'} =
-        'Agen modul pemberitahuan antarmuka untuk melihat jumlah perubahan dikelola oleh pengguna.';
-    $Self->{Translation}->{'Agent interface notification module to see the number of changes.'} =
-        'Agen modul pemberitahuan antarmuka untuk melihat jumlah perubahan.';
-    $Self->{Translation}->{'Agent interface notification module to see the number of workorders.'} =
-        'Modul pemberitauan di antarmuka agen untuk melihat jumlah perintah kerja';
-    $Self->{Translation}->{'CAB Member Search'} = 'Cari anggota CAB';
-    $Self->{Translation}->{'Cache time in minutes for the change management toolbars. Default: 3 hours (180 minutes).'} =
-        'waktu cache di menit untuk toolbar perubahan manajemen. Default: 3 jam (180 menit).';
-    $Self->{Translation}->{'Cache time in minutes for the change management. Default: 5 days (7200 minutes).'} =
-        'waktu cache di menit untuk manajemen perubahan. Default: 5 hari (7200 menit).';
-    $Self->{Translation}->{'Change CAB Templates'} = 'Mengubah template CAB';
-    $Self->{Translation}->{'Change History.'} = 'Mengubah sejarah';
-    $Self->{Translation}->{'Change Involved Persons.'} = 'Mengubah orang yang terlibat';
-    $Self->{Translation}->{'Change Overview "Small" Limit'} = 'Batas mengubah keseluruhan "Kecil" ';
-    $Self->{Translation}->{'Change Overview.'} = 'Mengubah keseluruhan';
-    $Self->{Translation}->{'Change Print.'} = 'Mengubah print';
-    $Self->{Translation}->{'Change Schedule'} = 'Ubah jadwal';
-    $Self->{Translation}->{'Change Schedule.'} = 'Mengubah jadwal';
-    $Self->{Translation}->{'Change Settings'} = '';
-    $Self->{Translation}->{'Change Zoom'} = '';
-    $Self->{Translation}->{'Change Zoom.'} = 'Mengubah zoom';
-    $Self->{Translation}->{'Change and Workorder Templates'} = '';
-    $Self->{Translation}->{'Change and workorder templates edited by this user.'} = '';
-    $Self->{Translation}->{'Change area.'} = 'Mengubah area';
-    $Self->{Translation}->{'Change involved persons of the change.'} = '';
-    $Self->{Translation}->{'Change limit per page for Change Overview "Small".'} = '';
-    $Self->{Translation}->{'Change number'} = '';
-    $Self->{Translation}->{'Change search backend router of the agent interface.'} = 'Ubah pencarian backend router dari interface agen.';
-    $Self->{Translation}->{'Change state'} = '';
-    $Self->{Translation}->{'Change time'} = '';
-    $Self->{Translation}->{'Change title'} = '';
-    $Self->{Translation}->{'Condition Edit'} = 'Edit kondisi';
-    $Self->{Translation}->{'Condition Overview'} = 'Kondisi keseluruhan';
-    $Self->{Translation}->{'Configure which screen should be shown after a new workorder has been created.'} =
+    $Self->{Translation}->{'A precentage value of the minimal translation progress per language, to be usable for documentations.'} =
         '';
-    $Self->{Translation}->{'Configures how often the notifications are sent when planned the start time or other time values have been reached/passed.'} =
-        'Mengkonfigurasi seberapa sering pemberitahuan dikirim ketika direncanakan waktu mulai atau waktu lainnya yang telah tercapai / berlalu.';
-    $Self->{Translation}->{'Create Change'} = 'Membuat perubahan';
-    $Self->{Translation}->{'Create Change (from Template)'} = '';
-    $Self->{Translation}->{'Create a change (from template) from this ticket.'} = '';
-    $Self->{Translation}->{'Create a change from this ticket.'} = '';
-    $Self->{Translation}->{'Create and manage ITSM Change Management notifications.'} = 'membuat dan mengelola pemberitahuan ITSM Manajemen Perubahan.';
-    $Self->{Translation}->{'Create and manage change notifications.'} = '';
-    $Self->{Translation}->{'Default type for a workorder. This entry must exist in general catalog class \'ITSM::ChangeManagement::WorkOrder::Type\'.'} =
-        'Jenis default untuk perintah kerja. Catatan ini harus ada dalam kelas katalog umum \'ITSM::ChangeManagement::WorkOrder::Type\'.';
-    $Self->{Translation}->{'Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.'} =
+    $Self->{Translation}->{'Access repos via http or https.'} = '';
+    $Self->{Translation}->{'Autoloading of Znuny4OTRSRepo extensions.'} = '';
+    $Self->{Translation}->{'Backend module registration for the config conflict check module.'} =
         '';
-    $Self->{Translation}->{'Define the signals for each workorder state.'} = 'Mendefinisikan sinyal untuk setiap negara perintah kerja.';
-    $Self->{Translation}->{'Define which columns are shown in the linked Changes widget (LinkObject::ViewMode = "complex"). Note: Only Change attributes are allowed for DefaultColumns. Possible settings: 0 = Disabled, 1 = Available, 2 = Enabled by default.'} =
+    $Self->{Translation}->{'Backend module registration for the file conflict check module.'} =
         '';
-    $Self->{Translation}->{'Define which columns are shown in the linked Workorder widget (LinkObject::ViewMode = "complex"). Note: Only Workorder attributes are allowed for DefaultColumns. Possible settings: 0 = Disabled, 1 = Available, 2 = Enabled by default.'} =
+    $Self->{Translation}->{'Backend module registration for the function redefine check module.'} =
         '';
-    $Self->{Translation}->{'Defines an overview module to show the small view of a change list.'} =
-        'Mendefinisikan sebuah modul gambaran untuk menunjukkan pandangan kecil dari daftar perubahan.';
-    $Self->{Translation}->{'Defines an overview module to show the small view of a template list.'} =
-        'Mendefinisikan sebuah modul gambaran untuk menunjukkan pandangan kecil dari daftar template.';
-    $Self->{Translation}->{'Defines if it will be possible to print the accounted time.'} = 'Mendefinisikan jika itu akan mungkin untuk mencetak waktu dipertanggungjawabkan.';
-    $Self->{Translation}->{'Defines if it will be possible to print the planned effort.'} = 'Mendefinisikan jika itu akan mungkin untuk mencetak upaya yang direncanakan.';
-    $Self->{Translation}->{'Defines if reachable (as defined by the state machine) change end states should be allowed if a change is in a locked state.'} =
-        'Mendefinisikan jika dicapai (seperti yang didefinisikan oleh mesin) state perubahan akhir harus diizinkan jika perubahan dalam keadaan terkunci.';
-    $Self->{Translation}->{'Defines if reachable (as defined by the state machine) workorder end states should be allowed if a workorder is in a locked state.'} =
-        'Mendefinisikan jika dicapai (seperti yang didefinisikan oleh mesin) perintah kerja akhir harus diizinkan jika perintah kerja dalam keadaan terkunci.';
-    $Self->{Translation}->{'Defines if the accounted time should be shown.'} = 'Mendifinisikan waktu untuk ditunjukkan';
-    $Self->{Translation}->{'Defines if the actual start and end times should be set.'} = 'Mendifinisikan waktu mulai dan waktu berakhir harus bisa diatur';
-    $Self->{Translation}->{'Defines if the change search and the workorder search functions could use the mirror DB.'} =
-        'Mendifinisikan jika perubahan pencarian dan fungsi pencarian perintah kerja bisa menggunakan DB';
-    $Self->{Translation}->{'Defines if the change state can be set in the change edit screen of the agent interface.'} =
+    $Self->{Translation}->{'Backend module registration for the manual set module.'} = '';
+    $Self->{Translation}->{'Block hooks to be created for BS ad removal.'} = '';
+    $Self->{Translation}->{'Block hooks to be created for package manager output filter.'} =
         '';
-    $Self->{Translation}->{'Defines if the planned effort should be shown.'} = 'Mendefinisikan jika upaya yang direncanakan harus ditampilkan.';
-    $Self->{Translation}->{'Defines if the requested date should be print by customer.'} = 'Mendefinisikan jika tanggal yang diminta harus dicetak oleh pelanggan.';
-    $Self->{Translation}->{'Defines if the requested date should be searched by customer.'} =
-        'Mendefinisikan jika tanggal yang diminta harus dicari oleh pelanggan.';
-    $Self->{Translation}->{'Defines if the requested date should be set by customer.'} = 'Mendefinisikan jika tanggal yang diminta harus ditetapkan oleh pelanggan.';
-    $Self->{Translation}->{'Defines if the requested date should be shown by customer.'} = 'Mendefinisikan jika tanggal yang diminta harus ditampilkan oleh pelanggan.';
-    $Self->{Translation}->{'Defines if the workorder state should be shown.'} = 'Mendefinisikan jika perintah kerja harus ditampilkan.';
-    $Self->{Translation}->{'Defines if the workorder title should be shown.'} = 'Mendefinisikan jika judul perintah kerja harus ditampilkan.';
-    $Self->{Translation}->{'Defines shown graph attributes.'} = 'Mendefinisikan atribut grafik ditampilkan.';
-    $Self->{Translation}->{'Defines that only changes containing Workorders linked with services, which the customer user has permission to use will be shown. Any other changes will not be displayed.'} =
-        'Mendefinisikan bahwa hanya perubahan yang mengandung Pesanan Kerja terkait dengan layanan yang pengguna pelanggan memiliki izin untuk menggunakan akan ditampilkan. Perubahan lain tidak akan ditampilkan.';
-    $Self->{Translation}->{'Defines the change states that will be allowed to delete.'} = 'Mendifinisikan perubahan yang akan diijinkan untuk dihapus';
-    $Self->{Translation}->{'Defines the change states that will be used as filters in the Change PSA overview.'} =
-        'Mendefinisikan perubahan akan digunakan sebagai filter dalam perubahan PSA';
-    $Self->{Translation}->{'Defines the change states that will be used as filters in the Change Schedule overview.'} =
-        'Mendefinisikan perubahan akan digunakan sebagai filter dalam perubahan jadwal';
-    $Self->{Translation}->{'Defines the change states that will be used as filters in the MyCAB overview.'} =
-        'Mendefinisikan perubahan yang akan digunakan sebagai filter dalam MyCAB';
-    $Self->{Translation}->{'Defines the change states that will be used as filters in the MyChanges overview.'} =
-        'Mendefinisikan perubahan yang akan digunakan sebagai filter dalam MyChages ';
-    $Self->{Translation}->{'Defines the change states that will be used as filters in the change manager overview.'} =
-        'Mendefinisikan perubahan yang akan digunakan sebagai filter dalam perubahan manajer';
-    $Self->{Translation}->{'Defines the change states that will be used as filters in the change overview.'} =
-        'Mendefinisikan perubahan yang akan digunakan sebagai filter dalam perubahan';
-    $Self->{Translation}->{'Defines the change states that will be used as filters in the customer change schedule overview.'} =
-        'Mendefinisikan perubahan yang akan digunakan sebagai filter dalam perubahan jadwal pelanggan ';
-    $Self->{Translation}->{'Defines the default change title for a dummy change which is needed to edit a workorder template.'} =
-        'Mendefinisikan judul perubahan default untuk perubahan boneka yang diperlukan untuk mengedit perintah kerja Template.';
-    $Self->{Translation}->{'Defines the default sort criteria in the change PSA overview.'} =
-        'Mendefinisikan kriteria standar semacam dalam perubahan PSA ';
-    $Self->{Translation}->{'Defines the default sort criteria in the change manager overview.'} =
-        'Mendefinisikan kriteria standar semacam dalam perubahan manajer ';
-    $Self->{Translation}->{'Defines the default sort criteria in the change overview.'} = 'Mendefinisikan kriteria standar semacam dalam perubahan';
-    $Self->{Translation}->{'Defines the default sort criteria in the change schedule overview.'} =
-        'Mendefinisikan kriteria standar semacam di jadwal perubahan';
-    $Self->{Translation}->{'Defines the default sort criteria of the changes in the MyCAB overview.'} =
-        'Mendefinisikan kriteria standar semacam perubahan dalam My CAB';
-    $Self->{Translation}->{'Defines the default sort criteria of the changes in the MyChanges overview.'} =
-        'Mendefinisikan kriteria standar semacam perubahan dalam MyChanges';
-    $Self->{Translation}->{'Defines the default sort criteria of the changes in the MyWorkorders overview.'} =
-        'Mendefinisikan kriteria standar semacam perubahan dalam pesanan Kerja';
-    $Self->{Translation}->{'Defines the default sort criteria of the changes in the PIR overview.'} =
-        'Mendefinisikan kriteria standar semacam perubahan dalam PIR';
-    $Self->{Translation}->{'Defines the default sort criteria of the changes in the customer change schedule overview.'} =
-        'Mendefinisikan kriteria standar semacam perubahan jadwal perubahan pelanggan';
-    $Self->{Translation}->{'Defines the default sort criteria of the changes in the template overview.'} =
-        'Mendefinisikan kriteria standar semacam perubahan dalam template';
-    $Self->{Translation}->{'Defines the default sort order in the MyCAB overview.'} = 'Mendefinisikan urutan standar semacam di My CAB';
-    $Self->{Translation}->{'Defines the default sort order in the MyChanges overview.'} = 'Mendefinisikan urutan standar semacam di MyChanges';
-    $Self->{Translation}->{'Defines the default sort order in the MyWorkorders overview.'} =
-        'Mendefinisikan urutan standar semacam di pesanan Kerja';
-    $Self->{Translation}->{'Defines the default sort order in the PIR overview.'} = 'Mendefinisikan urutan standar semacam di PIR';
-    $Self->{Translation}->{'Defines the default sort order in the change PSA overview.'} = 'Mendefinisikan urutan default di PSA perubahan';
-    $Self->{Translation}->{'Defines the default sort order in the change manager overview.'} =
-        'Mendefinisikan urutan standar semacam di perubahan manajer';
-    $Self->{Translation}->{'Defines the default sort order in the change overview.'} = 'Mendefinisikan urutan default dalam perubahan';
-    $Self->{Translation}->{'Defines the default sort order in the change schedule overview.'} =
-        'Mendefinisikan urutan default dalam jadwal perubahan';
-    $Self->{Translation}->{'Defines the default sort order in the customer change schedule overview.'} =
-        'Mendefinisikan urutan default dalam jadwal perubahan pelanggan';
-    $Self->{Translation}->{'Defines the default sort order in the template overview.'} = 'Mendefinisikan urutan standar semacam di template';
-    $Self->{Translation}->{'Defines the default value for the category of a change.'} = 'Mendefinisikan nilai default untuk kategori perubahan.';
-    $Self->{Translation}->{'Defines the default value for the impact of a change.'} = 'Mendefinisikan nilai default untuk dampak perubahan.';
-    $Self->{Translation}->{'Defines the field type of CompareValue fields for change attributes used in the change condition edit screen of the agent interface. Valid values are Selection, Text and Date. If a type is not defined, the field will not be shown.'} =
+    $Self->{Translation}->{'Branch View commit limit'} = '';
+    $Self->{Translation}->{'CodePolicy'} = '';
+    $Self->{Translation}->{'Commit limit per page for Branch view screen'} = '';
+    $Self->{Translation}->{'Create analysis file'} = '';
+    $Self->{Translation}->{'Creates a analysis file from this ticket and sends to Znuny.'} =
         '';
-    $Self->{Translation}->{'Defines the field type of CompareValue fields for workorder attributes used in the change condition edit screen of the agent interface. Valid values are Selection, Text and Date. If a type is not defined, the field will not be shown.'} =
+    $Self->{Translation}->{'Creates a analysis file from this ticket.'} = '';
+    $Self->{Translation}->{'Define private addon repos.'} = '';
+    $Self->{Translation}->{'Defines the filter that processes the HTML templates.'} = '';
+    $Self->{Translation}->{'Defines the test module for checking code policy.'} = '';
+    $Self->{Translation}->{'Definition of GIT clone/push URL Prefix.'} = '';
+    $Self->{Translation}->{'Definition of a Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRelease => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed.'} =
         '';
-    $Self->{Translation}->{'Defines the object attributes that are selectable for change objects in the change condition edit screen of the agent interface.'} =
+    $Self->{Translation}->{'Definition of a Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed.'} =
         '';
-    $Self->{Translation}->{'Defines the object attributes that are selectable for workorder objects in the change condition edit screen of the agent interface.'} =
+    $Self->{Translation}->{'Definition of external MD5 sums (key => MD5, Value => Vendor, PackageName, Version, Date).'} =
         '';
-    $Self->{Translation}->{'Defines the operators that are selectable for the attribute AccountedTime in the change condition edit screen of the agent interface.'} =
+    $Self->{Translation}->{'Definition of mappings between public repository requests and internal OPMS repositories.'} =
         '';
-    $Self->{Translation}->{'Defines the operators that are selectable for the attribute ActualEndTime in the change condition edit screen of the agent interface.'} =
+    $Self->{Translation}->{'Definition of package states.'} = '';
+    $Self->{Translation}->{'Definition of renamed OPMS packages.'} = '';
+    $Self->{Translation}->{'Directory, which is used by Git to cache repositories.'} = '';
+    $Self->{Translation}->{'Directory, which is used by Git to store temporary data.'} = '';
+    $Self->{Translation}->{'Directory, which is used by Git to store working copies.'} = '';
+    $Self->{Translation}->{'Disable online repositories.'} = '';
+    $Self->{Translation}->{'Do not log git ssh connection authorization results for these users. Useful for automated stuff.'} =
         '';
-    $Self->{Translation}->{'Defines the operators that are selectable for the attribute ActualStartTime in the change condition edit screen of the agent interface.'} =
+    $Self->{Translation}->{'Dynamic Fields Screens'} = '';
+    $Self->{Translation}->{'DynamicFieldScreen'} = '';
+    $Self->{Translation}->{'Export all available public keys to authorized_keys file.'} = '';
+    $Self->{Translation}->{'Export all relevant releases to ftp server.'} = '';
+    $Self->{Translation}->{'Frontend module registration for the OPMS object in the agent interface.'} =
         '';
-    $Self->{Translation}->{'Defines the operators that are selectable for the attribute CategoryID in the change condition edit screen of the agent interface.'} =
+    $Self->{Translation}->{'Frontend module registration for the PublicOPMSRepository object in the public interface.'} =
         '';
-    $Self->{Translation}->{'Defines the operators that are selectable for the attribute ChangeBuilderID in the change condition edit screen of the agent interface.'} =
+    $Self->{Translation}->{'Frontend module registration for the PublicOPMSRepositoryLookup object in the public interface.'} =
         '';
-    $Self->{Translation}->{'Defines the operators that are selectable for the attribute ChangeManagerID in the change condition edit screen of the agent interface.'} =
+    $Self->{Translation}->{'Frontend module registration for the PublicOPMSTestBuild object in the public interface.'} =
         '';
-    $Self->{Translation}->{'Defines the operators that are selectable for the attribute ChangeStateID in the change condition edit screen of the agent interface.'} =
+    $Self->{Translation}->{'Frontend module registration for the PublicPackageVerification object in the public interface.'} =
         '';
-    $Self->{Translation}->{'Defines the operators that are selectable for the attribute ChangeTitle in the change condition edit screen of the agent interface.'} =
+    $Self->{Translation}->{'Frontend module registration for the admin interface.'} = '';
+    $Self->{Translation}->{'GIT Author registration.'} = '';
+    $Self->{Translation}->{'Generate HTML comment hooks for the specified blocks so that filters can use them.'} =
         '';
-    $Self->{Translation}->{'Defines the operators that are selectable for the attribute DynamicField in the change condition edit screen of the agent interface.'} =
+    $Self->{Translation}->{'Generate documentations once per night.'} = '';
+    $Self->{Translation}->{'Git'} = '';
+    $Self->{Translation}->{'Git Management'} = '';
+    $Self->{Translation}->{'Git Repository'} = '';
+    $Self->{Translation}->{'Group, whose members have delete admin permissions in OPMS.'} = '';
+    $Self->{Translation}->{'Group, whose members have repository admin permissions in OPMS.'} =
         '';
-    $Self->{Translation}->{'Defines the operators that are selectable for the attribute ImpactID in the change condition edit screen of the agent interface.'} =
+    $Self->{Translation}->{'Group, whose members will see CI test result information in OPMS screens.'} =
         '';
-    $Self->{Translation}->{'Defines the operators that are selectable for the attribute PlannedEffort in the change condition edit screen of the agent interface.'} =
+    $Self->{Translation}->{'Groups an authenticated user (by user login and password) must be member of to build test packages via the public interface.'} =
         '';
-    $Self->{Translation}->{'Defines the operators that are selectable for the attribute PlannedEndTime in the change condition edit screen of the agent interface.'} =
+    $Self->{Translation}->{'Groups which will be set during git project creation processes while adding OPMS repositories.'} =
         '';
-    $Self->{Translation}->{'Defines the operators that are selectable for the attribute PlannedStartTime in the change condition edit screen of the agent interface.'} =
+    $Self->{Translation}->{'Manage dynamic field in screens.'} = '';
+    $Self->{Translation}->{'Manage your public SSH key(s) for Git access here. Make sure to save this preference when you add a new key.'} =
         '';
-    $Self->{Translation}->{'Defines the operators that are selectable for the attribute PriorityID in the change condition edit screen of the agent interface.'} =
+    $Self->{Translation}->{'Module to generate statistics about the added code lines.'} = '';
+    $Self->{Translation}->{'Module to generate statistics about the growth of code.'} = '';
+    $Self->{Translation}->{'Module to generate statistics about the number of git commits.'} =
         '';
-    $Self->{Translation}->{'Defines the operators that are selectable for the attribute RequestedTime in the change condition edit screen of the agent interface.'} =
+    $Self->{Translation}->{'Module to generate statistics about the removed code lines.'} = '';
+    $Self->{Translation}->{'OPMS'} = '';
+    $Self->{Translation}->{'Only users who have rw permissions in one of these groups may access git.'} =
         '';
-    $Self->{Translation}->{'Defines the operators that are selectable for the attribute WorkOrderAgentID in the change condition edit screen of the agent interface.'} =
+    $Self->{Translation}->{'Option to set a package compatibility manually.'} = '';
+    $Self->{Translation}->{'Parameters for the pages in the BranchView screen.'} = '';
+    $Self->{Translation}->{'Pre-Definition of the \'GITProjectName\' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed.'} =
         '';
-    $Self->{Translation}->{'Defines the operators that are selectable for the attribute WorkOrderNumber in the change condition edit screen of the agent interface.'} =
+    $Self->{Translation}->{'Pre-Definition of the \'GITRepositoryName\' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed.'} =
         '';
-    $Self->{Translation}->{'Defines the operators that are selectable for the attribute WorkOrderStateID in the change condition edit screen of the agent interface.'} =
+    $Self->{Translation}->{'Pre-Definition of the \'PackageDeprecated\' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed.'} =
         '';
-    $Self->{Translation}->{'Defines the operators that are selectable for the attribute WorkOrderTitle in the change condition edit screen of the agent interface.'} =
+    $Self->{Translation}->{'Recipients that will be informed by email in case of errors.'} =
         '';
-    $Self->{Translation}->{'Defines the operators that are selectable for the attribute WorkOrderTypeID in the change condition edit screen of the agent interface.'} =
+    $Self->{Translation}->{'SSH Keys for Git Access'} = '';
+    $Self->{Translation}->{'Send analysis file'} = '';
+    $Self->{Translation}->{'Sets the git clone address to be used in repository listings.'} =
         '';
-    $Self->{Translation}->{'Defines the period (in years), in which start and end times can be selected.'} =
-        'Mendefinisikan periode (tahun), di mana waktu mulai dan bisa dipilih.';
-    $Self->{Translation}->{'Defines the shown attributes of a workorder in the tooltip of the workorder graph in the change zoom. To show workorder dynamic fields in the tooltip, they must be specified like DynamicField_WorkOrderFieldName1, DynamicField_WorkOrderFieldName2, etc.'} =
-        'Mendefinisikan atribut ditampilkan dari perintah kerja di tooltip dari grafik perintah kerja di zoom perubahan. Untuk menampilkan field workorder dinamis dalam tooltip, mereka harus ditentukan seperti DynamicField_WorkOrderFieldName1, DynamicField_WorkOrderFieldName2, etc.';
-    $Self->{Translation}->{'Defines the shown columns in the Change PSA overview. This option has no effect on the position of the column.'} =
-        'Mendefinisikan acara kolom di Ganti PSA gambaran. Pilihan ini tidak berpengaruh pada posisi kolom.';
-    $Self->{Translation}->{'Defines the shown columns in the Change Schedule overview. This option has no effect on the position of the column.'} =
-        'Mendefinisikan acara kolom di Ubah Jadwal. Pilihan ini tidak berpengaruh pada posisi kolom.';
-    $Self->{Translation}->{'Defines the shown columns in the MyCAB overview. This option has no effect on the position of the column.'} =
-        'Mendefinisikan acara kolom di My CAB. Pilihan ini tidak berpengaruh pada posisi kolom.';
-    $Self->{Translation}->{'Defines the shown columns in the MyChanges overview. This option has no effect on the position of the column.'} =
-        'Mendefinisikan acara kolom di Perubahan gambaran. Pilihan ini tidak berpengaruh pada posisi kolom.';
-    $Self->{Translation}->{'Defines the shown columns in the MyWorkorders overview. This option has no effect on the position of the column.'} =
-        'Mendefinisikan acara kolom di perintah kerja. Pilihan ini tidak berpengaruh pada posisi kolom.';
-    $Self->{Translation}->{'Defines the shown columns in the PIR overview. This option has no effect on the position of the column.'} =
-        'Mendefinisikan acara kolom di PIR. Pilihan ini tidak berpengaruh pada posisi kolom.';
-    $Self->{Translation}->{'Defines the shown columns in the change manager overview. This option has no effect on the position of the column.'} =
-        'Mendefinisikan acara kolom dalam perubahan manajer. Pilihan ini tidak berpengaruh pada posisi kolom.';
-    $Self->{Translation}->{'Defines the shown columns in the change overview. This option has no effect on the position of the column.'} =
-        'Mendefinisikan acara kolom dalam perubahan. Pilihan ini tidak berpengaruh pada posisi kolom.';
-    $Self->{Translation}->{'Defines the shown columns in the change search. This option has no effect on the position of the column.'} =
-        'Mendefinisikan acara kolom dalam pencarian perubahan. Pilihan ini tidak berpengaruh pada posisi kolom.';
-    $Self->{Translation}->{'Defines the shown columns in the customer change schedule overview. This option has no effect on the position of the column.'} =
-        'Mendefinisikan acara kolom di pelanggan jadwal perubahan. Pilihan ini tidak berpengaruh pada posisi kolom.';
-    $Self->{Translation}->{'Defines the shown columns in the template overview. This option has no effect on the position of the column.'} =
-        'Mendefinisikan acara kolom di template. Pilihan ini tidak berpengaruh pada posisi kolom.';
-    $Self->{Translation}->{'Defines the signals for each ITSM change state.'} = '';
-    $Self->{Translation}->{'Defines the template types that will be used as filters in the template overview.'} =
-        'Mendefinisikan jenis template yang akan digunakan sebagai filter dalam template';
-    $Self->{Translation}->{'Defines the workorder states that will be used as filters in the MyWorkorders overview.'} =
-        'Mendefinisikan state perintah kerja yang akan digunakan sebagai filter dalam MyWorkorders ';
-    $Self->{Translation}->{'Defines the workorder states that will be used as filters in the PIR overview.'} =
-        'Mendefinisikan perintah kerja yang akan digunakan sebagai filter dalam PIR';
-    $Self->{Translation}->{'Defines the workorder types that will be used to show the PIR overview.'} =
-        'Mendefinisikan jenis perintah kerja yang akan digunakan untuk menunjukkan PIR';
-    $Self->{Translation}->{'Defines whether notifications should be sent.'} = 'Mendefinisikan apakah pemberitahuan harus dikirim.';
-    $Self->{Translation}->{'Delete a change.'} = 'Menghapus perubahan.';
-    $Self->{Translation}->{'Delete the change.'} = '';
-    $Self->{Translation}->{'Delete the workorder.'} = '';
-    $Self->{Translation}->{'Details of a change history entry.'} = 'Rincian dari entri perubahan sejarah.';
-    $Self->{Translation}->{'Determines if an agent can exchange the X-axis of a stat if he generates one.'} =
-        'Menentukan apakah agen dapat bertukar X jika ia menghasilkan satu.';
-    $Self->{Translation}->{'Determines if the common stats module may generate stats about changes done for config item classes.'} =
-        'Menentukan apakah modul statistik umum dapat menghasilkan statistik tentang perubahan dilakukan untuk kelas config barang.';
-    $Self->{Translation}->{'Determines if the common stats module may generate stats about changes regarding change state updates within a timeperiod.'} =
-        'Menentukan apakah modul statistik umum dapat menghasilkan statistik tentang perubahan mengenai update perubahan dalam periode waktu.';
-    $Self->{Translation}->{'Determines if the common stats module may generate stats about changes regarding the relation between changes and incident tickets.'} =
-        'Menentukan apakah modul statistik umum dapat menghasilkan statistik tentang perubahan mengenai hubungan antara perubahan dan tiket insiden.';
-    $Self->{Translation}->{'Determines if the common stats module may generate stats about changes.'} =
-        'Menentukan apakah modul statistik umum dapat menghasilkan statistik tentang perubahan.';
-    $Self->{Translation}->{'Determines if the common stats module may generate stats about the number of Rfc tickets a requester created.'} =
-        'Menentukan apakah modul statistik umum dapat menghasilkan statistik tentang jumlah tiket pemohon RFC ';
-    $Self->{Translation}->{'Dynamic fields (for changes and workorders) shown in the change print screen of the agent interface.'} =
+    $Self->{Translation}->{'Sets the home directory for git repositories.'} = '';
+    $Self->{Translation}->{'Sets the path for the BugzillaAddComment post receive script location.'} =
         '';
-    $Self->{Translation}->{'Dynamic fields shown in the change add screen of the agent interface.'} =
+    $Self->{Translation}->{'Sets the path for the OTRSCodePolicy  script location. It is recommended to have a separate clone of the OTRSCodePolicy module that is updated via cron.'} =
         '';
-    $Self->{Translation}->{'Dynamic fields shown in the change edit screen of the agent interface.'} =
+    $Self->{Translation}->{'Sets the path for the OTRSCodePolicy pre receive script location. It is recommended to have a separate clone of the OTRSCodePolicy module that is updated via cron.'} =
         '';
-    $Self->{Translation}->{'Dynamic fields shown in the change search screen of the agent interface.'} =
+    $Self->{Translation}->{'Show latest commits in git repositories.'} = '';
+    $Self->{Translation}->{'Shows a link in the menu to go create a unit test from the current ticket.'} =
         '';
-    $Self->{Translation}->{'Dynamic fields shown in the change zoom screen of the agent interface.'} =
+    $Self->{Translation}->{'Synchronize OPMS tables with a remote database.'} = '';
+    $Self->{Translation}->{'The minimum version of the sphinx library.'} = '';
+    $Self->{Translation}->{'The name of the sphinx theme to be used.'} = '';
+    $Self->{Translation}->{'The path to the OTRS CSS file (relative below the static path).'} =
         '';
-    $Self->{Translation}->{'Dynamic fields shown in the workorder add screen of the agent interface.'} =
+    $Self->{Translation}->{'The path to the OTRS logo (relative below the static path).'} = '';
+    $Self->{Translation}->{'The path to the static folder, containing images and css files.'} =
         '';
-    $Self->{Translation}->{'Dynamic fields shown in the workorder edit screen of the agent interface.'} =
+    $Self->{Translation}->{'The path to the theme folder, containing the sphinx themes.'} = '';
+    $Self->{Translation}->{'This configuration defines all possible screens to enable or disable default columns.'} =
         '';
-    $Self->{Translation}->{'Dynamic fields shown in the workorder report screen of the agent interface.'} =
+    $Self->{Translation}->{'This configuration defines all possible screens to enable or disable dynamic fields.'} =
         '';
-    $Self->{Translation}->{'Dynamic fields shown in the workorder zoom screen of the agent interface.'} =
+    $Self->{Translation}->{'This configuration defines if only valids or all (invalids) dynamic fields should be shown.'} =
         '';
-    $Self->{Translation}->{'DynamicField event module to handle the update of conditions if dynamic fields are added, updated or deleted.'} =
-        'Dinamis modul acara Lapangan untuk menangani update kondisi jika bidang yang dinamis ditambahkan, diperbarui atau dihapus.';
-    $Self->{Translation}->{'Edit a change.'} = 'Mengedit perubahan';
-    $Self->{Translation}->{'Edit the change.'} = '';
-    $Self->{Translation}->{'Edit the conditions of the change.'} = '';
-    $Self->{Translation}->{'Edit the workorder.'} = '';
-    $Self->{Translation}->{'Enables the minimal change counter size (if "Date" was selected as ITSMChange::NumberGenerator).'} =
+    $Self->{Translation}->{'This configuration defines if the OTRS package verification should be active or disabled. If disabled all packages are shown as verified. It\'s still recommended to use only verified packages.'} =
         '';
-    $Self->{Translation}->{'Forward schedule of changes. Overview over approved changes.'} =
-        'Perubahan bahwa jadwal dimajukan . Ikhtisar lebih perubahan disetujui.';
-    $Self->{Translation}->{'History Zoom'} = 'sejarah Zoom/Dekat';
-    $Self->{Translation}->{'ITSM Change CAB Templates.'} = 'ITSM mengubah template CAB';
-    $Self->{Translation}->{'ITSM Change Condition Edit.'} = 'ITSM mengubah kondisi';
-    $Self->{Translation}->{'ITSM Change Condition Overview.'} = 'Perubahan Kondisi ITSM';
-    $Self->{Translation}->{'ITSM Change Manager Overview.'} = 'Mengubah manajer ITSM';
-    $Self->{Translation}->{'ITSM Change Notifications'} = '';
-    $Self->{Translation}->{'ITSM Change PIR Overview.'} = 'Mengubah PIR ITSM';
-    $Self->{Translation}->{'ITSM Change notification rules'} = 'Mengubah peraturan notifikasi ITSM';
-    $Self->{Translation}->{'ITSM Changes'} = 'Perubahan ITSM';
-    $Self->{Translation}->{'ITSM MyCAB Overview.'} = 'Ikhtisar MyCAB ITSM';
-    $Self->{Translation}->{'ITSM MyChanges Overview.'} = 'Ikhtisar MyChanges ITSM';
-    $Self->{Translation}->{'ITSM MyWorkorders Overview.'} = 'Ikhtisar MyWorkorders ITSM';
-    $Self->{Translation}->{'ITSM Template Delete.'} = 'Menghapus template ITSM';
-    $Self->{Translation}->{'ITSM Template Edit CAB.'} = 'ITSM mengedit template CAB';
-    $Self->{Translation}->{'ITSM Template Edit Content.'} = 'Mengedit isi template ITSM';
-    $Self->{Translation}->{'ITSM Template Edit.'} = 'Mengedit template ITSM';
-    $Self->{Translation}->{'ITSM Template Overview.'} = 'Template ITSM';
-    $Self->{Translation}->{'ITSM event module that cleans up conditions.'} = 'ITSM acara modul yang membersihkan kondisi.';
-    $Self->{Translation}->{'ITSM event module that deletes the cache for a toolbar.'} = 'ITSM acara modul yang menghapus cache untuk toolbar.';
-    $Self->{Translation}->{'ITSM event module that deletes the history of changes.'} = 'ITSM acara modul yang menghapus sejarah perubahan.';
-    $Self->{Translation}->{'ITSM event module that matches conditions and executes actions.'} =
-        'ITSM acara modul yang cocok kondisi dan mengeksekusi tindakan.';
-    $Self->{Translation}->{'ITSM event module that sends notifications.'} = 'ITSM acara modul yang mengirimkan pemberitahuan.';
-    $Self->{Translation}->{'ITSM event module that updates the history of changes.'} = 'ITSM acara modul yang update sejarah perubahan.';
-    $Self->{Translation}->{'ITSM event module that updates the history of conditions.'} = 'ITSM acara modul yang update sejarah kondisi.';
-    $Self->{Translation}->{'ITSM event module that updates the history of workorders.'} = 'ITSM acara modul yang update sejarah perintah kerja.';
-    $Self->{Translation}->{'ITSM event module to recalculate the workorder numbers.'} = 'ITSM acara modul untuk menghitung angka perintah kerja.';
-    $Self->{Translation}->{'ITSM event module to set the actual start and end times of workorders.'} =
-        'ITSM acara modul untuk mengatur sebenarnya mulai dan akhir dari perintah kerja.';
-    $Self->{Translation}->{'ITSMChange'} = 'Perubahan ITSM';
-    $Self->{Translation}->{'ITSMWorkOrder'} = 'Tata Kerja ITSM';
-    $Self->{Translation}->{'If frequency is \'regularly\', you can configure how often the notifications are sent (every X hours).'} =
-        'Jika frekuensi \'teratur\', Anda dapat mengkonfigurasi seberapa sering pemberitahuan dikirim (setiap X jam).';
-    $Self->{Translation}->{'Link another object to the change.'} = '';
-    $Self->{Translation}->{'Link another object to the workorder.'} = '';
-    $Self->{Translation}->{'List of all change events to be displayed in the GUI.'} = '';
-    $Self->{Translation}->{'List of all workorder events to be displayed in the GUI.'} = '';
-    $Self->{Translation}->{'Lookup of CAB members for autocompletion.'} = 'Lookup anggota CAB untuk pelengkapan otomatis.';
-    $Self->{Translation}->{'Lookup of agents, used for autocompletion.'} = 'Lookup agen, yang digunakan untuk melengkapi.';
-    $Self->{Translation}->{'Manage ITSM Change Management state machine.'} = '';
-    $Self->{Translation}->{'Manage the category ↔ impact ↔ priority matrix.'} = '';
-    $Self->{Translation}->{'Module to check if WorkOrderAdd or WorkOrderAddFromTemplate should be permitted.'} =
-        'Modul untuk memeriksa apakah WorkOrderAdd atau Work Order AddFromTemplate harus diijinkan.';
-    $Self->{Translation}->{'Module to check the CAB members.'} = 'Modul untuk memeriksa anggota CAB.';
-    $Self->{Translation}->{'Module to check the agent.'} = 'Modul untuk memeriksa agen.';
-    $Self->{Translation}->{'Module to check the change builder.'} = 'Modul untuk memeriksa perubahan pembangun';
-    $Self->{Translation}->{'Module to check the change manager.'} = 'Modul untuk memeriksa perubahan manajer';
-    $Self->{Translation}->{'Module to check the workorder agent.'} = 'Modul untuk memeriksa agen perintah kerja.';
-    $Self->{Translation}->{'Module to check whether no workorder agent is set.'} = 'Modul untuk memeriksa apakah ada agen perintah kerja diatur.';
-    $Self->{Translation}->{'Module to check whether the agent is contained in the configured list.'} =
-        'Modul untuk memeriksa apakah agen yang terkandung dalam daftar dikonfigurasi.';
-    $Self->{Translation}->{'Module to show a link to create a change from this ticket. The ticket will be automatically linked with the new change.'} =
-        'Modul untuk menunjukkan link untuk membuat perubahan dari tiket ini. tiket akan otomatis terhubung dengan perubahan baru.';
-    $Self->{Translation}->{'Move Time Slot.'} = 'Pindah Waktu Slot.';
-    $Self->{Translation}->{'Move all workorders in time.'} = '';
-    $Self->{Translation}->{'New (from template)'} = 'Baru (dari template)';
-    $Self->{Translation}->{'Only users of these groups have the permission to use the ticket types as defined in "ITSMChange::AddChangeLinkTicketTypes" if the feature "Ticket::Acl::Module###200-Ticket::Acl::Module" is enabled.'} =
-        'Hanya pengguna dari kelompok-kelompok ini memiliki izin untuk menggunakan jenis tiket sebagaimana didefinisikan dalam "ITSM Perubahan :: AddChangeLinkTicketTypes" jika fitur "Ticket :: Acl :: Modul ### 200-Ticket :: Acl :: Modul" diaktifkan.';
-    $Self->{Translation}->{'Other Settings'} = 'Pengaturan Lain';
-    $Self->{Translation}->{'Overview over all Changes.'} = 'Gambaran atas semua Perubahan.';
-    $Self->{Translation}->{'PIR'} = '';
-    $Self->{Translation}->{'PIR (Post Implementation Review)'} = 'PIR (Post Implementasi Review)';
-    $Self->{Translation}->{'PSA'} = 'PSA';
-    $Self->{Translation}->{'Parameters for the UserCreateWorkOrderNextMask object in the preference view of the agent interface.'} =
-        'Parameter untuk Pengguna Buat WorkOrderNextMask objek dalam pandangan preferensi antarmuka agen.';
-    $Self->{Translation}->{'Parameters for the pages (in which the changes are shown) of the small change overview.'} =
-        'Parameter untuk halaman (di mana perubahan akan ditampilkan) dari gambaran perubahan kecil.';
-    $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
-        'Melakukan tindakan dikonfigurasi untuk setiap acara (sebagai Invoker) untuk setiap Layanan Web dikonfigurasi.';
-    $Self->{Translation}->{'Planned end time'} = '';
-    $Self->{Translation}->{'Planned start time'} = '';
-    $Self->{Translation}->{'Print the change.'} = '';
-    $Self->{Translation}->{'Print the workorder.'} = '';
-    $Self->{Translation}->{'Projected Service Availability'} = '';
-    $Self->{Translation}->{'Projected Service Availability (PSA)'} = 'Proyeksi Layanan Ketersediaan (PSA)';
-    $Self->{Translation}->{'Projected Service Availability (PSA) of changes. Overview of approved changes and their services.'} =
-        'Proyeksi Layanan Ketersediaan (PSA) perubahan. Ikhtisar perubahan disetujui dan layanan mereka.';
-    $Self->{Translation}->{'Requested time'} = '';
-    $Self->{Translation}->{'Required privileges in order for an agent to take a workorder.'} =
-        'hak diperlukan agar agen untuk mengambil perintah kerja.';
-    $Self->{Translation}->{'Required privileges to access the overview of all changes.'} = 'hak yang diperlukan untuk mengakses gambaran dari semua perubahan.';
-    $Self->{Translation}->{'Required privileges to add a workorder.'} = 'hak diperlukan untuk menambahkan perintah kerja.';
-    $Self->{Translation}->{'Required privileges to change the workorder agent.'} = 'hak diperlukan untuk mengubah agen perintah kerja.';
-    $Self->{Translation}->{'Required privileges to create a template from a change.'} = 'hak yang diperlukan untuk membuat template dari perubahan.';
-    $Self->{Translation}->{'Required privileges to create a template from a changes\' CAB.'} =
-        'hak yang diperlukan untuk membuat template dari perubahan CAB';
-    $Self->{Translation}->{'Required privileges to create a template from a workorder.'} = 'hak yang diperlukan untuk membuat template dari perintah kerja.';
-    $Self->{Translation}->{'Required privileges to create changes from templates.'} = 'hak yang diperlukan untuk membuat perubahan dari template.';
-    $Self->{Translation}->{'Required privileges to create changes.'} = 'hak yang diperlukan untuk membuat perubahan.';
-    $Self->{Translation}->{'Required privileges to delete a template.'} = 'hak diperlukan untuk menghapus template.';
-    $Self->{Translation}->{'Required privileges to delete a workorder.'} = 'hak diperlukan untuk menghapus perintah kerja.';
-    $Self->{Translation}->{'Required privileges to delete changes.'} = 'hak diperlukan untuk menghapus perubahan.';
-    $Self->{Translation}->{'Required privileges to edit a template.'} = 'hak diperlukan untuk mengedit template.';
-    $Self->{Translation}->{'Required privileges to edit a workorder.'} = 'hak diperlukan untuk mengedit perintah kerja.';
-    $Self->{Translation}->{'Required privileges to edit changes.'} = 'hak diperlukan untuk mengedit perubahan.';
-    $Self->{Translation}->{'Required privileges to edit the conditions of changes.'} = 'hak diperlukan untuk mengedit kondisi perubahan.';
-    $Self->{Translation}->{'Required privileges to edit the content of a template.'} = 'hak diperlukan untuk mengedit isi dari template.';
-    $Self->{Translation}->{'Required privileges to edit the involved persons of a change.'} =
-        'hak diperlukan untuk mengedit orang yang terlibat dari perubahan.';
-    $Self->{Translation}->{'Required privileges to move changes in time.'} = 'hak yang dibutuhkan untuk memindahkan perubahan waktu.';
-    $Self->{Translation}->{'Required privileges to print a change.'} = 'hak yang diperlukan untuk mencetak perubahan.';
-    $Self->{Translation}->{'Required privileges to reset changes.'} = 'hak diperlukan untuk me-reset perubahan.';
-    $Self->{Translation}->{'Required privileges to view a workorder.'} = 'hak diperlukan untuk melihat perintah kerja.';
-    $Self->{Translation}->{'Required privileges to view changes.'} = 'hak diperlukan untuk me-review Melihat hal Perintah kerja.';
-    $Self->{Translation}->{'Required privileges to view list of changes where the user is a CAB member.'} =
-        'hak diperlukan untuk melihat daftar perubahan di mana pengguna adalah anggota CAB.';
-    $Self->{Translation}->{'Required privileges to view list of changes where the user is the change manager.'} =
-        'hak diperlukan untuk melihat daftar perubahan di mana pengguna adalah perubahan manajer';
-    $Self->{Translation}->{'Required privileges to view overview over all templates.'} = 'hak diperlukan untuk melihat gambaran atas semua template.';
-    $Self->{Translation}->{'Required privileges to view the conditions of changes.'} = 'hak diperlukan untuk melihat kondisi perubahan.';
-    $Self->{Translation}->{'Required privileges to view the history of a change.'} = 'hak diperlukan untuk melihat sejarah perubahan.';
-    $Self->{Translation}->{'Required privileges to view the history of a workorder.'} = 'hak diperlukan untuk melihat sejarah perintah kerja.';
-    $Self->{Translation}->{'Required privileges to view the history zoom of a change.'} = 'hak diperlukan untuk melihat zoom sejarah perubahan.';
-    $Self->{Translation}->{'Required privileges to view the history zoom of a workorder.'} =
-        'hak diperlukan untuk melihat zoom sejarah perintah kerja.';
-    $Self->{Translation}->{'Required privileges to view the list of Change Schedule.'} = 'hak diperlukan untuk melihat daftar Perubahan Jadwal.';
-    $Self->{Translation}->{'Required privileges to view the list of change PSA.'} = 'hak diperlukan untuk melihat daftar perubahan PSA.';
-    $Self->{Translation}->{'Required privileges to view the list of changes with an upcoming PIR (Post Implementation Review).'} =
-        'hak diperlukan untuk melihat daftar perubahan dengan PIR mendatang (Post Pelaksanaan Review).';
-    $Self->{Translation}->{'Required privileges to view the list of own changes.'} = 'hak diperlukan untuk melihat daftar perubahan sendiri.';
-    $Self->{Translation}->{'Required privileges to view the list of own workorders.'} = 'hak diperlukan untuk melihat daftar perintah kerja sendiri.';
-    $Self->{Translation}->{'Required privileges to write a report for the workorder.'} = 'hak diperlukan untuk menulis laporan untuk perintah kerja.';
-    $Self->{Translation}->{'Reset a change and its workorders.'} = 'Ulang perubahan dan perintah kerja nya.';
-    $Self->{Translation}->{'Reset change and its workorders.'} = '';
-    $Self->{Translation}->{'Run task to check if specific times have been reached in changes and workorders.'} =
-        'tugas dijalankan untuk memeriksa apakah waktu tertentu telah dicapai dalam perubahan dan perintah kerja.';
-    $Self->{Translation}->{'Save change as a template.'} = '';
-    $Self->{Translation}->{'Save workorder as a template.'} = '';
-    $Self->{Translation}->{'Schedule'} = '';
-    $Self->{Translation}->{'Screen after creating a workorder'} = 'Layar setelah membuat perintah kerja';
-    $Self->{Translation}->{'Search Changes'} = 'Cari perubahan';
-    $Self->{Translation}->{'Search Changes.'} = 'Cari Perubahan.';
-    $Self->{Translation}->{'Selects the change number generator module. "AutoIncrement" increments the change number, the SystemID and the counter are used with SystemID.counter format (e.g. 100118, 100119). With "Date", the change numbers will be generated by the current date and a counter; this format looks like Year.Month.Day.counter, e.g. 2010062400001, 2010062400002. With "DateChecksum", the counter will be appended as checksum to the string of date plus the SystemID. The checksum will be rotated on a daily basis. This format looks like Year.Month.Day.SystemID.Counter.CheckSum, e.g. 2010062410000017, 2010062410000026.'} =
-        'Memilih modul jumlah perubahan pembangkit. "AutoIncrement" increment jumlah perubahan, SystemID dan meja yang digunakan dengan format yang SystemID.counter (Misalnya 100.118, 100.119). Dengan "Tanggal", angka perubahan akan dihasilkan oleh tanggal dan counter; format ini tampak seperti Year.Month.Day.counter, misalnya 2010062400001, 2010062400002. Dengan "DateChecksum", counter akan ditambahkan sebagai checksum untuk string dari tanggal ditambah SystemID. checksum akan diputar setiap hari. Format ini terlihat seperti Year.Month.Day.SystemID.Counter.CheckSum, misalnya 2010062410000017, 2010062410000026.';
-    $Self->{Translation}->{'Set the agent for the workorder.'} = '';
-    $Self->{Translation}->{'Set the default height (in pixels) of inline HTML fields in the change zoom screen and workorder zoom screen of the agent interface.'} =
+    $Self->{Translation}->{'This configuration defines the URL to the OTRS CloudService Proxy service. The http or https prefix will be added, depending on selection SysConfig \'Znuny4OTRSRepoType\'.'} =
         '';
-    $Self->{Translation}->{'Set the maximum height (in pixels) of inline HTML fields in the change zoom screen and workorder zoom screen of the agent interface.'} =
+    $Self->{Translation}->{'This configuration registers a Output post-filter to extend package verification.'} =
         '';
-    $Self->{Translation}->{'Sets the minimal change counter size (if "AutoIncrement" was selected as ITSMChange::NumberGenerator). Default is 5, this means the counter starts from 10000.'} =
-        'Menetapkan minimal ukuran perubahan counter (jika "auto_increment" terpilih sebagai Perubahan ITSM :: Number Generator). Default adalah 5, ini berarti konter dimulai dari 10000.';
-    $Self->{Translation}->{'Sets up the state machine for changes.'} = 'Set up mesin untuk perubahan.';
-    $Self->{Translation}->{'Sets up the state machine for workorders.'} = 'Set up mesin untuk perintah kerja.';
-    $Self->{Translation}->{'Shows a checkbox in the workorder edit screen of the agent interface that defines if the the following workorders should also be moved if a workorder is modified and the planned end time has changed.'} =
+    $Self->{Translation}->{'This configuration registers an OutputFilter module that removes OTRS Business Solution TM advertisements.'} =
         '';
-    $Self->{Translation}->{'Shows a link in the menu that allows changing the workorder agent, in the zoom view of the workorder of the agent interface.'} =
+    $Self->{Translation}->{'This configuration registers an output filter to hide online repository selection in package manager.'} =
         '';
-    $Self->{Translation}->{'Shows a link in the menu that allows defining a change as a template in the zoom view of the change, in the agent interface.'} =
-        'Menunjukkan link dalam menu yang memungkinkan mendefinisikan perubahan sebagai template dalam tampilan zoom perubahan, dalam antarmuka agen.';
-    $Self->{Translation}->{'Shows a link in the menu that allows defining a workorder as a template in the zoom view of the workorder, in the agent interface.'} =
-        'Menunjukkan link dalam menu yang memungkinkan mendefinisikan perintah kerja sebagai template dalam tampilan zoom dari perintah kerja, di antarmuka agen.';
-    $Self->{Translation}->{'Shows a link in the menu that allows editing the report of a workorder, in the zoom view of the workorder of the agent interface.'} =
+    $Self->{Translation}->{'Tidy unprocessed release that not passed test pomules checks for a long time.'} =
         '';
-    $Self->{Translation}->{'Shows a link in the menu that allows linking a change with another object in the change zoom view of the agent interface.'} =
-        'Menunjukkan link dalam menu yang memungkinkan menghubungkan perubahan dengan objek lain pada tampilan perubahan zoom dari antarmuka agen.';
-    $Self->{Translation}->{'Shows a link in the menu that allows linking a workorder with another object in the zoom view of the workorder of the agent interface.'} =
+    $Self->{Translation}->{'Users who have rw permissions in one of these groups are permitted to execute force pushes \'git push --force\'.'} =
         '';
-    $Self->{Translation}->{'Shows a link in the menu that allows moving the time slot of a change in its zoom view of the agent interface.'} =
-        'Menunjukkan link dalam menu yang memungkinkan bergerak slot waktu perubahan dalam tampilan zoom-nya dari antarmuka agen.';
-    $Self->{Translation}->{'Shows a link in the menu that allows taking a workorder in the its zoom view of the agent interface.'} =
-        'Menunjukkan link dalam menu yang memungkinkan mengambil perintah kerja dalam tampilan zoom-nya dari antarmuka agen.';
-    $Self->{Translation}->{'Shows a link in the menu to access the conditions of a change in the its zoom view of the agent interface.'} =
-        'Menunjukkan link dalam menu untuk mengakses kondisi perubahan yang zoom pandangan agen antarmuka.';
-    $Self->{Translation}->{'Shows a link in the menu to access the history of a change in the its zoom view of the agent interface.'} =
-        'Menunjukkan link dalam menu untuk mengakses sejarah dari perubahan dalam tampilan zoom-nya dari antarmuka agen.';
-    $Self->{Translation}->{'Shows a link in the menu to access the history of a workorder in the its zoom view of the agent interface.'} =
-        'Menunjukkan link dalam menu untuk mengakses sejarah perintah kerja dalam tampilan zoom-nya dari antarmuka agen.';
-    $Self->{Translation}->{'Shows a link in the menu to add a workorder in the change zoom view of the agent interface.'} =
-        'Menunjukkan link dalam menu untuk menambahkan perintah kerja dalam tampilan perubahan zoom dari antarmuka agen.';
-    $Self->{Translation}->{'Shows a link in the menu to delete a change in its zoom view of the agent interface.'} =
-        'Menunjukkan link dalam menu untuk menghapus perubahan dalam pandangan zoom-nya dari antarmuka agen.';
-    $Self->{Translation}->{'Shows a link in the menu to delete a workorder in its zoom view of the agent interface.'} =
-        'Menunjukkan link dalam menu untuk menghapus perintah kerja dalam pandangan zoom-nya dari antarmuka agen.';
-    $Self->{Translation}->{'Shows a link in the menu to edit a change in the its zoom view of the agent interface.'} =
-        'Menunjukkan link dalam menu untuk mengedit perubahan dalam tampilan zoom-nya dari antarmuka agen.';
-    $Self->{Translation}->{'Shows a link in the menu to edit a workorder in the its zoom view of the agent interface.'} =
-        'Menunjukkan link dalam menu untuk mengedit perintah kerja dalam tampilan zoom-nya dari antarmuka agen.';
-    $Self->{Translation}->{'Shows a link in the menu to go back in the change zoom view of the agent interface.'} =
-        'Menunjukkan link dalam menu untuk kembali dalam tampilan perubahan zoom dari antarmuka agen.';
-    $Self->{Translation}->{'Shows a link in the menu to go back in the workorder zoom view of the agent interface.'} =
-        'Menunjukkan link dalam menu untuk kembali dalam urutan kerja tampilan zoom dari antarmuka agen.';
-    $Self->{Translation}->{'Shows a link in the menu to print a change in the its zoom view of the agent interface.'} =
-        'Menunjukkan link dalam menu untuk mencetak perubahan dalam tampilan zoom-nya dari antarmuka agen.';
-    $Self->{Translation}->{'Shows a link in the menu to print a workorder in the its zoom view of the agent interface.'} =
-        'Menunjukkan link dalam menu untuk mencetak perintah kerja dalam tampilan zoom-nya dari antarmuka agen.';
-    $Self->{Translation}->{'Shows a link in the menu to reset a change and its workorders in its zoom view of the agent interface.'} =
-        'Menunjukkan link dalam menu untuk mengatur ulang perubahan dan perintah kerja dalam tampilan zoom-nya dari antarmuka agen.';
-    $Self->{Translation}->{'Shows a link in the menu to show the involved persons in a change, in the zoom view of the change in the agent interface.'} =
+    $Self->{Translation}->{'Users who have rw permissions in one of these groups are permitted to manage projects. Additionally the members have administration permissions to the git management.'} =
         '';
-    $Self->{Translation}->{'Shows the change history (reverse ordered) in the agent interface.'} =
-        'Menunjukkan sejarah perubahan (urutan terbalik) di antarmuka agen.';
-    $Self->{Translation}->{'State Machine'} = 'State mesin';
-    $Self->{Translation}->{'Stores change and workorder ids and their corresponding template id, while a user is editing a template.'} =
-        'Simpan perubahan dan perintah kerja id dan Template id yang sesuai mereka, sementara pengguna mengedit template.';
-    $Self->{Translation}->{'Take Workorder'} = 'Ambil Work Order';
-    $Self->{Translation}->{'Take Workorder.'} = 'Mengambil perintah kerja';
-    $Self->{Translation}->{'Take the workorder.'} = '';
-    $Self->{Translation}->{'Template Overview'} = 'Ikhtisar Template';
-    $Self->{Translation}->{'Template type'} = '';
-    $Self->{Translation}->{'Template.'} = 'Template';
-    $Self->{Translation}->{'The identifier for a change, e.g. Change#, MyChange#. The default is Change#.'} =
-        'Pengenal untuk perubahan, misalnya. Ganti #,  perubahan saya#. default Berubah #.';
-    $Self->{Translation}->{'The identifier for a workorder, e.g. Workorder#, MyWorkorder#. The default is Workorder#.'} =
-        'Pengenal untuk perintah kerja, misalnya Workorder #, Workorder #. Standarnya adalah Work Order #.';
-    $Self->{Translation}->{'This ACL module restricts the usuage of the ticket types that are defined in the sysconfig option \'ITSMChange::AddChangeLinkTicketTypes\', to users of the groups as defined in "ITSMChange::RestrictTicketTypes::Groups". As this ACL could collide with other ACLs which are also related to the ticket type, this sysconfig option is disabled by default and should only be activated if needed.'} =
-        'Modul ACL ini membatasi penggunaan jenis tiket yang didefinisikan dalam pilihan sysconfig \'ITSMChange :: AddChangeLinkTicketTypes\', untuk pengguna kelompok sebagaimana didefinisikan dalam "ITSMChange :: RestrictTicketTypes :: Grup". Sebagai ACL ini bisa berbenturan dengan ACL lain yang juga terkait dengan jenis tiket, opsi sysconfig ini dinonaktifkan secara default dan hanya harus diaktifkan jika diperlukan.';
-    $Self->{Translation}->{'Time Slot'} = 'waktu Slot';
-    $Self->{Translation}->{'Types of tickets, where in the ticket zoom view a link to add a change will be displayed.'} =
-        'Jenis tiket, di mana dalam zoom tiket melihat link untuk menambahkan perubahan akan ditampilkan.';
-    $Self->{Translation}->{'User Search'} = 'Cari pengguna';
-    $Self->{Translation}->{'Workorder Add (from template).'} = 'Tambahan Perintah Kerja (dari template).';
-    $Self->{Translation}->{'Workorder Add.'} = 'Perintah kerja ditambah';
-    $Self->{Translation}->{'Workorder Agent.'} = 'Agen perintah kerja';
-    $Self->{Translation}->{'Workorder Delete.'} = 'Perintah kerja dihapus';
-    $Self->{Translation}->{'Workorder Edit.'} = 'Perintah kerja di edit';
-    $Self->{Translation}->{'Workorder History Zoom.'} = 'Sejarah perintah kerja';
-    $Self->{Translation}->{'Workorder History.'} = 'Sejarah perintah kerja';
-    $Self->{Translation}->{'Workorder Report.'} = 'Laporan perintah kerja';
-    $Self->{Translation}->{'Workorder Zoom'} = '';
-    $Self->{Translation}->{'Workorder Zoom.'} = 'Perintah kerja zoom';
-    $Self->{Translation}->{'once'} = 'Sekali';
-    $Self->{Translation}->{'regularly'} = 'secara teratur';
 
 
     push @{ $Self->{JavaScriptStrings} // [] }, (
