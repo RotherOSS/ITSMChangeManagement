@@ -1376,163 +1376,163 @@ msgstr "Gruppe ITSMChangeBuilder"
 msgid "Group ITSMChangeManager"
 msgstr "Gruppe ITSMChangeManager"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "requested"
 msgstr "Angefragt"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "pending approval"
 msgstr "Ausstehende Genehmigung"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "rejected"
 msgstr "Zurückgewiesen"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "approved"
 msgstr "Genehmigt"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "in progress"
 msgstr "In Bearbeitung"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "pending pir"
 msgstr "Wartender PIR"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "successful"
 msgstr "Erfolgreich"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "failed"
 msgstr "Fehlgeschlagen"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "canceled"
 msgstr "Abgebrochen"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "retracted"
 msgstr "Zurückgezogen"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "created"
 msgstr "Erstellt"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "accepted"
 msgstr "Angenommen"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "ready"
 msgstr "Fertig"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "approval"
 msgstr "Genehmigung"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "workorder"
 msgstr "Arbeitsauftrag"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "backout"
 msgstr "Backout-Plan"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "decision"
 msgstr "Entscheidung"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "pir"
 msgstr "PIR (Post Implementation Review)"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "ChangeStateID"
 msgstr "Change-Status-ID"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "CategoryID"
 msgstr "Kategorie-ID"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "ImpactID"
 msgstr "Auswirkungs-ID"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "PriorityID"
 msgstr "Prioritäts-ID"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "ChangeManagerID"
 msgstr "Change-Manager-ID"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "ChangeBuilderID"
 msgstr "ChangeBuilderID"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "WorkOrderStateID"
 msgstr "Arbeitsauftrags-Status-ID"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "WorkOrderTypeID"
 msgstr "Arbeitsauftrags-Typ-ID"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "WorkOrderAgentID"
 msgstr "Arbeitsauftrags-Agent-ID"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "is"
 msgstr "ist"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "is not"
 msgstr "ist nicht"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "is empty"
 msgstr "ist leer"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "is not empty"
 msgstr "ist nicht leer"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "is greater than"
 msgstr "ist grösser als"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "is less than"
 msgstr "ist kleiner als"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "is before"
 msgstr "ist vor"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "is after"
 msgstr "ist nach"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "contains"
 msgstr "enthält"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "not contains"
 msgstr "enthält nicht"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "begins with"
 msgstr "beginnt mit"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "ends with"
 msgstr "endet mit"
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "set"
 msgstr "setze"
 

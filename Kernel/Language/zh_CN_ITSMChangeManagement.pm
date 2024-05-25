@@ -313,7 +313,6 @@ sub Data {
     $Self->{Translation}->{'Can\'t show history, as no ChangeID is given!'} = '不能显示历史，因为没有指定变更ID！';
     $Self->{Translation}->{'Change "%s" not found in the database!'} = '数据库中没有找到变更"%s"！';
     $Self->{Translation}->{'Unknown type "%s" encountered!'} = '遇到了未知的类型"%s"！';
-    $Self->{Translation}->{'Change History'} = '变更历史';
 
     # Perl Module: Kernel/Modules/AgentITSMChangeHistoryZoom.pm
     $Self->{Translation}->{'Can\'t show history zoom, no HistoryEntryID is given!'} = '不能显示历史详情，因为没有指定HistoryEntryID！';
@@ -534,7 +533,7 @@ sub Data {
     $Self->{Translation}->{'Group ITSMChangeBuilder'} = 'ITSM变更创建人组';
     $Self->{Translation}->{'Group ITSMChangeManager'} = 'ITSM变更经理组';
 
-    # Database XML Definition: ITSMChangeManagement.sopm
+    # Database XML / SOPM Definition: ITSMChangeManagement.sopm
     $Self->{Translation}->{'requested'} = '请求的';
     $Self->{Translation}->{'pending approval'} = '待审批';
     $Self->{Translation}->{'rejected'} = '被拒绝';
@@ -585,144 +584,514 @@ sub Data {
     $Self->{Translation}->{'Ok'} = '确定';
 
     # SysConfig
-    $Self->{Translation}->{'A precentage value of the minimal translation progress per language, to be usable for documentations.'} =
+    $Self->{Translation}->{'A list of the agents who have permission to take workorders. Key is a login name. Content is 0 or 1.'} =
+        '有权限接手工作指令的服务人员列表。“键”是登录名，“值”是0或1。';
+    $Self->{Translation}->{'A list of workorder states, at which the ActualStartTime of a workorder will be set if it was empty at this point.'} =
+        '工作指令状态列表，工作指令的ActualStartTime（实际开始时间）将被设置（如果这时候还没有设置的话）。';
+    $Self->{Translation}->{'Actual end time'} = '实际结束时间';
+    $Self->{Translation}->{'Actual start time'} = '实际开始时间';
+    $Self->{Translation}->{'Add Workorder'} = '添加工作指令';
+    $Self->{Translation}->{'Add Workorder (from Template)'} = '从模板添加工作指令';
+    $Self->{Translation}->{'Add a change from template.'} = '从模板添加一个变更。';
+    $Self->{Translation}->{'Add a change.'} = '添加一个变更。';
+    $Self->{Translation}->{'Add a workorder (from template) to the change.'} = '从模板添加变更的工作指令。';
+    $Self->{Translation}->{'Add a workorder to the change.'} = '添加变更的工作指令';
+    $Self->{Translation}->{'Add from template'} = '从模板添加';
+    $Self->{Translation}->{'Admin of the CIP matrix.'} = '管理CIP矩阵。';
+    $Self->{Translation}->{'Admin of the state machine.'} = '管理状态模式转换。';
+    $Self->{Translation}->{'Agent interface notification module to see the number of change advisory boards.'} =
+        '查看CAB数量的服务人员界面通知模块。';
+    $Self->{Translation}->{'Agent interface notification module to see the number of changes managed by the user.'} =
+        '查看变更经理管理的变更数的服务人员界面通知模块。';
+    $Self->{Translation}->{'Agent interface notification module to see the number of changes.'} =
+        '查看变更数量的服务人员界面通知模块。';
+    $Self->{Translation}->{'Agent interface notification module to see the number of workorders.'} =
+        '查看工作指令数量的服务人员界面通知模块。';
+    $Self->{Translation}->{'CAB Member Search'} = 'CAB成员搜索';
+    $Self->{Translation}->{'Cache time in minutes for the change management toolbars. Default: 3 hours (180 minutes).'} =
+        '变更管理工具栏的缓存时间（单位：分钟）。默认：3小时（180分钟）。';
+    $Self->{Translation}->{'Cache time in minutes for the change management. Default: 5 days (7200 minutes).'} =
+        '变更管理的缓存时间（单位：分钟）。默认：5天（7200分钟）。';
+    $Self->{Translation}->{'Change CAB Templates'} = '变更CAB模板';
+    $Self->{Translation}->{'Change History.'} = '变更历史';
+    $Self->{Translation}->{'Change Involved Persons.'} = '变更涉及的人员。';
+    $Self->{Translation}->{'Change Overview "Small" Limit'} = '变更概览简洁模式限制';
+    $Self->{Translation}->{'Change Overview.'} = '变更概览';
+    $Self->{Translation}->{'Change Print.'} = '打印变更。';
+    $Self->{Translation}->{'Change Schedule'} = '变更计划';
+    $Self->{Translation}->{'Change Schedule.'} = '变更计划表。';
+    $Self->{Translation}->{'Change Settings'} = '变更设置';
+    $Self->{Translation}->{'Change Zoom'} = '变更详情';
+    $Self->{Translation}->{'Change Zoom.'} = '变更详情。';
+    $Self->{Translation}->{'Change and Workorder Templates'} = '变更和工作指令模板';
+    $Self->{Translation}->{'Change and workorder templates edited by this user.'} = '本用户编辑的变更模板和工作指令模板。';
+    $Self->{Translation}->{'Change area.'} = '变更区域。';
+    $Self->{Translation}->{'Change involved persons of the change.'} = '更换变更涉及的相关人员。';
+    $Self->{Translation}->{'Change limit per page for Change Overview "Small".'} = '变更概览简洁模式每页变更数限制。';
+    $Self->{Translation}->{'Change number'} = '变更编号';
+    $Self->{Translation}->{'Change search backend router of the agent interface.'} = '服务人员界面变更搜索后端路由';
+    $Self->{Translation}->{'Change state'} = '变更状态';
+    $Self->{Translation}->{'Change time'} = '变更时间';
+    $Self->{Translation}->{'Change title'} = '变更标题';
+    $Self->{Translation}->{'Condition Edit'} = '条件编辑';
+    $Self->{Translation}->{'Condition Overview'} = '条件概览';
+    $Self->{Translation}->{'Configure which screen should be shown after a new workorder has been created.'} =
+        '配置创建新工作指令后显示的界面。';
+    $Self->{Translation}->{'Configures how often the notifications are sent when planned the start time or other time values have been reached/passed.'} =
+        '配置计划开始时间或其它时间到达/过去时发送通知的频率。';
+    $Self->{Translation}->{'Create Change'} = '创建变更';
+    $Self->{Translation}->{'Create Change (from Template)'} = '从模板创建变更';
+    $Self->{Translation}->{'Create a change (from template) from this ticket.'} = '从这个工单创建一个变更（即从模板的方式）。';
+    $Self->{Translation}->{'Create a change from this ticket.'} = '从这个工单创建变更。';
+    $Self->{Translation}->{'Create and manage ITSM Change Management notifications.'} = '创建和管理ITSM变更管理通知。';
+    $Self->{Translation}->{'Create and manage change notifications.'} = '创建和管理变更通知。';
+    $Self->{Translation}->{'Default type for a workorder. This entry must exist in general catalog class \'ITSM::ChangeManagement::WorkOrder::Type\'.'} =
+        '工作指令的默认类型。这个条目必须在目录类\'ITSM::ChangeManagement::WorkOrder::Type\'中存在。';
+    $Self->{Translation}->{'Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.'} =
+        '定义链接对象小部件(LinkObject::ViewMode = \"complex\")设置按钮中的操作。请注意，这些操作必须已经在以下JS和CSS文件中注册：Core.AllocationList.css、Core.UI.AllocationList.js、 Core.UI.Table.Sort.js、Core.Agent.TableFilters.js和Core.Agent.LinkObject.js。';
+    $Self->{Translation}->{'Define the signals for each workorder state.'} = '定义每个工作指令状态的标志信号。';
+    $Self->{Translation}->{'Define which columns are shown in the linked Changes widget (LinkObject::ViewMode = "complex"). Note: Only Change attributes are allowed for DefaultColumns. Possible settings: 0 = Disabled, 1 = Available, 2 = Enabled by default.'} =
+        '定义链接的变更小部件(LinkObject::ViewMode = "complex")要显示的列。注意：只有变更属性才能作为默认列，可用的设置值为：0 = 禁用，1 = 可用， 2 = 默认启用。';
+    $Self->{Translation}->{'Define which columns are shown in the linked Workorder widget (LinkObject::ViewMode = "complex"). Note: Only Workorder attributes are allowed for DefaultColumns. Possible settings: 0 = Disabled, 1 = Available, 2 = Enabled by default.'} =
+        '定义链接的工作指令小部件(LinkObject::ViewMode = "complex")要显示的列。注意：只有工作指令属性才能作为默认列，可用的设置值为：0 = 禁用，1 = 可用， 2 = 默认启用。';
+    $Self->{Translation}->{'Defines an overview module to show the small view of a change list.'} =
+        '定义一个概览模块，以显示变更列表的简洁视图。';
+    $Self->{Translation}->{'Defines an overview module to show the small view of a template list.'} =
+        '定义一个概览模块，以显示模板列表的简洁视图。';
+    $Self->{Translation}->{'Defines if it will be possible to print the accounted time.'} = '定义是否可以打印记帐时间。';
+    $Self->{Translation}->{'Defines if it will be possible to print the planned effort.'} = '定义是否可以打印计划用时。';
+    $Self->{Translation}->{'Defines if reachable (as defined by the state machine) change end states should be allowed if a change is in a locked state.'} =
+        '定义是否允许一个锁定状态的变更可达到结束状态（在状态模式转换中定义）。';
+    $Self->{Translation}->{'Defines if reachable (as defined by the state machine) workorder end states should be allowed if a workorder is in a locked state.'} =
+        '定义是否允许一个锁定状态的工作指令可达到结束状态（在状态模式转换中定义）。';
+    $Self->{Translation}->{'Defines if the accounted time should be shown.'} = '定义是否显示记帐时间。';
+    $Self->{Translation}->{'Defines if the actual start and end times should be set.'} = '定义（工作指令报告中）是否要设置实际开始/结束时间。';
+    $Self->{Translation}->{'Defines if the change search and the workorder search functions could use the mirror DB.'} =
+        '定义变更搜索和工作指令搜索功能是否能够使用镜像数据库。';
+    $Self->{Translation}->{'Defines if the change state can be set in the change edit screen of the agent interface.'} =
+        '定义服务人员界面在变更编辑屏幕能否设置变更状态。';
+    $Self->{Translation}->{'Defines if the planned effort should be shown.'} = '定义是否显示计划用时。';
+    $Self->{Translation}->{'Defines if the requested date should be print by customer.'} = '定义客户是否可以打印请求日期。';
+    $Self->{Translation}->{'Defines if the requested date should be searched by customer.'} =
+        '定义客户是否可以搜索请求日期。';
+    $Self->{Translation}->{'Defines if the requested date should be set by customer.'} = '定义客户是否可以设置请求日期。';
+    $Self->{Translation}->{'Defines if the requested date should be shown by customer.'} = '定义客户是否可以显示请求的日期。';
+    $Self->{Translation}->{'Defines if the workorder state should be shown.'} = '定义是否显示工作指令状态。';
+    $Self->{Translation}->{'Defines if the workorder title should be shown.'} = '定义是否显示工作指令标题。';
+    $Self->{Translation}->{'Defines shown graph attributes.'} = '定义（变更详情窗口工作指令图）显示的图形的属性。';
+    $Self->{Translation}->{'Defines that only changes containing Workorders linked with services, which the customer user has permission to use will be shown. Any other changes will not be displayed.'} =
+        '定义仅显示变更中包含的工作指令中有 到客户联系人有权限使用的服务 的链接 的变更，任何其它变更都不会显示。';
+    $Self->{Translation}->{'Defines the change states that will be allowed to delete.'} = '定义允许删除变更的变更状态。';
+    $Self->{Translation}->{'Defines the change states that will be used as filters in the Change PSA overview.'} =
+        '定义\'变更PSA\'概览中能用于过滤器的变更状态。';
+    $Self->{Translation}->{'Defines the change states that will be used as filters in the Change Schedule overview.'} =
+        '定义\'变更计划\'概览中能用于过滤器的变更状态。';
+    $Self->{Translation}->{'Defines the change states that will be used as filters in the MyCAB overview.'} =
+        '定义\'我的CAB\'概览中能用于过滤器的变更状态。';
+    $Self->{Translation}->{'Defines the change states that will be used as filters in the MyChanges overview.'} =
+        '定义\'我的变更\'概览中能用于过滤器的变更状态。';
+    $Self->{Translation}->{'Defines the change states that will be used as filters in the change manager overview.'} =
+        '定义\'变更经理\'概览中能用于过滤器的变更状态。';
+    $Self->{Translation}->{'Defines the change states that will be used as filters in the change overview.'} =
+        '定义\'变更\'概览中能用于过滤器的变更状态。';
+    $Self->{Translation}->{'Defines the change states that will be used as filters in the customer change schedule overview.'} =
+        '定义客户\'变更计划\'概览中能用于过滤器的变更状态。';
+    $Self->{Translation}->{'Defines the default change title for a dummy change which is needed to edit a workorder template.'} =
+        '定义编辑工作指令时创建的临时变更的默认标题。';
+    $Self->{Translation}->{'Defines the default frontend (HTML) theme to be used by the agents and customers. If you like, you can add your own theme. Please refer the administrator manual located at https://doc.otobo.org/.'} =
         '';
-    $Self->{Translation}->{'Access repos via http or https.'} = '';
-    $Self->{Translation}->{'Autoloading of Znuny4OTRSRepo extensions.'} = '';
-    $Self->{Translation}->{'Backend module registration for the config conflict check module.'} =
+    $Self->{Translation}->{'Defines the default frontend language. All the possible values are determined by the available language files on the system. These values are listed as the keys in the setting \'DefaultUsedLanguages\'.'} =
         '';
-    $Self->{Translation}->{'Backend module registration for the file conflict check module.'} =
+    $Self->{Translation}->{'Defines the default sort criteria in the change PSA overview.'} =
+        '定义\'变更PSA\'概览中默认的排序条件。';
+    $Self->{Translation}->{'Defines the default sort criteria in the change manager overview.'} =
+        '定义\'变更经理\'概览中默认的排序条件。';
+    $Self->{Translation}->{'Defines the default sort criteria in the change overview.'} = '定义\'变更\'概览中默认的排序条件。';
+    $Self->{Translation}->{'Defines the default sort criteria in the change schedule overview.'} =
+        '定义\'变更计划\'概览中默认的排序条件。';
+    $Self->{Translation}->{'Defines the default sort criteria of the changes in the MyCAB overview.'} =
+        '定义\'我的CAB\'概览中默认的变更排序条件。';
+    $Self->{Translation}->{'Defines the default sort criteria of the changes in the MyChanges overview.'} =
+        '定义\'我的变更\'概览中默认的变更排序条件。';
+    $Self->{Translation}->{'Defines the default sort criteria of the changes in the MyWorkorders overview.'} =
+        '定义\'我的工作指令\'概览中默认的变更排序条件。';
+    $Self->{Translation}->{'Defines the default sort criteria of the changes in the PIR overview.'} =
+        '定义\'PIR（实施后评审）\'概览中默认的变更排序条件。';
+    $Self->{Translation}->{'Defines the default sort criteria of the changes in the customer change schedule overview.'} =
+        '定义客户\'变更计划\'概览中默认的变更排序条件。';
+    $Self->{Translation}->{'Defines the default sort criteria of the changes in the template overview.'} =
+        '定义\'模板\'概览中默认的变更排序条件。';
+    $Self->{Translation}->{'Defines the default sort order in the MyCAB overview.'} = '定义\'我的CAB\'概览中默认的排序顺序。';
+    $Self->{Translation}->{'Defines the default sort order in the MyChanges overview.'} = '定义\'我的变更\'概览中默认的排序顺序。';
+    $Self->{Translation}->{'Defines the default sort order in the MyWorkorders overview.'} =
+        '定义\'我的工作指令\'概览中默认的排序顺序。';
+    $Self->{Translation}->{'Defines the default sort order in the PIR overview.'} = '定义\'PIR（实施后评审）\'概览中默认的排序顺序。';
+    $Self->{Translation}->{'Defines the default sort order in the change PSA overview.'} = '定义\'变更PSA\'概览中默认的排序顺序。';
+    $Self->{Translation}->{'Defines the default sort order in the change manager overview.'} =
+        '定义\'变更经理\'概览中默认的排序顺序。';
+    $Self->{Translation}->{'Defines the default sort order in the change overview.'} = '定义变更概览中默认的排序顺序。';
+    $Self->{Translation}->{'Defines the default sort order in the change schedule overview.'} =
+        '定义\'变更计划\'概览中默认的排序顺序。';
+    $Self->{Translation}->{'Defines the default sort order in the customer change schedule overview.'} =
+        '定义客户界面\'变更计划\'概览中默认的排序顺序。';
+    $Self->{Translation}->{'Defines the default sort order in the template overview.'} = '定义模板概览中默认的排序顺序。';
+    $Self->{Translation}->{'Defines the default value for the category of a change.'} = '定义一个变更风险类别的默认值。';
+    $Self->{Translation}->{'Defines the default value for the impact of a change.'} = '定义一个变更影响的默认值。';
+    $Self->{Translation}->{'Defines the field type of CompareValue fields for change attributes used in the change condition edit screen of the agent interface. Valid values are Selection, Text and Date. If a type is not defined, the field will not be shown.'} =
+        '定义服务人员界面变更条件编辑屏幕变更属性比较值字段的类型，有效值是：Selection（选择）、Text（文本）和Date（日期）。 如果没有定义类型，字段不会被显示出来。';
+    $Self->{Translation}->{'Defines the field type of CompareValue fields for workorder attributes used in the change condition edit screen of the agent interface. Valid values are Selection, Text and Date. If a type is not defined, the field will not be shown.'} =
+        '定义服务人员界面工作指令条件编辑屏幕变更属性比较值字段的类型，有效值是：Selection（选择）、Text（文本）和Date（日期）。 如果没有定义类型，字段不会被显示出来。';
+    $Self->{Translation}->{'Defines the object attributes that are selectable for change objects in the change condition edit screen of the agent interface.'} =
+        '定义服务人员界面变更条件编辑屏幕中变更对象可选择的对象属性。';
+    $Self->{Translation}->{'Defines the object attributes that are selectable for workorder objects in the change condition edit screen of the agent interface.'} =
+        '定义服务人员界面工作指令条件编辑屏幕中工作指令对象可选择的对象属性。';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute AccountedTime in the change condition edit screen of the agent interface.'} =
+        '定义服务人员界面变更条件编辑屏幕中占用时间属性可选择的运算符。';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute ActualEndTime in the change condition edit screen of the agent interface.'} =
+        '定义服务人员界面变更条件编辑屏幕中实际结束时间属性可选择的运算符。';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute ActualStartTime in the change condition edit screen of the agent interface.'} =
+        '定义服务人员界面变更条件编辑屏幕中实际开始时间属性可选择的运算符。';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute CategoryID in the change condition edit screen of the agent interface.'} =
+        '定义服务人员界面变更条件编辑屏幕中目录ID属性可选择的运算符。';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute ChangeBuilderID in the change condition edit screen of the agent interface.'} =
+        '定义服务人员界面变更条件编辑屏幕中目录创建人ID属性可选择的运算符。';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute ChangeManagerID in the change condition edit screen of the agent interface.'} =
+        '定义服务人员界面变更条件编辑屏幕中目录管理人ID属性可选择的运算符。';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute ChangeStateID in the change condition edit screen of the agent interface.'} =
+        '定义服务人员界面变更条件编辑屏幕中变更状态ID属性可选择的运算符。';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute ChangeTitle in the change condition edit screen of the agent interface.'} =
+        '定义服务人员界面变更条件编辑屏幕中变更标题属性可选择的运算符。';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute DynamicField in the change condition edit screen of the agent interface.'} =
+        '定义服务人员界面变更条件编辑屏幕中动态字段属性可选择的运算符。';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute ImpactID in the change condition edit screen of the agent interface.'} =
+        '定义服务人员界面变更条件编辑屏幕中影响ID属性可选择的运算符。';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute PlannedEffort in the change condition edit screen of the agent interface.'} =
+        '定义服务人员界面变更条件编辑屏幕中计划用时属性可选择的运算符。';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute PlannedEndTime in the change condition edit screen of the agent interface.'} =
+        '定义服务人员界面变更条件编辑屏幕中计划结束时间属性可选择的运算符。';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute PlannedStartTime in the change condition edit screen of the agent interface.'} =
+        '定义服务人员界面变更条件编辑屏幕中计划开始时间属性可选择的运算符。';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute PriorityID in the change condition edit screen of the agent interface.'} =
+        '定义服务人员界面变更条件编辑屏幕中优先级ID属性可选择的运算符。';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute RequestedTime in the change condition edit screen of the agent interface.'} =
+        '定义服务人员界面变更条件编辑屏幕中请求时间属性可选择的运算符。';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute WorkOrderAgentID in the change condition edit screen of the agent interface.'} =
+        '定义服务人员界面变更条件编辑屏幕中工作指令服务人员ID属性可选择的运算符。';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute WorkOrderNumber in the change condition edit screen of the agent interface.'} =
+        '定义服务人员界面变更条件编辑屏幕中工作指令编号属性可选择的运算符。';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute WorkOrderStateID in the change condition edit screen of the agent interface.'} =
+        '定义服务人员界面变更条件编辑屏幕中工作指令状态ID属性可选择的运算符。';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute WorkOrderTitle in the change condition edit screen of the agent interface.'} =
+        '定义服务人员界面变更条件编辑屏幕中工作指令标题属性可选择的运算符。';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute WorkOrderTypeID in the change condition edit screen of the agent interface.'} =
+        '定义服务人员界面变更条件编辑屏幕中工作指令类型ID属性可选择的运算符。';
+    $Self->{Translation}->{'Defines the parameters for the dashboard backend. "Cmd" is used to specify command with parameters. "Group" is used to restrict access to the plugin (e. g. Group: admin;group1;group2;). "Default" indicates if the plugin is enabled by default or if the user needs to enable it manually. "CacheTTL" indicates the cache expiration period in minutes for the plugin. "Mandatory" determines if the plugin is always shown and can not be removed by agents. Only works if DashboardBackend::AllowCmdOutput is enabled in Config.pm.'} =
         '';
-    $Self->{Translation}->{'Backend module registration for the function redefine check module.'} =
+    $Self->{Translation}->{'Defines the period (in years), in which start and end times can be selected.'} =
+        '定义能够选择开始时间和结束时间的时间段（单位：年）。';
+    $Self->{Translation}->{'Defines the shown attributes of a workorder in the tooltip of the workorder graph in the change zoom. To show workorder dynamic fields in the tooltip, they must be specified like DynamicField_WorkOrderFieldName1, DynamicField_WorkOrderFieldName2, etc.'} =
+        '在变更详情窗口显示在工作指令图提示文本的属性。要在提示文本中显示工作指令动态字段，他们必须按如下格式指定，如DynamicField_WorkOrderFieldName1、DynamicField_WorkOrderFieldName2等等。';
+    $Self->{Translation}->{'Defines the shown columns in the Change PSA overview. This option has no effect on the position of the column.'} =
+        '定义在\'变更PSA\'概览中显示的字段，这个选项不会影响字段的显示位置。';
+    $Self->{Translation}->{'Defines the shown columns in the Change Schedule overview. This option has no effect on the position of the column.'} =
+        '定义在\'变更计划\'概览中显示的字段，这个选项不会影响字段的显示位置。';
+    $Self->{Translation}->{'Defines the shown columns in the MyCAB overview. This option has no effect on the position of the column.'} =
+        '定义在\'我的CAB\'概览中显示的字段，这个选项不会影响字段的显示位置。';
+    $Self->{Translation}->{'Defines the shown columns in the MyChanges overview. This option has no effect on the position of the column.'} =
+        '定义在\'我的变更\'概览中显示的字段，这个选项不会影响字段的显示位置。';
+    $Self->{Translation}->{'Defines the shown columns in the MyWorkorders overview. This option has no effect on the position of the column.'} =
+        '定义在\'我的工作指令\'概览中显示的字段，这个选项不会影响字段的显示位置。';
+    $Self->{Translation}->{'Defines the shown columns in the PIR overview. This option has no effect on the position of the column.'} =
+        '定义在\'PIR（实施后评审）\'概览中显示的字段，这个选项不会影响字段的显示位置。';
+    $Self->{Translation}->{'Defines the shown columns in the change manager overview. This option has no effect on the position of the column.'} =
+        '定义在\'变更经理\'概览中显示的字段，这个选项不会影响字段的显示位置。';
+    $Self->{Translation}->{'Defines the shown columns in the change overview. This option has no effect on the position of the column.'} =
+        '定义在\'变更\'概览中显示的字段，这个选项不会影响字段的显示位置。';
+    $Self->{Translation}->{'Defines the shown columns in the change search. This option has no effect on the position of the column.'} =
+        '定义在变更搜索结果中显示的字段，这个选项不会影响字段的显示位置。';
+    $Self->{Translation}->{'Defines the shown columns in the customer change schedule overview. This option has no effect on the position of the column.'} =
+        '定义在客户\'变更计划\'概览中显示的字段，这个选项不会影响字段的显示位置。';
+    $Self->{Translation}->{'Defines the shown columns in the template overview. This option has no effect on the position of the column.'} =
+        '定义在模板概览中显示的字段，这个选项不会影响字段的显示位置。';
+    $Self->{Translation}->{'Defines the signals for each ITSM change state.'} = '定义每个变更状态的标志信号。';
+    $Self->{Translation}->{'Defines the template types that will be used as filters in the template overview.'} =
+        '定义在模板概览中用作过滤器的模板类型。';
+    $Self->{Translation}->{'Defines the workorder states that will be used as filters in the MyWorkorders overview.'} =
+        '定义在\'我的工作指令\'概览中用作过滤器的工作指令状态。';
+    $Self->{Translation}->{'Defines the workorder states that will be used as filters in the PIR overview.'} =
+        '定义在\'PIR（实施后评审）\'概览中用作过滤器的工作指令状态。';
+    $Self->{Translation}->{'Defines the workorder types that will be used to show the PIR overview.'} =
+        '定义在\'PIR（实施后评审）\'概览中用作过滤器的工作指令类型。';
+    $Self->{Translation}->{'Defines whether notifications should be sent.'} = '定义是否发送通知。';
+    $Self->{Translation}->{'Delete a change.'} = '删除一个变更。';
+    $Self->{Translation}->{'Delete the change.'} = '删除此变更。';
+    $Self->{Translation}->{'Delete the workorder.'} = '删除此工作指令。';
+    $Self->{Translation}->{'Details of a change history entry.'} = '一个变更历史条目的详细信息。';
+    $Self->{Translation}->{'Determines if an agent can exchange the X-axis of a stat if he generates one.'} =
+        '确定服务人员能否交换他生成的统计的X轴。';
+    $Self->{Translation}->{'Determines if the common stats module may generate stats about changes done for config item classes.'} =
+        '确定通用统计模块能否生成配置项类所做的变更统计。';
+    $Self->{Translation}->{'Determines if the common stats module may generate stats about changes regarding change state updates within a timeperiod.'} =
+        '确定通用统计模块能否生成一段时间内变更关于变更状态更新的统计。';
+    $Self->{Translation}->{'Determines if the common stats module may generate stats about changes regarding the relation between changes and incident tickets.'} =
+        '确定通用统计模块能否生成变更关于变更和故障工单之间的关系的统计。';
+    $Self->{Translation}->{'Determines if the common stats module may generate stats about changes.'} =
+        '确定通用统计模块能否生成关于变更的统计。';
+    $Self->{Translation}->{'Determines if the common stats module may generate stats about the number of Rfc tickets a requester created.'} =
+        '确定通用统计模块能否生成一个请求者创建的RFC（变更请求）的数量的统计。';
+    $Self->{Translation}->{'Dynamic fields (for changes and workorders) shown in the change print screen of the agent interface.'} =
+        '在服务人员界面变更打印窗口中显示的（变更和工作指令）动态字段。';
+    $Self->{Translation}->{'Dynamic fields shown in the change add screen of the agent interface.'} =
+        '在服务人员界面添加变更窗口中显示的动态字段。';
+    $Self->{Translation}->{'Dynamic fields shown in the change edit screen of the agent interface.'} =
+        '在服务人员界面编辑变更窗口中显示的动态字段。';
+    $Self->{Translation}->{'Dynamic fields shown in the change search screen of the agent interface.'} =
+        '在服务人员界面搜索变更窗口中显示的动态字段。';
+    $Self->{Translation}->{'Dynamic fields shown in the change zoom screen of the agent interface.'} =
+        '在服务人员界面变更详情窗口中显示的动态字段。';
+    $Self->{Translation}->{'Dynamic fields shown in the workorder add screen of the agent interface.'} =
+        '在服务人员界面添加工作指令窗口中显示的动态字段。';
+    $Self->{Translation}->{'Dynamic fields shown in the workorder edit screen of the agent interface.'} =
+        '在服务人员界面编辑工作指令窗口中显示的动态字段。';
+    $Self->{Translation}->{'Dynamic fields shown in the workorder report screen of the agent interface.'} =
+        '在服务人员界面工作指令报告窗口中显示的动态字段。';
+    $Self->{Translation}->{'Dynamic fields shown in the workorder zoom screen of the agent interface.'} =
+        '在服务人员界面工作指令详情窗口中显示的动态字段。';
+    $Self->{Translation}->{'DynamicField event module to handle the update of conditions if dynamic fields are added, updated or deleted.'} =
+        '处理动态字段更新条件（添加、更新或删除）的动态字段事件模块。';
+    $Self->{Translation}->{'Edit a change.'} = '编辑一个变更。';
+    $Self->{Translation}->{'Edit the change.'} = '编辑变更。';
+    $Self->{Translation}->{'Edit the conditions of the change.'} = '编辑变更条件。';
+    $Self->{Translation}->{'Edit the workorder.'} = '编辑工作指令。';
+    $Self->{Translation}->{'Enables the minimal change counter size (if "Date" was selected as ITSMChange::NumberGenerator).'} =
+        '启用最小的变更计数器大小（如果ITSMChange::NumberGenerator 变更编号生成器选择为“日期”）';
+    $Self->{Translation}->{'Forward schedule of changes. Overview over approved changes.'} =
+        '转发变更的计划表。已批准变更的概览。';
+    $Self->{Translation}->{'History Zoom'} = '历史详情';
+    $Self->{Translation}->{'ITSM Change CAB Templates.'} = '变更CAB模板。';
+    $Self->{Translation}->{'ITSM Change Condition Edit.'} = '变更条件编辑。';
+    $Self->{Translation}->{'ITSM Change Condition Overview.'} = '变更条件概览。';
+    $Self->{Translation}->{'ITSM Change Manager Overview.'} = '变更经理概览。';
+    $Self->{Translation}->{'ITSM Change Notifications'} = 'ITSM变更通知';
+    $Self->{Translation}->{'ITSM Change PIR Overview.'} = '变更PIR（实施后评审）概览。';
+    $Self->{Translation}->{'ITSM Change notification rules'} = '变更通知规则';
+    $Self->{Translation}->{'ITSM Changes'} = '变更';
+    $Self->{Translation}->{'ITSM MyCAB Overview.'} = '我的CAB概览';
+    $Self->{Translation}->{'ITSM MyChanges Overview.'} = '我的变更概览。';
+    $Self->{Translation}->{'ITSM MyWorkorders Overview.'} = '我的工作指令概览。';
+    $Self->{Translation}->{'ITSM Template Delete.'} = '删除模板。';
+    $Self->{Translation}->{'ITSM Template Edit CAB.'} = '编辑模板CAB。';
+    $Self->{Translation}->{'ITSM Template Edit Content.'} = '编辑模板内容。';
+    $Self->{Translation}->{'ITSM Template Edit.'} = '编辑模板。';
+    $Self->{Translation}->{'ITSM Template Overview.'} = '模板概览。';
+    $Self->{Translation}->{'ITSM event module that cleans up conditions.'} = '清理变更条件的ITSM事件模块。';
+    $Self->{Translation}->{'ITSM event module that deletes the cache for a toolbar.'} = '删除变更工具栏缓存的ITSM事件模块。';
+    $Self->{Translation}->{'ITSM event module that deletes the history of changes.'} = '删除变更历史的ITSM事件模块。';
+    $Self->{Translation}->{'ITSM event module that matches conditions and executes actions.'} =
+        '匹配条件并执行操作的ITSM事件模块。';
+    $Self->{Translation}->{'ITSM event module that sends notifications.'} = '发送通知的ITSM事件模块。';
+    $Self->{Translation}->{'ITSM event module that updates the history of changes.'} = '更新变更历史的ITSM事件模块。';
+    $Self->{Translation}->{'ITSM event module that updates the history of conditions.'} = '更新条件历史的ITSM事件模块。';
+    $Self->{Translation}->{'ITSM event module that updates the history of workorders.'} = '更新工作指令历史的ITSM事件模块。';
+    $Self->{Translation}->{'ITSM event module to recalculate the workorder numbers.'} = '重新计算工作指令编号的ITSM事件模块。';
+    $Self->{Translation}->{'ITSM event module to set the actual start and end times of workorders.'} =
+        '设置工作指令实际开始/结束时间的ITSM事件模块。';
+    $Self->{Translation}->{'ITSMChange'} = '变更';
+    $Self->{Translation}->{'ITSMWorkOrder'} = '工作指令';
+    $Self->{Translation}->{'If "LDAP" was selected for Customer::AuthModule and you wish to use TLS security to communicate with the LDAP server, the "verify" parameter can be specified here. See Net::LDAP::start_tls for more information about the parameter.'} =
         '';
-    $Self->{Translation}->{'Backend module registration for the manual set module.'} = '';
-    $Self->{Translation}->{'Block hooks to be created for BS ad removal.'} = '';
-    $Self->{Translation}->{'Block hooks to be created for package manager output filter.'} =
-        '';
-    $Self->{Translation}->{'Branch View commit limit'} = '';
-    $Self->{Translation}->{'CodePolicy'} = '';
-    $Self->{Translation}->{'Commit limit per page for Branch view screen'} = '';
-    $Self->{Translation}->{'Create analysis file'} = '';
-    $Self->{Translation}->{'Creates a analysis file from this ticket and sends to Znuny.'} =
-        '';
-    $Self->{Translation}->{'Creates a analysis file from this ticket.'} = '';
-    $Self->{Translation}->{'Define private addon repos.'} = '';
-    $Self->{Translation}->{'Defines the filter that processes the HTML templates.'} = '';
-    $Self->{Translation}->{'Defines the test module for checking code policy.'} = '';
-    $Self->{Translation}->{'Definition of GIT clone/push URL Prefix.'} = '';
-    $Self->{Translation}->{'Definition of a Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRelease => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed.'} =
-        '';
-    $Self->{Translation}->{'Definition of a Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed.'} =
-        '';
-    $Self->{Translation}->{'Definition of external MD5 sums (key => MD5, Value => Vendor, PackageName, Version, Date).'} =
-        '';
-    $Self->{Translation}->{'Definition of mappings between public repository requests and internal OPMS repositories.'} =
-        '';
-    $Self->{Translation}->{'Definition of package states.'} = '';
-    $Self->{Translation}->{'Definition of renamed OPMS packages.'} = '';
-    $Self->{Translation}->{'Directory, which is used by Git to cache repositories.'} = '';
-    $Self->{Translation}->{'Directory, which is used by Git to store temporary data.'} = '';
-    $Self->{Translation}->{'Directory, which is used by Git to store working copies.'} = '';
-    $Self->{Translation}->{'Disable online repositories.'} = '';
-    $Self->{Translation}->{'Do not log git ssh connection authorization results for these users. Useful for automated stuff.'} =
-        '';
-    $Self->{Translation}->{'Dynamic Fields Screens'} = '';
-    $Self->{Translation}->{'DynamicFieldScreen'} = '';
-    $Self->{Translation}->{'Export all available public keys to authorized_keys file.'} = '';
-    $Self->{Translation}->{'Export all relevant releases to ftp server.'} = '';
-    $Self->{Translation}->{'Frontend module registration for the OPMS object in the agent interface.'} =
-        '';
-    $Self->{Translation}->{'Frontend module registration for the PublicOPMSRepository object in the public interface.'} =
-        '';
-    $Self->{Translation}->{'Frontend module registration for the PublicOPMSRepositoryLookup object in the public interface.'} =
-        '';
-    $Self->{Translation}->{'Frontend module registration for the PublicOPMSTestBuild object in the public interface.'} =
-        '';
-    $Self->{Translation}->{'Frontend module registration for the PublicPackageVerification object in the public interface.'} =
-        '';
-    $Self->{Translation}->{'Frontend module registration for the admin interface.'} = '';
-    $Self->{Translation}->{'GIT Author registration.'} = '';
-    $Self->{Translation}->{'Generate HTML comment hooks for the specified blocks so that filters can use them.'} =
-        '';
-    $Self->{Translation}->{'Generate documentations once per night.'} = '';
-    $Self->{Translation}->{'Git'} = '';
-    $Self->{Translation}->{'Git Management'} = '';
-    $Self->{Translation}->{'Git Repository'} = '';
-    $Self->{Translation}->{'Group, whose members have delete admin permissions in OPMS.'} = '';
-    $Self->{Translation}->{'Group, whose members have repository admin permissions in OPMS.'} =
-        '';
-    $Self->{Translation}->{'Group, whose members will see CI test result information in OPMS screens.'} =
-        '';
-    $Self->{Translation}->{'Groups an authenticated user (by user login and password) must be member of to build test packages via the public interface.'} =
-        '';
-    $Self->{Translation}->{'Groups which will be set during git project creation processes while adding OPMS repositories.'} =
-        '';
-    $Self->{Translation}->{'Manage dynamic field in screens.'} = '';
-    $Self->{Translation}->{'Manage your public SSH key(s) for Git access here. Make sure to save this preference when you add a new key.'} =
-        '';
-    $Self->{Translation}->{'Module to generate statistics about the added code lines.'} = '';
-    $Self->{Translation}->{'Module to generate statistics about the growth of code.'} = '';
-    $Self->{Translation}->{'Module to generate statistics about the number of git commits.'} =
-        '';
-    $Self->{Translation}->{'Module to generate statistics about the removed code lines.'} = '';
-    $Self->{Translation}->{'OPMS'} = '';
-    $Self->{Translation}->{'Only users who have rw permissions in one of these groups may access git.'} =
-        '';
-    $Self->{Translation}->{'Option to set a package compatibility manually.'} = '';
-    $Self->{Translation}->{'Parameters for the pages in the BranchView screen.'} = '';
-    $Self->{Translation}->{'Pre-Definition of the \'GITProjectName\' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed.'} =
-        '';
-    $Self->{Translation}->{'Pre-Definition of the \'GITRepositoryName\' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed.'} =
-        '';
-    $Self->{Translation}->{'Pre-Definition of the \'PackageDeprecated\' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed.'} =
-        '';
-    $Self->{Translation}->{'Recipients that will be informed by email in case of errors.'} =
-        '';
-    $Self->{Translation}->{'SSH Keys for Git Access'} = '';
-    $Self->{Translation}->{'Send analysis file'} = '';
-    $Self->{Translation}->{'Sets the git clone address to be used in repository listings.'} =
-        '';
-    $Self->{Translation}->{'Sets the home directory for git repositories.'} = '';
-    $Self->{Translation}->{'Sets the path for the BugzillaAddComment post receive script location.'} =
-        '';
-    $Self->{Translation}->{'Sets the path for the OTRSCodePolicy  script location. It is recommended to have a separate clone of the OTRSCodePolicy module that is updated via cron.'} =
-        '';
-    $Self->{Translation}->{'Sets the path for the OTRSCodePolicy pre receive script location. It is recommended to have a separate clone of the OTRSCodePolicy module that is updated via cron.'} =
-        '';
-    $Self->{Translation}->{'Show latest commits in git repositories.'} = '';
-    $Self->{Translation}->{'Shows a link in the menu to go create a unit test from the current ticket.'} =
-        '';
-    $Self->{Translation}->{'Synchronize OPMS tables with a remote database.'} = '';
-    $Self->{Translation}->{'The minimum version of the sphinx library.'} = '';
-    $Self->{Translation}->{'The name of the sphinx theme to be used.'} = '';
-    $Self->{Translation}->{'The path to the OTRS CSS file (relative below the static path).'} =
-        '';
-    $Self->{Translation}->{'The path to the OTRS logo (relative below the static path).'} = '';
-    $Self->{Translation}->{'The path to the static folder, containing images and css files.'} =
-        '';
-    $Self->{Translation}->{'The path to the theme folder, containing the sphinx themes.'} = '';
-    $Self->{Translation}->{'This configuration defines all possible screens to enable or disable default columns.'} =
-        '';
-    $Self->{Translation}->{'This configuration defines all possible screens to enable or disable dynamic fields.'} =
-        '';
-    $Self->{Translation}->{'This configuration defines if only valids or all (invalids) dynamic fields should be shown.'} =
-        '';
-    $Self->{Translation}->{'This configuration defines if the OTRS package verification should be active or disabled. If disabled all packages are shown as verified. It\'s still recommended to use only verified packages.'} =
-        '';
-    $Self->{Translation}->{'This configuration defines the URL to the OTRS CloudService Proxy service. The http or https prefix will be added, depending on selection SysConfig \'Znuny4OTRSRepoType\'.'} =
-        '';
-    $Self->{Translation}->{'This configuration registers a Output post-filter to extend package verification.'} =
-        '';
-    $Self->{Translation}->{'This configuration registers an OutputFilter module that removes OTRS Business Solution TM advertisements.'} =
-        '';
-    $Self->{Translation}->{'This configuration registers an output filter to hide online repository selection in package manager.'} =
-        '';
-    $Self->{Translation}->{'Tidy unprocessed release that not passed test pomules checks for a long time.'} =
-        '';
-    $Self->{Translation}->{'Users who have rw permissions in one of these groups are permitted to execute force pushes \'git push --force\'.'} =
-        '';
-    $Self->{Translation}->{'Users who have rw permissions in one of these groups are permitted to manage projects. Additionally the members have administration permissions to the git management.'} =
-        '';
+    $Self->{Translation}->{'If frequency is \'regularly\', you can configure how often the notifications are sent (every X hours).'} =
+        '如果频率设置为“定期”，你可以设置发送通知的频率间隔（每X小时）。';
+    $Self->{Translation}->{'Ignores not ticket related attributes.'} = '';
+    $Self->{Translation}->{'Link another object to the change.'} = '链接另一对象到变更。';
+    $Self->{Translation}->{'Link another object to the workorder.'} = '链接另一对象到工作指令。';
+    $Self->{Translation}->{'List of all change events to be displayed in the GUI.'} = '图形界面显示的所有变更事件列表。';
+    $Self->{Translation}->{'List of all workorder events to be displayed in the GUI.'} = '在图形用户界面中显示的工作指令事件列表。';
+    $Self->{Translation}->{'Lookup of CAB members for autocompletion.'} = '查找CAB成员，用于自动补齐功能。';
+    $Self->{Translation}->{'Lookup of agents, used for autocompletion.'} = '查找服务人员，用于自动补齐功能。';
+    $Self->{Translation}->{'Manage ITSM Change Management state machine.'} = '管理ITSM变更管理状态机。';
+    $Self->{Translation}->{'Manage the category ↔ impact ↔ priority matrix.'} = '管理 风险类别 ↔ 影响 ↔ 优先级 矩阵。';
+    $Self->{Translation}->{'Module to check if WorkOrderAdd or WorkOrderAddFromTemplate should be permitted.'} =
+        '检查是否允许WorkOrderAdd（添加工作指令）或WorkOrderAddFromTemplate（从模板添加工作指令）的模块。';
+    $Self->{Translation}->{'Module to check the CAB members.'} = '检查CAB成员的模块。';
+    $Self->{Translation}->{'Module to check the agent.'} = '检查变更服务人员的模块。';
+    $Self->{Translation}->{'Module to check the change builder.'} = '检查变更创建人的模块。';
+    $Self->{Translation}->{'Module to check the change manager.'} = '检查变更经理的模块。';
+    $Self->{Translation}->{'Module to check the workorder agent.'} = '检查工作指令服务人员的模块。';
+    $Self->{Translation}->{'Module to check whether no workorder agent is set.'} = '检查是否没有设置工作指令服务人员的模块。';
+    $Self->{Translation}->{'Module to check whether the agent is contained in the configured list.'} =
+        '检查服务人员是否包含在在配置列表中的模块。';
+    $Self->{Translation}->{'Module to show a link to create a change from this ticket. The ticket will be automatically linked with the new change.'} =
+        '显示一个链接以从工单创建一个变更的模块。工单将自动链接到新的变更。';
+    $Self->{Translation}->{'Move Time Slot.'} = '移动时间轴。';
+    $Self->{Translation}->{'Move all workorders in time.'} = '移动所有工作指令的时间。';
+    $Self->{Translation}->{'New (from template)'} = '从模板新建变更';
+    $Self->{Translation}->{'Only users of these groups have the permission to use the ticket types as defined in "ITSMChange::AddChangeLinkTicketTypes" if the feature "Ticket::Acl::Module###200-Ticket::Acl::Module" is enabled.'} =
+        '如果启用了“Ticket::Acl::Module###200-Ticket::Acl::Module”，只有这些组中的用户有权使用“ITSMChange::AddChangeLinkTicketTypes”中定义的工单类型。';
+    $Self->{Translation}->{'Other Settings'} = '其它设置';
+    $Self->{Translation}->{'Overview over all Changes.'} = '所有变更的概览。';
+    $Self->{Translation}->{'PIR'} = '实施后评审';
+    $Self->{Translation}->{'PIR (Post Implementation Review)'} = 'PIR (实施后评审)';
+    $Self->{Translation}->{'PSA'} = 'PSA';
+    $Self->{Translation}->{'Parameters for the UserCreateWorkOrderNextMask object in the preference view of the agent interface.'} =
+        '服务人员界面偏好设置视图UserCreateWorkOrderNextMask（创建工作指令后的窗口）对象的参数。';
+    $Self->{Translation}->{'Parameters for the pages (in which the changes are shown) of the small change overview.'} =
+        '变更概览简洁模式显示变更的页面参数。';
+    $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
+        '为每个配置的WEB服务的每个事件执行配置好的操作（以调用程序角色）。';
+    $Self->{Translation}->{'Planned end time'} = '计划结束时间';
+    $Self->{Translation}->{'Planned start time'} = '计划开始时间';
+    $Self->{Translation}->{'Print the change.'} = '打印变更。';
+    $Self->{Translation}->{'Print the workorder.'} = '打印工作指令。';
+    $Self->{Translation}->{'Projected Service Availability'} = '计划服务可用性';
+    $Self->{Translation}->{'Projected Service Availability (PSA)'} = '计划服务可用性（PSA）';
+    $Self->{Translation}->{'Projected Service Availability (PSA) of changes. Overview of approved changes and their services.'} =
+        '变更的计划服务可用性（PSA）。已批准的变更和它们的服务的概览。';
+    $Self->{Translation}->{'Requested time'} = '请求时间';
+    $Self->{Translation}->{'Required privileges in order for an agent to take a workorder.'} =
+        '服务人员接手工作指令所需的权限。';
+    $Self->{Translation}->{'Required privileges to access the overview of all changes.'} = '访问所有的变更概览所需的权限。';
+    $Self->{Translation}->{'Required privileges to add a workorder.'} = '添加一个工作指令所需的权限。';
+    $Self->{Translation}->{'Required privileges to change the workorder agent.'} = '更换工作指令服务人员所需的权限。';
+    $Self->{Translation}->{'Required privileges to create a template from a change.'} = '从变更中创建模板所需的权限。';
+    $Self->{Translation}->{'Required privileges to create a template from a changes\' CAB.'} =
+        '从变更CAB中创建模板所需的权限。';
+    $Self->{Translation}->{'Required privileges to create a template from a workorder.'} = '从工作指令创建模板所需的权限。';
+    $Self->{Translation}->{'Required privileges to create changes from templates.'} = '从模板中创建变更所需的权限。';
+    $Self->{Translation}->{'Required privileges to create changes.'} = '创建变更所需的权限。';
+    $Self->{Translation}->{'Required privileges to delete a template.'} = '删除模板所需的权限。';
+    $Self->{Translation}->{'Required privileges to delete a workorder.'} = '删除一个工作指令所需的权限。';
+    $Self->{Translation}->{'Required privileges to delete changes.'} = '删除变更所需的权限。';
+    $Self->{Translation}->{'Required privileges to edit a template.'} = '编辑变更所需的权限。';
+    $Self->{Translation}->{'Required privileges to edit a workorder.'} = '编辑工作指令所需的权限。';
+    $Self->{Translation}->{'Required privileges to edit changes.'} = '编辑变更所需的权限。';
+    $Self->{Translation}->{'Required privileges to edit the conditions of changes.'} = '编辑变更条件所需的权限。';
+    $Self->{Translation}->{'Required privileges to edit the content of a template.'} = '编辑模板内容所需的权限。';
+    $Self->{Translation}->{'Required privileges to edit the involved persons of a change.'} =
+        '编辑变更相关人员所需的权限。';
+    $Self->{Translation}->{'Required privileges to move changes in time.'} = '移动变更时间轴所需的权限。';
+    $Self->{Translation}->{'Required privileges to print a change.'} = '打印变更所需的权限。';
+    $Self->{Translation}->{'Required privileges to reset changes.'} = '重置变更所需的权限。';
+    $Self->{Translation}->{'Required privileges to view a workorder.'} = '查看工作指令所需的权限。';
+    $Self->{Translation}->{'Required privileges to view changes.'} = '查看变更所需的权限。';
+    $Self->{Translation}->{'Required privileges to view list of changes where the user is a CAB member.'} =
+        '查看\'我的CAB\'的变更列表所需的权限。';
+    $Self->{Translation}->{'Required privileges to view list of changes where the user is the change manager.'} =
+        '查看\'我的变更\'的变更列表所需的权限。';
+    $Self->{Translation}->{'Required privileges to view overview over all templates.'} = '查看所有模板概览所需的权限。';
+    $Self->{Translation}->{'Required privileges to view the conditions of changes.'} = '查看变更条件所需的权限。';
+    $Self->{Translation}->{'Required privileges to view the history of a change.'} = '查看变更历史所需的权限。';
+    $Self->{Translation}->{'Required privileges to view the history of a workorder.'} = '查看工作指令历史所需的权限。';
+    $Self->{Translation}->{'Required privileges to view the history zoom of a change.'} = '查看变更历史详情所需的权限。';
+    $Self->{Translation}->{'Required privileges to view the history zoom of a workorder.'} =
+        '查看工作指令详情所需的权限。';
+    $Self->{Translation}->{'Required privileges to view the list of Change Schedule.'} = '查看变更计划列表所需的权限。';
+    $Self->{Translation}->{'Required privileges to view the list of change PSA.'} = '查看变更PSA列表所需的权限。';
+    $Self->{Translation}->{'Required privileges to view the list of changes with an upcoming PIR (Post Implementation Review).'} =
+        '查看有即使来临的PIR（实施后评审）的变更列表所需的权限。';
+    $Self->{Translation}->{'Required privileges to view the list of own changes.'} = '查看自己的变更列表所需的权限。';
+    $Self->{Translation}->{'Required privileges to view the list of own workorders.'} = '查看自己的工作指令所需的权限。';
+    $Self->{Translation}->{'Required privileges to write a report for the workorder.'} = '为工作指令编写报告所需的权限。';
+    $Self->{Translation}->{'Reset a change and its workorders.'} = '重置一个变更和它的工作指令。';
+    $Self->{Translation}->{'Reset change and its workorders.'} = '重置变更和它的工作指令。';
+    $Self->{Translation}->{'Run task to check if specific times have been reached in changes and workorders.'} =
+        '执行任务来检查是否到达了变更和工作指令的特定时间点。';
+    $Self->{Translation}->{'Save change as a template.'} = '保存变更为模板。';
+    $Self->{Translation}->{'Save workorder as a template.'} = '保存工作指令为模板。';
+    $Self->{Translation}->{'Schedule'} = '计划表';
+    $Self->{Translation}->{'Screen after creating a workorder'} = '创建工作指令后的窗口';
+    $Self->{Translation}->{'Search Changes'} = '搜索变更';
+    $Self->{Translation}->{'Search Changes.'} = '搜索变更。';
+    $Self->{Translation}->{'Selects the change number generator module. "AutoIncrement" increments the change number, the SystemID and the counter are used with SystemID.counter format (e.g. 100118, 100119). With "Date", the change numbers will be generated by the current date and a counter; this format looks like Year.Month.Day.counter, e.g. 2010062400001, 2010062400002. With "DateChecksum", the counter will be appended as checksum to the string of date plus the SystemID. The checksum will be rotated on a daily basis. This format looks like Year.Month.Day.SystemID.Counter.CheckSum, e.g. 2010062410000017, 2010062410000026.'} =
+        '选择变更编号生成器模块。“自动增量”--递增变更编号，系统ID和计数器配合使用的格式为：系统ID.计数器（如100118、100119）。“日期”--会用当前日期、系统ID和计数器共同生成变更编号，格式为：年.月.日.系统ID.计数器（如2010062400001、2010062400002）。“日期校验和”--计数器的值以校验和的方式追加日期和系统ID的字符串后面，校验和每日轮换，这种格式为：年.月.日.系统ID.计数器.校验和（如2010062410000017、2010062410000026）。';
+    $Self->{Translation}->{'Set the agent for the workorder.'} = '为工作指令指派服务人员。';
+    $Self->{Translation}->{'Set the default height (in pixels) of inline HTML fields in the change zoom screen and workorder zoom screen of the agent interface.'} =
+        '设置服务人员界面变更详情屏幕和工作指令详情屏幕中内联HTML字段的默认高度（单位：像素）。';
+    $Self->{Translation}->{'Set the maximum height (in pixels) of inline HTML fields in the change zoom screen and workorder zoom screen of the agent interface.'} =
+        '设置服务人员界面变更详情屏幕和工作指令详情屏幕中内联HTML字段的最大高度（单位：像素）。';
+    $Self->{Translation}->{'Sets the minimal change counter size (if "AutoIncrement" was selected as ITSMChange::NumberGenerator). Default is 5, this means the counter starts from 10000.'} =
+        '设置最小的变更计数器大小（如果变更编号生成器选用“自动增量”）。默认是5（位数），意味着计数器从10000开始。';
+    $Self->{Translation}->{'Sets up the state machine for changes.'} = '设置变更的状态模式转换。';
+    $Self->{Translation}->{'Sets up the state machine for workorders.'} = '设置工作指令的状态模式转换。';
+    $Self->{Translation}->{'Shows a checkbox in the workorder edit screen of the agent interface that defines if the the following workorders should also be moved if a workorder is modified and the planned end time has changed.'} =
+        '在服务人员界面编辑工作指令屏幕显示一个复选框，用于确定当一个工作指令被修改且计划结束时间变更时，是否将后面的工作指令也随之移动时间。';
+    $Self->{Translation}->{'Shows a link in the menu that allows changing the workorder agent, in the zoom view of the workorder of the agent interface.'} =
+        '在服务人员界面工作指令详情窗口，在菜单中显示一个允许修改该工作指令的服务人员的链接。';
+    $Self->{Translation}->{'Shows a link in the menu that allows defining a change as a template in the zoom view of the change, in the agent interface.'} =
+        '在服务人员界面变更详情窗口，在菜单中显示一个允许定义一个变更为模板的链接。';
+    $Self->{Translation}->{'Shows a link in the menu that allows defining a workorder as a template in the zoom view of the workorder, in the agent interface.'} =
+        '在服务人员界面工作指令详情窗口，在菜单中显示一个允许定义一个工作指令为模板的链接。';
+    $Self->{Translation}->{'Shows a link in the menu that allows editing the report of a workorder, in the zoom view of the workorder of the agent interface.'} =
+        '在服务人员界面工作指令详情窗口，在菜单中显示一个允许编辑该工作指令的报告的链接。';
+    $Self->{Translation}->{'Shows a link in the menu that allows linking a change with another object in the change zoom view of the agent interface.'} =
+        '在服务人员界面变更详情窗口，在菜单中显示一个允许链接变更到另一对象的链接。';
+    $Self->{Translation}->{'Shows a link in the menu that allows linking a workorder with another object in the zoom view of the workorder of the agent interface.'} =
+        '在服务人员界面工作指令详情窗口，在菜单中显示一个允许链接该工作指令到其它对象的链接。';
+    $Self->{Translation}->{'Shows a link in the menu that allows moving the time slot of a change in its zoom view of the agent interface.'} =
+        '在服务人员界面工单变更详情窗口，在菜单中显示一个允许移动变更时间轴的链接。';
+    $Self->{Translation}->{'Shows a link in the menu that allows taking a workorder in the its zoom view of the agent interface.'} =
+        '在服务人员界面工作指令详情窗口，在菜单中显示一个允许执行一个工作指令的链接。';
+    $Self->{Translation}->{'Shows a link in the menu to access the conditions of a change in the its zoom view of the agent interface.'} =
+        '在服务人员界面变更详情窗口，在菜单中显示一个访问变更条件的链接。';
+    $Self->{Translation}->{'Shows a link in the menu to access the history of a change in the its zoom view of the agent interface.'} =
+        '在服务人员界面变更详情窗口，在菜单中显示一个访问变更历史的链接。';
+    $Self->{Translation}->{'Shows a link in the menu to access the history of a workorder in the its zoom view of the agent interface.'} =
+        '在服务人员界面工作指令详情窗口，在菜单中显示一个访问工作指令历史的链接。';
+    $Self->{Translation}->{'Shows a link in the menu to add a workorder in the change zoom view of the agent interface.'} =
+        '在服务人员界面变更详情窗口，在菜单中显示一个添加工作指令的链接。';
+    $Self->{Translation}->{'Shows a link in the menu to delete a change in its zoom view of the agent interface.'} =
+        '在服务人员界面变更详情窗口，在菜单中显示一个删除变更的链接。';
+    $Self->{Translation}->{'Shows a link in the menu to delete a workorder in its zoom view of the agent interface.'} =
+        '在服务人员界面工作指令详情窗口，在菜单中显示一个删除工作指令的链接。';
+    $Self->{Translation}->{'Shows a link in the menu to edit a change in the its zoom view of the agent interface.'} =
+        '在服务人员界面变更详情窗口，在菜单中显示一个编辑变更的链接。';
+    $Self->{Translation}->{'Shows a link in the menu to edit a workorder in the its zoom view of the agent interface.'} =
+        '在服务人员界面工作指令详情窗口，在菜单中显示一个编辑工作指令的链接。';
+    $Self->{Translation}->{'Shows a link in the menu to go back in the change zoom view of the agent interface.'} =
+        '在服务人员界面变更详情窗口，在菜单中显示一个返回链接。';
+    $Self->{Translation}->{'Shows a link in the menu to go back in the workorder zoom view of the agent interface.'} =
+        '在服务人员界面工作指令详情窗口，在菜单中显示一个返回链接。';
+    $Self->{Translation}->{'Shows a link in the menu to print a change in the its zoom view of the agent interface.'} =
+        '在服务人员界面工作指令详情窗口，在菜单中显示一个打印变更的链接。';
+    $Self->{Translation}->{'Shows a link in the menu to print a workorder in the its zoom view of the agent interface.'} =
+        '在服务人员界面工作指令详情窗口，在菜单中显示一个打印工作指令的链接。';
+    $Self->{Translation}->{'Shows a link in the menu to reset a change and its workorders in its zoom view of the agent interface.'} =
+        '在服务人员界面工作指令详情窗口，在菜单中显示一个重置变更和工作指令的链接。';
+    $Self->{Translation}->{'Shows a link in the menu to show the involved persons in a change, in the zoom view of the change in the agent interface.'} =
+        '在服务人员界面变更详情窗口，在菜单中显示一个链接以显示变更的相关人员。';
+    $Self->{Translation}->{'Shows the change history (reverse ordered) in the agent interface.'} =
+        '在服务人员界面显示变更历史（倒序）。';
+    $Self->{Translation}->{'State Machine'} = '状态模式转换';
+    $Self->{Translation}->{'Stores change and workorder ids and their corresponding template id, while a user is editing a template.'} =
+        '当用户编辑一个模板时，存储变更和工作指令的ID和他们对应的模板ID。';
+    $Self->{Translation}->{'Take Workorder'} = '接手工作指令';
+    $Self->{Translation}->{'Take Workorder.'} = '执行工作指令。';
+    $Self->{Translation}->{'Take the workorder.'} = '接手这个工作指令。';
+    $Self->{Translation}->{'Template Overview'} = '模板概览';
+    $Self->{Translation}->{'Template type'} = '模板类型';
+    $Self->{Translation}->{'Template.'} = '模板。';
+    $Self->{Translation}->{'The identifier for a change, e.g. Change#, MyChange#. The default is Change#.'} =
+        '变更的标识符，例如：Change#、MyChange#。默认为Change#。';
+    $Self->{Translation}->{'The identifier for a workorder, e.g. Workorder#, MyWorkorder#. The default is Workorder#.'} =
+        '工作指令的标识符，例如：Workorder#、MyWorkorder#。默认为Workorder#。';
+    $Self->{Translation}->{'This ACL module restricts the usuage of the ticket types that are defined in the sysconfig option \'ITSMChange::AddChangeLinkTicketTypes\', to users of the groups as defined in "ITSMChange::RestrictTicketTypes::Groups". As this ACL could collide with other ACLs which are also related to the ticket type, this sysconfig option is disabled by default and should only be activated if needed.'} =
+        '这个ACL模块限制使用定义在系统配置选项\'ITSMChange::AddChangeLinkTicketTypes\'中的工单类型， 仅在\'ITSMChange::RestrictTicketTypes::Groups\'中定义的组成员能够使用。这个ACL可能会和其它与这个工单类型相关的ACL冲突， 所以这个系统配置选项默认是禁用的，仅在需要时启用。';
+    $Self->{Translation}->{'Time Slot'} = '时间轴';
+    $Self->{Translation}->{'Types of tickets, where in the ticket zoom view a link to add a change will be displayed.'} =
+        '在工单详情窗口添加一个变更链接时显示的工单类型。';
+    $Self->{Translation}->{'User Search'} = '用户搜索';
+    $Self->{Translation}->{'Workorder Add (from template).'} = '添加工作指令（从模板）。';
+    $Self->{Translation}->{'Workorder Add.'} = '添加工作指令。';
+    $Self->{Translation}->{'Workorder Agent.'} = '工作指令服务人员。';
+    $Self->{Translation}->{'Workorder Delete.'} = '删除工作指令。';
+    $Self->{Translation}->{'Workorder Edit.'} = '编辑工作指令。';
+    $Self->{Translation}->{'Workorder History Zoom.'} = '工作指令历史详情。';
+    $Self->{Translation}->{'Workorder History.'} = '工作指令历史。';
+    $Self->{Translation}->{'Workorder Report.'} = '工作指令报告。';
+    $Self->{Translation}->{'Workorder Zoom'} = '工作指令详情';
+    $Self->{Translation}->{'Workorder Zoom.'} = '工作指令详情。';
+    $Self->{Translation}->{'once'} = '单次';
+    $Self->{Translation}->{'regularly'} = '定期';
 
 
     push @{ $Self->{JavaScriptStrings} // [] }, (
