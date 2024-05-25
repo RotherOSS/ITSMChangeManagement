@@ -1,10 +1,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ITSMChangeManagement\n"
-"POT-Creation-Date: 2024-05-25 02:26+0000\n"
+"POT-Creation-Date: 2024-05-25 04:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@otobo.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -774,10 +774,6 @@ msgstr ""
 msgid "Unknown type \"%s\" encountered!"
 msgstr ""
 
-#. Perl Module: Kernel/Modules/AgentITSMChangeHistory.pm
-msgid "Change History"
-msgstr ""
-
 #. Perl Module: Kernel/Modules/AgentITSMChangeHistoryZoom.pm
 msgid "Can't show history zoom, no HistoryEntryID is given!"
 msgstr ""
@@ -1374,163 +1370,163 @@ msgstr ""
 msgid "Group ITSMChangeManager"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "requested"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "pending approval"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "rejected"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "approved"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "in progress"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "pending pir"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "successful"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "failed"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "canceled"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "retracted"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "created"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "accepted"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "ready"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "approval"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "workorder"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "backout"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "decision"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "pir"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "ChangeStateID"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "CategoryID"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "ImpactID"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "PriorityID"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "ChangeManagerID"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "ChangeBuilderID"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "WorkOrderStateID"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "WorkOrderTypeID"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "WorkOrderAgentID"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "is"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "is not"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "is empty"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "is not empty"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "is greater than"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "is less than"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "is before"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "is after"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "contains"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "not contains"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "begins with"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "ends with"
 msgstr ""
 
-#. Database XML Definition: ITSMChangeManagement.sopm
+#. Database XML / SOPM Definition: ITSMChangeManagement.sopm
 msgid "set"
 msgstr ""
 
@@ -1551,370 +1547,1382 @@ msgid "Ok"
 msgstr ""
 
 #. SysConfig
-msgid "A precentage value of the minimal translation progress per language, to be usable for documentations."
+msgid "A list of the agents who have permission to take workorders. Key is a login name. Content is 0 or 1."
 msgstr ""
 
 #. SysConfig
-msgid "Access repos via http or https."
+msgid "A list of workorder states, at which the ActualStartTime of a workorder will be set if it was empty at this point."
 msgstr ""
 
 #. SysConfig
-msgid "Autoloading of Znuny4OTRSRepo extensions."
+msgid "Actual end time"
 msgstr ""
 
 #. SysConfig
-msgid "Backend module registration for the config conflict check module."
+msgid "Actual start time"
 msgstr ""
 
 #. SysConfig
-msgid "Backend module registration for the file conflict check module."
+msgid "Add Workorder"
 msgstr ""
 
 #. SysConfig
-msgid "Backend module registration for the function redefine check module."
+msgid "Add Workorder (from Template)"
 msgstr ""
 
 #. SysConfig
-msgid "Backend module registration for the manual set module."
+msgid "Add a change from template."
 msgstr ""
 
 #. SysConfig
-msgid "Block hooks to be created for BS ad removal."
+msgid "Add a change."
 msgstr ""
 
 #. SysConfig
-msgid "Block hooks to be created for package manager output filter."
+msgid "Add a workorder (from template) to the change."
 msgstr ""
 
 #. SysConfig
-msgid "Branch View commit limit"
+msgid "Add a workorder to the change."
 msgstr ""
 
 #. SysConfig
-msgid "CodePolicy"
+msgid "Add from template"
 msgstr ""
 
 #. SysConfig
-msgid "Commit limit per page for Branch view screen"
+msgid "Admin of the CIP matrix."
 msgstr ""
 
 #. SysConfig
-msgid "Create analysis file"
+msgid "Admin of the state machine."
 msgstr ""
 
 #. SysConfig
-msgid "Creates a analysis file from this ticket and sends to Znuny."
+msgid "Agent interface notification module to see the number of change advisory boards."
 msgstr ""
 
 #. SysConfig
-msgid "Creates a analysis file from this ticket."
+msgid "Agent interface notification module to see the number of changes managed by the user."
 msgstr ""
 
 #. SysConfig
-msgid "Define private addon repos."
+msgid "Agent interface notification module to see the number of changes."
 msgstr ""
 
 #. SysConfig
-msgid "Defines the filter that processes the HTML templates."
+msgid "Agent interface notification module to see the number of workorders."
 msgstr ""
 
 #. SysConfig
-msgid "Defines the test module for checking code policy."
+msgid "CAB Member Search"
 msgstr ""
 
 #. SysConfig
-msgid "Definition of GIT clone/push URL Prefix."
+msgid "Cache time in minutes for the change management toolbars. Default: 3 hours (180 minutes)."
 msgstr ""
 
 #. SysConfig
-msgid "Definition of a Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRelease => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
+msgid "Cache time in minutes for the change management. Default: 5 days (7200 minutes)."
 msgstr ""
 
 #. SysConfig
-msgid "Definition of a Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
+msgid "Change CAB Templates"
 msgstr ""
 
 #. SysConfig
-msgid "Definition of external MD5 sums (key => MD5, Value => Vendor, PackageName, Version, Date)."
+msgid "Change History."
 msgstr ""
 
 #. SysConfig
-msgid "Definition of mappings between public repository requests and internal OPMS repositories."
+msgid "Change Involved Persons."
 msgstr ""
 
 #. SysConfig
-msgid "Definition of package states."
+msgid "Change Overview \"Small\" Limit"
 msgstr ""
 
 #. SysConfig
-msgid "Definition of renamed OPMS packages."
+msgid "Change Overview."
 msgstr ""
 
 #. SysConfig
-msgid "Directory, which is used by Git to cache repositories."
+msgid "Change Print."
 msgstr ""
 
 #. SysConfig
-msgid "Directory, which is used by Git to store temporary data."
+msgid "Change Schedule"
 msgstr ""
 
 #. SysConfig
-msgid "Directory, which is used by Git to store working copies."
+msgid "Change Schedule."
 msgstr ""
 
 #. SysConfig
-msgid "Disable online repositories."
+msgid "Change Settings"
 msgstr ""
 
 #. SysConfig
-msgid "Do not log git ssh connection authorization results for these users. Useful for automated stuff."
+msgid "Change Zoom"
 msgstr ""
 
 #. SysConfig
-msgid "Dynamic Fields Screens"
+msgid "Change Zoom."
 msgstr ""
 
 #. SysConfig
-msgid "DynamicFieldScreen"
+msgid "Change and Workorder Templates"
 msgstr ""
 
 #. SysConfig
-msgid "Export all available public keys to authorized_keys file."
+msgid "Change and workorder templates edited by this user."
 msgstr ""
 
 #. SysConfig
-msgid "Export all relevant releases to ftp server."
+msgid "Change area."
 msgstr ""
 
 #. SysConfig
-msgid "Frontend module registration for the OPMS object in the agent interface."
+msgid "Change involved persons of the change."
 msgstr ""
 
 #. SysConfig
-msgid "Frontend module registration for the PublicOPMSRepository object in the public interface."
+msgid "Change limit per page for Change Overview \"Small\"."
 msgstr ""
 
 #. SysConfig
-msgid "Frontend module registration for the PublicOPMSRepositoryLookup object in the public interface."
+msgid "Change number"
 msgstr ""
 
 #. SysConfig
-msgid "Frontend module registration for the PublicOPMSTestBuild object in the public interface."
+msgid "Change search backend router of the agent interface."
 msgstr ""
 
 #. SysConfig
-msgid "Frontend module registration for the PublicPackageVerification object in the public interface."
+msgid "Change state"
 msgstr ""
 
 #. SysConfig
-msgid "Frontend module registration for the admin interface."
+msgid "Change time"
 msgstr ""
 
 #. SysConfig
-msgid "GIT Author registration."
+msgid "Change title"
 msgstr ""
 
 #. SysConfig
-msgid "Generate HTML comment hooks for the specified blocks so that filters can use them."
+msgid "Condition Edit"
 msgstr ""
 
 #. SysConfig
-msgid "Generate documentations once per night."
+msgid "Condition Overview"
 msgstr ""
 
 #. SysConfig
-msgid "Git"
+msgid "Configure which screen should be shown after a new workorder has been created."
 msgstr ""
 
 #. SysConfig
-msgid "Git Management"
+msgid "Configures how often the notifications are sent when planned the start time or other time values have been reached/passed."
 msgstr ""
 
 #. SysConfig
-msgid "Git Repository"
+msgid "Create Change"
 msgstr ""
 
 #. SysConfig
-msgid "Group, whose members have delete admin permissions in OPMS."
+msgid "Create Change (from Template)"
 msgstr ""
 
 #. SysConfig
-msgid "Group, whose members have repository admin permissions in OPMS."
+msgid "Create a change (from template) from this ticket."
 msgstr ""
 
 #. SysConfig
-msgid "Group, whose members will see CI test result information in OPMS screens."
+msgid "Create a change from this ticket."
 msgstr ""
 
 #. SysConfig
-msgid "Groups an authenticated user (by user login and password) must be member of to build test packages via the public interface."
+msgid "Create and manage ITSM Change Management notifications."
 msgstr ""
 
 #. SysConfig
-msgid "Groups which will be set during git project creation processes while adding OPMS repositories."
+msgid "Create and manage change notifications."
 msgstr ""
 
 #. SysConfig
-msgid "Manage dynamic field in screens."
+msgid "Default type for a workorder. This entry must exist in general catalog class 'ITSM::ChangeManagement::WorkOrder::Type'."
 msgstr ""
 
 #. SysConfig
-msgid "Manage your public SSH key(s) for Git access here. Make sure to save this preference when you add a new key."
+msgid "Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = \"complex\"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js."
 msgstr ""
 
 #. SysConfig
-msgid "Module to generate statistics about the added code lines."
+msgid "Define the signals for each workorder state."
 msgstr ""
 
 #. SysConfig
-msgid "Module to generate statistics about the growth of code."
+msgid "Define which columns are shown in the linked Changes widget (LinkObject::ViewMode = \"complex\"). Note: Only Change attributes are allowed for DefaultColumns. Possible settings: 0 = Disabled, 1 = Available, 2 = Enabled by default."
 msgstr ""
 
 #. SysConfig
-msgid "Module to generate statistics about the number of git commits."
+msgid "Define which columns are shown in the linked Workorder widget (LinkObject::ViewMode = \"complex\"). Note: Only Workorder attributes are allowed for DefaultColumns. Possible settings: 0 = Disabled, 1 = Available, 2 = Enabled by default."
 msgstr ""
 
 #. SysConfig
-msgid "Module to generate statistics about the removed code lines."
+msgid "Defines an overview module to show the small view of a change list."
 msgstr ""
 
 #. SysConfig
-msgid "OPMS"
+msgid "Defines an overview module to show the small view of a template list."
 msgstr ""
 
 #. SysConfig
-msgid "Only users who have rw permissions in one of these groups may access git."
+msgid "Defines if it will be possible to print the accounted time."
 msgstr ""
 
 #. SysConfig
-msgid "Option to set a package compatibility manually."
+msgid "Defines if it will be possible to print the planned effort."
 msgstr ""
 
 #. SysConfig
-msgid "Parameters for the pages in the BranchView screen."
+msgid "Defines if reachable (as defined by the state machine) change end states should be allowed if a change is in a locked state."
 msgstr ""
 
 #. SysConfig
-msgid "Pre-Definition of the 'GITProjectName' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
+msgid "Defines if reachable (as defined by the state machine) workorder end states should be allowed if a workorder is in a locked state."
 msgstr ""
 
 #. SysConfig
-msgid "Pre-Definition of the 'GITRepositoryName' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
+msgid "Defines if the accounted time should be shown."
 msgstr ""
 
 #. SysConfig
-msgid "Pre-Definition of the 'PackageDeprecated' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed."
+msgid "Defines if the actual start and end times should be set."
 msgstr ""
 
 #. SysConfig
-msgid "Recipients that will be informed by email in case of errors."
+msgid "Defines if the change search and the workorder search functions could use the mirror DB."
 msgstr ""
 
 #. SysConfig
-msgid "SSH Keys for Git Access"
+msgid "Defines if the change state can be set in the change edit screen of the agent interface."
 msgstr ""
 
 #. SysConfig
-msgid "Send analysis file"
+msgid "Defines if the planned effort should be shown."
 msgstr ""
 
 #. SysConfig
-msgid "Sets the git clone address to be used in repository listings."
+msgid "Defines if the requested date should be print by customer."
 msgstr ""
 
 #. SysConfig
-msgid "Sets the home directory for git repositories."
+msgid "Defines if the requested date should be searched by customer."
 msgstr ""
 
 #. SysConfig
-msgid "Sets the path for the BugzillaAddComment post receive script location."
+msgid "Defines if the requested date should be set by customer."
 msgstr ""
 
 #. SysConfig
-msgid "Sets the path for the OTRSCodePolicy  script location. It is recommended to have a separate clone of the OTRSCodePolicy module that is updated via cron."
+msgid "Defines if the requested date should be shown by customer."
 msgstr ""
 
 #. SysConfig
-msgid "Sets the path for the OTRSCodePolicy pre receive script location. It is recommended to have a separate clone of the OTRSCodePolicy module that is updated via cron."
+msgid "Defines if the workorder state should be shown."
 msgstr ""
 
 #. SysConfig
-msgid "Show latest commits in git repositories."
+msgid "Defines if the workorder title should be shown."
 msgstr ""
 
 #. SysConfig
-msgid "Shows a link in the menu to go create a unit test from the current ticket."
+msgid "Defines shown graph attributes."
 msgstr ""
 
 #. SysConfig
-msgid "Synchronize OPMS tables with a remote database."
+msgid "Defines that only changes containing Workorders linked with services, which the customer user has permission to use will be shown. Any other changes will not be displayed."
 msgstr ""
 
 #. SysConfig
-msgid "The minimum version of the sphinx library."
+msgid "Defines the change states that will be allowed to delete."
 msgstr ""
 
 #. SysConfig
-msgid "The name of the sphinx theme to be used."
+msgid "Defines the change states that will be used as filters in the Change PSA overview."
 msgstr ""
 
 #. SysConfig
-msgid "The path to the OTRS CSS file (relative below the static path)."
+msgid "Defines the change states that will be used as filters in the Change Schedule overview."
 msgstr ""
 
 #. SysConfig
-msgid "The path to the OTRS logo (relative below the static path)."
+msgid "Defines the change states that will be used as filters in the MyCAB overview."
 msgstr ""
 
 #. SysConfig
-msgid "The path to the static folder, containing images and css files."
+msgid "Defines the change states that will be used as filters in the MyChanges overview."
 msgstr ""
 
 #. SysConfig
-msgid "The path to the theme folder, containing the sphinx themes."
+msgid "Defines the change states that will be used as filters in the change manager overview."
 msgstr ""
 
 #. SysConfig
-msgid "This configuration defines all possible screens to enable or disable default columns."
+msgid "Defines the change states that will be used as filters in the change overview."
 msgstr ""
 
 #. SysConfig
-msgid "This configuration defines all possible screens to enable or disable dynamic fields."
+msgid "Defines the change states that will be used as filters in the customer change schedule overview."
 msgstr ""
 
 #. SysConfig
-msgid "This configuration defines if only valids or all (invalids) dynamic fields should be shown."
+msgid "Defines the default change title for a dummy change which is needed to edit a workorder template."
 msgstr ""
 
 #. SysConfig
-msgid "This configuration defines if the OTRS package verification should be active or disabled. If disabled all packages are shown as verified. It's still recommended to use only verified packages."
+msgid "Defines the default sort criteria in the change PSA overview."
 msgstr ""
 
 #. SysConfig
-msgid "This configuration defines the URL to the OTRS CloudService Proxy service. The http or https prefix will be added, depending on selection SysConfig 'Znuny4OTRSRepoType'."
+msgid "Defines the default sort criteria in the change manager overview."
 msgstr ""
 
 #. SysConfig
-msgid "This configuration registers a Output post-filter to extend package verification."
+msgid "Defines the default sort criteria in the change overview."
 msgstr ""
 
 #. SysConfig
-msgid "This configuration registers an OutputFilter module that removes OTRS Business Solution TM advertisements."
+msgid "Defines the default sort criteria in the change schedule overview."
 msgstr ""
 
 #. SysConfig
-msgid "This configuration registers an output filter to hide online repository selection in package manager."
+msgid "Defines the default sort criteria of the changes in the MyCAB overview."
 msgstr ""
 
 #. SysConfig
-msgid "Tidy unprocessed release that not passed test pomules checks for a long time."
+msgid "Defines the default sort criteria of the changes in the MyChanges overview."
 msgstr ""
 
 #. SysConfig
-msgid "Users who have rw permissions in one of these groups are permitted to execute force pushes 'git push --force'."
+msgid "Defines the default sort criteria of the changes in the MyWorkorders overview."
 msgstr ""
 
 #. SysConfig
-msgid "Users who have rw permissions in one of these groups are permitted to manage projects. Additionally the members have administration permissions to the git management."
+msgid "Defines the default sort criteria of the changes in the PIR overview."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the default sort criteria of the changes in the customer change schedule overview."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the default sort criteria of the changes in the template overview."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the default sort order in the MyCAB overview."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the default sort order in the MyChanges overview."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the default sort order in the MyWorkorders overview."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the default sort order in the PIR overview."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the default sort order in the change PSA overview."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the default sort order in the change manager overview."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the default sort order in the change overview."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the default sort order in the change schedule overview."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the default sort order in the customer change schedule overview."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the default sort order in the template overview."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the default value for the category of a change."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the default value for the impact of a change."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the field type of CompareValue fields for change attributes used in the change condition edit screen of the agent interface. Valid values are Selection, Text and Date. If a type is not defined, the field will not be shown."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the field type of CompareValue fields for workorder attributes used in the change condition edit screen of the agent interface. Valid values are Selection, Text and Date. If a type is not defined, the field will not be shown."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the object attributes that are selectable for change objects in the change condition edit screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the object attributes that are selectable for workorder objects in the change condition edit screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the operators that are selectable for the attribute AccountedTime in the change condition edit screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the operators that are selectable for the attribute ActualEndTime in the change condition edit screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the operators that are selectable for the attribute ActualStartTime in the change condition edit screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the operators that are selectable for the attribute CategoryID in the change condition edit screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the operators that are selectable for the attribute ChangeBuilderID in the change condition edit screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the operators that are selectable for the attribute ChangeManagerID in the change condition edit screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the operators that are selectable for the attribute ChangeStateID in the change condition edit screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the operators that are selectable for the attribute ChangeTitle in the change condition edit screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the operators that are selectable for the attribute DynamicField in the change condition edit screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the operators that are selectable for the attribute ImpactID in the change condition edit screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the operators that are selectable for the attribute PlannedEffort in the change condition edit screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the operators that are selectable for the attribute PlannedEndTime in the change condition edit screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the operators that are selectable for the attribute PlannedStartTime in the change condition edit screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the operators that are selectable for the attribute PriorityID in the change condition edit screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the operators that are selectable for the attribute RequestedTime in the change condition edit screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the operators that are selectable for the attribute WorkOrderAgentID in the change condition edit screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the operators that are selectable for the attribute WorkOrderNumber in the change condition edit screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the operators that are selectable for the attribute WorkOrderStateID in the change condition edit screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the operators that are selectable for the attribute WorkOrderTitle in the change condition edit screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the operators that are selectable for the attribute WorkOrderTypeID in the change condition edit screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the period (in years), in which start and end times can be selected."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the shown attributes of a workorder in the tooltip of the workorder graph in the change zoom. To show workorder dynamic fields in the tooltip, they must be specified like DynamicField_WorkOrderFieldName1, DynamicField_WorkOrderFieldName2, etc."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the shown columns in the Change PSA overview. This option has no effect on the position of the column."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the shown columns in the Change Schedule overview. This option has no effect on the position of the column."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the shown columns in the MyCAB overview. This option has no effect on the position of the column."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the shown columns in the MyChanges overview. This option has no effect on the position of the column."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the shown columns in the MyWorkorders overview. This option has no effect on the position of the column."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the shown columns in the PIR overview. This option has no effect on the position of the column."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the shown columns in the change manager overview. This option has no effect on the position of the column."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the shown columns in the change overview. This option has no effect on the position of the column."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the shown columns in the change search. This option has no effect on the position of the column."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the shown columns in the customer change schedule overview. This option has no effect on the position of the column."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the shown columns in the template overview. This option has no effect on the position of the column."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the signals for each ITSM change state."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the template types that will be used as filters in the template overview."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the workorder states that will be used as filters in the MyWorkorders overview."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the workorder states that will be used as filters in the PIR overview."
+msgstr ""
+
+#. SysConfig
+msgid "Defines the workorder types that will be used to show the PIR overview."
+msgstr ""
+
+#. SysConfig
+msgid "Defines whether notifications should be sent."
+msgstr ""
+
+#. SysConfig
+msgid "Delete a change."
+msgstr ""
+
+#. SysConfig
+msgid "Delete the change."
+msgstr ""
+
+#. SysConfig
+msgid "Delete the workorder."
+msgstr ""
+
+#. SysConfig
+msgid "Details of a change history entry."
+msgstr ""
+
+#. SysConfig
+msgid "Determines if an agent can exchange the X-axis of a stat if he generates one."
+msgstr ""
+
+#. SysConfig
+msgid "Determines if the common stats module may generate stats about changes done for config item classes."
+msgstr ""
+
+#. SysConfig
+msgid "Determines if the common stats module may generate stats about changes regarding change state updates within a timeperiod."
+msgstr ""
+
+#. SysConfig
+msgid "Determines if the common stats module may generate stats about changes regarding the relation between changes and incident tickets."
+msgstr ""
+
+#. SysConfig
+msgid "Determines if the common stats module may generate stats about changes."
+msgstr ""
+
+#. SysConfig
+msgid "Determines if the common stats module may generate stats about the number of Rfc tickets a requester created."
+msgstr ""
+
+#. SysConfig
+msgid "Dynamic fields (for changes and workorders) shown in the change print screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Dynamic fields shown in the change add screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Dynamic fields shown in the change edit screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Dynamic fields shown in the change search screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Dynamic fields shown in the change zoom screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Dynamic fields shown in the workorder add screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Dynamic fields shown in the workorder edit screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Dynamic fields shown in the workorder report screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Dynamic fields shown in the workorder zoom screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "DynamicField event module to handle the update of conditions if dynamic fields are added, updated or deleted."
+msgstr ""
+
+#. SysConfig
+msgid "Edit a change."
+msgstr ""
+
+#. SysConfig
+msgid "Edit the change."
+msgstr ""
+
+#. SysConfig
+msgid "Edit the conditions of the change."
+msgstr ""
+
+#. SysConfig
+msgid "Edit the workorder."
+msgstr ""
+
+#. SysConfig
+msgid "Enables the minimal change counter size (if \"Date\" was selected as ITSMChange::NumberGenerator)."
+msgstr ""
+
+#. SysConfig
+msgid "Forward schedule of changes. Overview over approved changes."
+msgstr ""
+
+#. SysConfig
+msgid "History Zoom"
+msgstr ""
+
+#. SysConfig
+msgid "ITSM Change CAB Templates."
+msgstr ""
+
+#. SysConfig
+msgid "ITSM Change Condition Edit."
+msgstr ""
+
+#. SysConfig
+msgid "ITSM Change Condition Overview."
+msgstr ""
+
+#. SysConfig
+msgid "ITSM Change Manager Overview."
+msgstr ""
+
+#. SysConfig
+msgid "ITSM Change Notifications"
+msgstr ""
+
+#. SysConfig
+msgid "ITSM Change PIR Overview."
+msgstr ""
+
+#. SysConfig
+msgid "ITSM Change notification rules"
+msgstr ""
+
+#. SysConfig
+msgid "ITSM Changes"
+msgstr ""
+
+#. SysConfig
+msgid "ITSM MyCAB Overview."
+msgstr ""
+
+#. SysConfig
+msgid "ITSM MyChanges Overview."
+msgstr ""
+
+#. SysConfig
+msgid "ITSM MyWorkorders Overview."
+msgstr ""
+
+#. SysConfig
+msgid "ITSM Template Delete."
+msgstr ""
+
+#. SysConfig
+msgid "ITSM Template Edit CAB."
+msgstr ""
+
+#. SysConfig
+msgid "ITSM Template Edit Content."
+msgstr ""
+
+#. SysConfig
+msgid "ITSM Template Edit."
+msgstr ""
+
+#. SysConfig
+msgid "ITSM Template Overview."
+msgstr ""
+
+#. SysConfig
+msgid "ITSM event module that cleans up conditions."
+msgstr ""
+
+#. SysConfig
+msgid "ITSM event module that deletes the cache for a toolbar."
+msgstr ""
+
+#. SysConfig
+msgid "ITSM event module that deletes the history of changes."
+msgstr ""
+
+#. SysConfig
+msgid "ITSM event module that matches conditions and executes actions."
+msgstr ""
+
+#. SysConfig
+msgid "ITSM event module that sends notifications."
+msgstr ""
+
+#. SysConfig
+msgid "ITSM event module that updates the history of changes."
+msgstr ""
+
+#. SysConfig
+msgid "ITSM event module that updates the history of conditions."
+msgstr ""
+
+#. SysConfig
+msgid "ITSM event module that updates the history of workorders."
+msgstr ""
+
+#. SysConfig
+msgid "ITSM event module to recalculate the workorder numbers."
+msgstr ""
+
+#. SysConfig
+msgid "ITSM event module to set the actual start and end times of workorders."
+msgstr ""
+
+#. SysConfig
+msgid "ITSMChange"
+msgstr ""
+
+#. SysConfig
+msgid "ITSMWorkOrder"
+msgstr ""
+
+#. SysConfig
+msgid "If frequency is 'regularly', you can configure how often the notifications are sent (every X hours)."
+msgstr ""
+
+#. SysConfig
+msgid "Link another object to the change."
+msgstr ""
+
+#. SysConfig
+msgid "Link another object to the workorder."
+msgstr ""
+
+#. SysConfig
+msgid "List of all change events to be displayed in the GUI."
+msgstr ""
+
+#. SysConfig
+msgid "List of all workorder events to be displayed in the GUI."
+msgstr ""
+
+#. SysConfig
+msgid "Lookup of CAB members for autocompletion."
+msgstr ""
+
+#. SysConfig
+msgid "Lookup of agents, used for autocompletion."
+msgstr ""
+
+#. SysConfig
+msgid "Manage ITSM Change Management state machine."
+msgstr ""
+
+#. SysConfig
+msgid "Manage the category ↔ impact ↔ priority matrix."
+msgstr ""
+
+#. SysConfig
+msgid "Module to check if WorkOrderAdd or WorkOrderAddFromTemplate should be permitted."
+msgstr ""
+
+#. SysConfig
+msgid "Module to check the CAB members."
+msgstr ""
+
+#. SysConfig
+msgid "Module to check the agent."
+msgstr ""
+
+#. SysConfig
+msgid "Module to check the change builder."
+msgstr ""
+
+#. SysConfig
+msgid "Module to check the change manager."
+msgstr ""
+
+#. SysConfig
+msgid "Module to check the workorder agent."
+msgstr ""
+
+#. SysConfig
+msgid "Module to check whether no workorder agent is set."
+msgstr ""
+
+#. SysConfig
+msgid "Module to check whether the agent is contained in the configured list."
+msgstr ""
+
+#. SysConfig
+msgid "Module to show a link to create a change from this ticket. The ticket will be automatically linked with the new change."
+msgstr ""
+
+#. SysConfig
+msgid "Move Time Slot."
+msgstr ""
+
+#. SysConfig
+msgid "Move all workorders in time."
+msgstr ""
+
+#. SysConfig
+msgid "New (from template)"
+msgstr ""
+
+#. SysConfig
+msgid "Only users of these groups have the permission to use the ticket types as defined in \"ITSMChange::AddChangeLinkTicketTypes\" if the feature \"Ticket::Acl::Module###200-Ticket::Acl::Module\" is enabled."
+msgstr ""
+
+#. SysConfig
+msgid "Other Settings"
+msgstr ""
+
+#. SysConfig
+msgid "Overview over all Changes."
+msgstr ""
+
+#. SysConfig
+msgid "PIR"
+msgstr ""
+
+#. SysConfig
+msgid "PIR (Post Implementation Review)"
+msgstr ""
+
+#. SysConfig
+msgid "PSA"
+msgstr ""
+
+#. SysConfig
+msgid "Parameters for the UserCreateWorkOrderNextMask object in the preference view of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Parameters for the pages (in which the changes are shown) of the small change overview."
+msgstr ""
+
+#. SysConfig
+msgid "Performs the configured action for each event (as an Invoker) for each configured Webservice."
+msgstr ""
+
+#. SysConfig
+msgid "Planned end time"
+msgstr ""
+
+#. SysConfig
+msgid "Planned start time"
+msgstr ""
+
+#. SysConfig
+msgid "Print the change."
+msgstr ""
+
+#. SysConfig
+msgid "Print the workorder."
+msgstr ""
+
+#. SysConfig
+msgid "Projected Service Availability"
+msgstr ""
+
+#. SysConfig
+msgid "Projected Service Availability (PSA)"
+msgstr ""
+
+#. SysConfig
+msgid "Projected Service Availability (PSA) of changes. Overview of approved changes and their services."
+msgstr ""
+
+#. SysConfig
+msgid "Requested time"
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges in order for an agent to take a workorder."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to access the overview of all changes."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to add a workorder."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to change the workorder agent."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to create a template from a change."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to create a template from a changes' CAB."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to create a template from a workorder."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to create changes from templates."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to create changes."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to delete a template."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to delete a workorder."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to delete changes."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to edit a template."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to edit a workorder."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to edit changes."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to edit the conditions of changes."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to edit the content of a template."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to edit the involved persons of a change."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to move changes in time."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to print a change."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to reset changes."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to view a workorder."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to view changes."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to view list of changes where the user is a CAB member."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to view list of changes where the user is the change manager."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to view overview over all templates."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to view the conditions of changes."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to view the history of a change."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to view the history of a workorder."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to view the history zoom of a change."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to view the history zoom of a workorder."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to view the list of Change Schedule."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to view the list of change PSA."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to view the list of changes with an upcoming PIR (Post Implementation Review)."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to view the list of own changes."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to view the list of own workorders."
+msgstr ""
+
+#. SysConfig
+msgid "Required privileges to write a report for the workorder."
+msgstr ""
+
+#. SysConfig
+msgid "Reset a change and its workorders."
+msgstr ""
+
+#. SysConfig
+msgid "Reset change and its workorders."
+msgstr ""
+
+#. SysConfig
+msgid "Run task to check if specific times have been reached in changes and workorders."
+msgstr ""
+
+#. SysConfig
+msgid "Save change as a template."
+msgstr ""
+
+#. SysConfig
+msgid "Save workorder as a template."
+msgstr ""
+
+#. SysConfig
+msgid "Schedule"
+msgstr ""
+
+#. SysConfig
+msgid "Screen after creating a workorder"
+msgstr ""
+
+#. SysConfig
+msgid "Search Changes"
+msgstr ""
+
+#. SysConfig
+msgid "Search Changes."
+msgstr ""
+
+#. SysConfig
+msgid "Selects the change number generator module. \"AutoIncrement\" increments the change number, the SystemID and the counter are used with SystemID.counter format (e.g. 100118, 100119). With \"Date\", the change numbers will be generated by the current date and a counter; this format looks like Year.Month.Day.counter, e.g. 2010062400001, 2010062400002. With \"DateChecksum\", the counter will be appended as checksum to the string of date plus the SystemID. The checksum will be rotated on a daily basis. This format looks like Year.Month.Day.SystemID.Counter.CheckSum, e.g. 2010062410000017, 2010062410000026."
+msgstr ""
+
+#. SysConfig
+msgid "Set the agent for the workorder."
+msgstr ""
+
+#. SysConfig
+msgid "Set the default height (in pixels) of inline HTML fields in the change zoom screen and workorder zoom screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Set the maximum height (in pixels) of inline HTML fields in the change zoom screen and workorder zoom screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Sets the minimal change counter size (if \"AutoIncrement\" was selected as ITSMChange::NumberGenerator). Default is 5, this means the counter starts from 10000."
+msgstr ""
+
+#. SysConfig
+msgid "Sets up the state machine for changes."
+msgstr ""
+
+#. SysConfig
+msgid "Sets up the state machine for workorders."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a checkbox in the workorder edit screen of the agent interface that defines if the the following workorders should also be moved if a workorder is modified and the planned end time has changed."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a link in the menu that allows changing the workorder agent, in the zoom view of the workorder of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a link in the menu that allows defining a change as a template in the zoom view of the change, in the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a link in the menu that allows defining a workorder as a template in the zoom view of the workorder, in the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a link in the menu that allows editing the report of a workorder, in the zoom view of the workorder of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a link in the menu that allows linking a change with another object in the change zoom view of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a link in the menu that allows linking a workorder with another object in the zoom view of the workorder of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a link in the menu that allows moving the time slot of a change in its zoom view of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a link in the menu that allows taking a workorder in the its zoom view of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a link in the menu to access the conditions of a change in the its zoom view of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a link in the menu to access the history of a change in the its zoom view of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a link in the menu to access the history of a workorder in the its zoom view of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a link in the menu to add a workorder in the change zoom view of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a link in the menu to delete a change in its zoom view of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a link in the menu to delete a workorder in its zoom view of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a link in the menu to edit a change in the its zoom view of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a link in the menu to edit a workorder in the its zoom view of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a link in the menu to go back in the change zoom view of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a link in the menu to go back in the workorder zoom view of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a link in the menu to print a change in the its zoom view of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a link in the menu to print a workorder in the its zoom view of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a link in the menu to reset a change and its workorders in its zoom view of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Shows a link in the menu to show the involved persons in a change, in the zoom view of the change in the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Shows the change history (reverse ordered) in the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "State Machine"
+msgstr ""
+
+#. SysConfig
+msgid "Stores change and workorder ids and their corresponding template id, while a user is editing a template."
+msgstr ""
+
+#. SysConfig
+msgid "Take Workorder"
+msgstr ""
+
+#. SysConfig
+msgid "Take Workorder."
+msgstr ""
+
+#. SysConfig
+msgid "Take the workorder."
+msgstr ""
+
+#. SysConfig
+msgid "Template Overview"
+msgstr ""
+
+#. SysConfig
+msgid "Template type"
+msgstr ""
+
+#. SysConfig
+msgid "Template."
+msgstr ""
+
+#. SysConfig
+msgid "The identifier for a change, e.g. Change#, MyChange#. The default is Change#."
+msgstr ""
+
+#. SysConfig
+msgid "The identifier for a workorder, e.g. Workorder#, MyWorkorder#. The default is Workorder#."
+msgstr ""
+
+#. SysConfig
+msgid "This ACL module restricts the usuage of the ticket types that are defined in the sysconfig option 'ITSMChange::AddChangeLinkTicketTypes', to users of the groups as defined in \"ITSMChange::RestrictTicketTypes::Groups\". As this ACL could collide with other ACLs which are also related to the ticket type, this sysconfig option is disabled by default and should only be activated if needed."
+msgstr ""
+
+#. SysConfig
+msgid "Time Slot"
+msgstr ""
+
+#. SysConfig
+msgid "Types of tickets, where in the ticket zoom view a link to add a change will be displayed."
+msgstr ""
+
+#. SysConfig
+msgid "User Search"
+msgstr ""
+
+#. SysConfig
+msgid "Workorder Add (from template)."
+msgstr ""
+
+#. SysConfig
+msgid "Workorder Add."
+msgstr ""
+
+#. SysConfig
+msgid "Workorder Agent."
+msgstr ""
+
+#. SysConfig
+msgid "Workorder Delete."
+msgstr ""
+
+#. SysConfig
+msgid "Workorder Edit."
+msgstr ""
+
+#. SysConfig
+msgid "Workorder History Zoom."
+msgstr ""
+
+#. SysConfig
+msgid "Workorder History."
+msgstr ""
+
+#. SysConfig
+msgid "Workorder Report."
+msgstr ""
+
+#. SysConfig
+msgid "Workorder Zoom"
+msgstr ""
+
+#. SysConfig
+msgid "Workorder Zoom."
+msgstr ""
+
+#. SysConfig
+msgid "once"
+msgstr ""
+
+#. SysConfig
+msgid "regularly"
 msgstr ""
 

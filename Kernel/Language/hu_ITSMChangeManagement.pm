@@ -313,7 +313,6 @@ sub Data {
     $Self->{Translation}->{'Can\'t show history, as no ChangeID is given!'} = 'Nem lehet megjeleníteni az előzményeket, mivel nincs változásazonosító megadva!';
     $Self->{Translation}->{'Change "%s" not found in the database!'} = 'A(z) „%s” változás nem található az adatbázisban!';
     $Self->{Translation}->{'Unknown type "%s" encountered!'} = 'Ismeretlen típus fordult elő: %s!';
-    $Self->{Translation}->{'Change History'} = 'Változástörténet';
 
     # Perl Module: Kernel/Modules/AgentITSMChangeHistoryZoom.pm
     $Self->{Translation}->{'Can\'t show history zoom, no HistoryEntryID is given!'} = 'Nem lehet megjeleníteni az előzménynagyítást, nincs előzménybejegyzés-azonosító megadva!';
@@ -534,7 +533,7 @@ sub Data {
     $Self->{Translation}->{'Group ITSMChangeBuilder'} = 'ITSM változás-összeállító csoport';
     $Self->{Translation}->{'Group ITSMChangeManager'} = 'ITSM változásmenedzser csoport';
 
-    # Database XML Definition: ITSMChangeManagement.sopm
+    # Database XML / SOPM Definition: ITSMChangeManagement.sopm
     $Self->{Translation}->{'requested'} = 'kérve';
     $Self->{Translation}->{'pending approval'} = 'jóváhagyásra vár';
     $Self->{Translation}->{'rejected'} = 'visszautasítva';
@@ -585,144 +584,505 @@ sub Data {
     $Self->{Translation}->{'Ok'} = 'OK';
 
     # SysConfig
-    $Self->{Translation}->{'A precentage value of the minimal translation progress per language, to be usable for documentations.'} =
-        '';
-    $Self->{Translation}->{'Access repos via http or https.'} = '';
-    $Self->{Translation}->{'Autoloading of Znuny4OTRSRepo extensions.'} = '';
-    $Self->{Translation}->{'Backend module registration for the config conflict check module.'} =
-        '';
-    $Self->{Translation}->{'Backend module registration for the file conflict check module.'} =
-        '';
-    $Self->{Translation}->{'Backend module registration for the function redefine check module.'} =
-        '';
-    $Self->{Translation}->{'Backend module registration for the manual set module.'} = '';
-    $Self->{Translation}->{'Block hooks to be created for BS ad removal.'} = '';
-    $Self->{Translation}->{'Block hooks to be created for package manager output filter.'} =
-        '';
-    $Self->{Translation}->{'Branch View commit limit'} = '';
-    $Self->{Translation}->{'CodePolicy'} = '';
-    $Self->{Translation}->{'Commit limit per page for Branch view screen'} = '';
-    $Self->{Translation}->{'Create analysis file'} = '';
-    $Self->{Translation}->{'Creates a analysis file from this ticket and sends to Znuny.'} =
-        '';
-    $Self->{Translation}->{'Creates a analysis file from this ticket.'} = '';
-    $Self->{Translation}->{'Define private addon repos.'} = '';
-    $Self->{Translation}->{'Defines the filter that processes the HTML templates.'} = '';
-    $Self->{Translation}->{'Defines the test module for checking code policy.'} = '';
-    $Self->{Translation}->{'Definition of GIT clone/push URL Prefix.'} = '';
-    $Self->{Translation}->{'Definition of a Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRelease => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed.'} =
-        '';
-    $Self->{Translation}->{'Definition of a Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed.'} =
-        '';
-    $Self->{Translation}->{'Definition of external MD5 sums (key => MD5, Value => Vendor, PackageName, Version, Date).'} =
-        '';
-    $Self->{Translation}->{'Definition of mappings between public repository requests and internal OPMS repositories.'} =
-        '';
-    $Self->{Translation}->{'Definition of package states.'} = '';
-    $Self->{Translation}->{'Definition of renamed OPMS packages.'} = '';
-    $Self->{Translation}->{'Directory, which is used by Git to cache repositories.'} = '';
-    $Self->{Translation}->{'Directory, which is used by Git to store temporary data.'} = '';
-    $Self->{Translation}->{'Directory, which is used by Git to store working copies.'} = '';
-    $Self->{Translation}->{'Disable online repositories.'} = '';
-    $Self->{Translation}->{'Do not log git ssh connection authorization results for these users. Useful for automated stuff.'} =
-        '';
-    $Self->{Translation}->{'Dynamic Fields Screens'} = '';
-    $Self->{Translation}->{'DynamicFieldScreen'} = '';
-    $Self->{Translation}->{'Export all available public keys to authorized_keys file.'} = '';
-    $Self->{Translation}->{'Export all relevant releases to ftp server.'} = '';
-    $Self->{Translation}->{'Frontend module registration for the OPMS object in the agent interface.'} =
-        '';
-    $Self->{Translation}->{'Frontend module registration for the PublicOPMSRepository object in the public interface.'} =
-        '';
-    $Self->{Translation}->{'Frontend module registration for the PublicOPMSRepositoryLookup object in the public interface.'} =
-        '';
-    $Self->{Translation}->{'Frontend module registration for the PublicOPMSTestBuild object in the public interface.'} =
-        '';
-    $Self->{Translation}->{'Frontend module registration for the PublicPackageVerification object in the public interface.'} =
-        '';
-    $Self->{Translation}->{'Frontend module registration for the admin interface.'} = '';
-    $Self->{Translation}->{'GIT Author registration.'} = '';
-    $Self->{Translation}->{'Generate HTML comment hooks for the specified blocks so that filters can use them.'} =
-        '';
-    $Self->{Translation}->{'Generate documentations once per night.'} = '';
-    $Self->{Translation}->{'Git'} = '';
-    $Self->{Translation}->{'Git Management'} = '';
-    $Self->{Translation}->{'Git Repository'} = '';
-    $Self->{Translation}->{'Group, whose members have delete admin permissions in OPMS.'} = '';
-    $Self->{Translation}->{'Group, whose members have repository admin permissions in OPMS.'} =
-        '';
-    $Self->{Translation}->{'Group, whose members will see CI test result information in OPMS screens.'} =
-        '';
-    $Self->{Translation}->{'Groups an authenticated user (by user login and password) must be member of to build test packages via the public interface.'} =
-        '';
-    $Self->{Translation}->{'Groups which will be set during git project creation processes while adding OPMS repositories.'} =
-        '';
-    $Self->{Translation}->{'Manage dynamic field in screens.'} = '';
-    $Self->{Translation}->{'Manage your public SSH key(s) for Git access here. Make sure to save this preference when you add a new key.'} =
-        '';
-    $Self->{Translation}->{'Module to generate statistics about the added code lines.'} = '';
-    $Self->{Translation}->{'Module to generate statistics about the growth of code.'} = '';
-    $Self->{Translation}->{'Module to generate statistics about the number of git commits.'} =
-        '';
-    $Self->{Translation}->{'Module to generate statistics about the removed code lines.'} = '';
-    $Self->{Translation}->{'OPMS'} = '';
-    $Self->{Translation}->{'Only users who have rw permissions in one of these groups may access git.'} =
-        '';
-    $Self->{Translation}->{'Option to set a package compatibility manually.'} = '';
-    $Self->{Translation}->{'Parameters for the pages in the BranchView screen.'} = '';
-    $Self->{Translation}->{'Pre-Definition of the \'GITProjectName\' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed.'} =
-        '';
-    $Self->{Translation}->{'Pre-Definition of the \'GITRepositoryName\' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed.'} =
-        '';
-    $Self->{Translation}->{'Pre-Definition of the \'PackageDeprecated\' Dynamic Field: Group => Group with access to the Dynamic Fields; AlwaysVisible => Field can be removed (0|1); InformationAreaName => Name of the Widgets; InformationAreaSize => Size and position of the widgets (Large|Small); Name => Name of the Dynamic Field which should be used; Priority => Order of the Dynamic Fields; State => State of the Fields (0 = disabled, 1 = active, 2 = mandatory), FilterRepository => Regex which the repository name has to match to be displayed, FilterPackage => Regex which the package name has to match to be displayed, FilterBranch => Regex which the branch name has to match to be displayed, FilterRelease => Regex which the repelase version string has to match to be displayed.'} =
-        '';
-    $Self->{Translation}->{'Recipients that will be informed by email in case of errors.'} =
-        '';
-    $Self->{Translation}->{'SSH Keys for Git Access'} = '';
-    $Self->{Translation}->{'Send analysis file'} = '';
-    $Self->{Translation}->{'Sets the git clone address to be used in repository listings.'} =
-        '';
-    $Self->{Translation}->{'Sets the home directory for git repositories.'} = '';
-    $Self->{Translation}->{'Sets the path for the BugzillaAddComment post receive script location.'} =
-        '';
-    $Self->{Translation}->{'Sets the path for the OTRSCodePolicy  script location. It is recommended to have a separate clone of the OTRSCodePolicy module that is updated via cron.'} =
-        '';
-    $Self->{Translation}->{'Sets the path for the OTRSCodePolicy pre receive script location. It is recommended to have a separate clone of the OTRSCodePolicy module that is updated via cron.'} =
-        '';
-    $Self->{Translation}->{'Show latest commits in git repositories.'} = '';
-    $Self->{Translation}->{'Shows a link in the menu to go create a unit test from the current ticket.'} =
-        '';
-    $Self->{Translation}->{'Synchronize OPMS tables with a remote database.'} = '';
-    $Self->{Translation}->{'The minimum version of the sphinx library.'} = '';
-    $Self->{Translation}->{'The name of the sphinx theme to be used.'} = '';
-    $Self->{Translation}->{'The path to the OTRS CSS file (relative below the static path).'} =
-        '';
-    $Self->{Translation}->{'The path to the OTRS logo (relative below the static path).'} = '';
-    $Self->{Translation}->{'The path to the static folder, containing images and css files.'} =
-        '';
-    $Self->{Translation}->{'The path to the theme folder, containing the sphinx themes.'} = '';
-    $Self->{Translation}->{'This configuration defines all possible screens to enable or disable default columns.'} =
-        '';
-    $Self->{Translation}->{'This configuration defines all possible screens to enable or disable dynamic fields.'} =
-        '';
-    $Self->{Translation}->{'This configuration defines if only valids or all (invalids) dynamic fields should be shown.'} =
-        '';
-    $Self->{Translation}->{'This configuration defines if the OTRS package verification should be active or disabled. If disabled all packages are shown as verified. It\'s still recommended to use only verified packages.'} =
-        '';
-    $Self->{Translation}->{'This configuration defines the URL to the OTRS CloudService Proxy service. The http or https prefix will be added, depending on selection SysConfig \'Znuny4OTRSRepoType\'.'} =
-        '';
-    $Self->{Translation}->{'This configuration registers a Output post-filter to extend package verification.'} =
-        '';
-    $Self->{Translation}->{'This configuration registers an OutputFilter module that removes OTRS Business Solution TM advertisements.'} =
-        '';
-    $Self->{Translation}->{'This configuration registers an output filter to hide online repository selection in package manager.'} =
-        '';
-    $Self->{Translation}->{'Tidy unprocessed release that not passed test pomules checks for a long time.'} =
-        '';
-    $Self->{Translation}->{'Users who have rw permissions in one of these groups are permitted to execute force pushes \'git push --force\'.'} =
-        '';
-    $Self->{Translation}->{'Users who have rw permissions in one of these groups are permitted to manage projects. Additionally the members have administration permissions to the git management.'} =
-        '';
+    $Self->{Translation}->{'A list of the agents who have permission to take workorders. Key is a login name. Content is 0 or 1.'} =
+        'Azon ügyintézők listája, akik jogosultsággal rendelkeznek a munkamegrendelések felvételéhez. A kulcs a bejelentkezési név. A tartalom 0 vagy 1.';
+    $Self->{Translation}->{'A list of workorder states, at which the ActualStartTime of a workorder will be set if it was empty at this point.'} =
+        'Azon munkamegrendelés-állapotok listája, amelyeknél egy munkamegrendelés tényleges kezdési ideje be lesz állítva, ha az üres ennél a pontnál.';
+    $Self->{Translation}->{'Actual end time'} = 'Tényleges befejezési idő';
+    $Self->{Translation}->{'Actual start time'} = 'Tényleges kezdési idő';
+    $Self->{Translation}->{'Add Workorder'} = 'Munkamegrendelés hozzáadása';
+    $Self->{Translation}->{'Add Workorder (from Template)'} = 'Munkamegrendelés hozzáadása (sablonból)';
+    $Self->{Translation}->{'Add a change from template.'} = 'Egy változás hozzáadása sablonból.';
+    $Self->{Translation}->{'Add a change.'} = 'Egy változás hozzáadása.';
+    $Self->{Translation}->{'Add a workorder (from template) to the change.'} = 'Egy munkamegrendelés hozzáadása (sablonból) a változáshoz.';
+    $Self->{Translation}->{'Add a workorder to the change.'} = 'Egy munkamegrendelés hozzáadása a változáshoz.';
+    $Self->{Translation}->{'Add from template'} = 'Hozzáadás sablonból';
+    $Self->{Translation}->{'Admin of the CIP matrix.'} = 'A CIP mátrix adminisztrátora.';
+    $Self->{Translation}->{'Admin of the state machine.'} = 'Az állapotgép adminisztrátora.';
+    $Self->{Translation}->{'Agent interface notification module to see the number of change advisory boards.'} =
+        'Ügyintézői felület értesítési modul a változásmenedzsment-tanácsok számának megtekintéséhez.';
+    $Self->{Translation}->{'Agent interface notification module to see the number of changes managed by the user.'} =
+        'Ügyintézői felület értesítési modul a felhasználó által kezelt változások számának megtekintéséhez.';
+    $Self->{Translation}->{'Agent interface notification module to see the number of changes.'} =
+        'Ügyintézői felület értesítési modul a változások számának megtekintéséhez.';
+    $Self->{Translation}->{'Agent interface notification module to see the number of workorders.'} =
+        'Ügyintézői felület értesítési modul a munkamegrendelések számának megtekintéséhez.';
+    $Self->{Translation}->{'CAB Member Search'} = 'CAB-tag keresés';
+    $Self->{Translation}->{'Cache time in minutes for the change management toolbars. Default: 3 hours (180 minutes).'} =
+        'Gyorsítótár idő percben a változásmenedzsment eszköztárnál. Alapértelmezett: 3 óra (180 perc).';
+    $Self->{Translation}->{'Cache time in minutes for the change management. Default: 5 days (7200 minutes).'} =
+        'Gyorsítótár idő percben a változásmenedzsmentnél. Alapértelmezett: 5 nap (7200 perc).';
+    $Self->{Translation}->{'Change CAB Templates'} = 'Változás CAB-sablonok';
+    $Self->{Translation}->{'Change History.'} = 'Változástörténet.';
+    $Self->{Translation}->{'Change Involved Persons.'} = 'A változásban résztvevő személyek.';
+    $Self->{Translation}->{'Change Overview "Small" Limit'} = 'Változás áttekintő „kis” korlát';
+    $Self->{Translation}->{'Change Overview.'} = 'Változás áttekintés.';
+    $Self->{Translation}->{'Change Print.'} = 'Változásnyomtatás.';
+    $Self->{Translation}->{'Change Schedule'} = 'Változtatási ütemterv';
+    $Self->{Translation}->{'Change Schedule.'} = 'Változtatási ütemterv.';
+    $Self->{Translation}->{'Change Settings'} = 'Változás beállítások';
+    $Self->{Translation}->{'Change Zoom'} = 'Változásnagyítás';
+    $Self->{Translation}->{'Change Zoom.'} = 'Változásnagyítás.';
+    $Self->{Translation}->{'Change and Workorder Templates'} = 'Változás és munkamegrendelés sablonok';
+    $Self->{Translation}->{'Change and workorder templates edited by this user.'} = 'A felhasználó által szerkesztett változás és munkamegrendelés sablonok.';
+    $Self->{Translation}->{'Change area.'} = 'Változásterület.';
+    $Self->{Translation}->{'Change involved persons of the change.'} = 'A változás résztvevő személyeinek módosítása.';
+    $Self->{Translation}->{'Change limit per page for Change Overview "Small".'} = 'Oldalankénti változás korlát a „kis” változás áttekintőnél.';
+    $Self->{Translation}->{'Change number'} = 'Változásszám';
+    $Self->{Translation}->{'Change search backend router of the agent interface.'} = 'Az ügyintézői felület változás keresési háttérprogram útválasztója.';
+    $Self->{Translation}->{'Change state'} = 'Változásállapot';
+    $Self->{Translation}->{'Change time'} = 'Változtatás ideje';
+    $Self->{Translation}->{'Change title'} = 'Változáscím';
+    $Self->{Translation}->{'Condition Edit'} = 'Feltétel szerkesztés';
+    $Self->{Translation}->{'Condition Overview'} = 'Feltétel áttekintés';
+    $Self->{Translation}->{'Configure which screen should be shown after a new workorder has been created.'} =
+        'Annak beállítása, hogy mely képernyő legyen megjelenítve, miután egy új munkamegrendelést létrehoztak.';
+    $Self->{Translation}->{'Configures how often the notifications are sent when planned the start time or other time values have been reached/passed.'} =
+        'Beállítja, hogy milyen gyakran legyenek elküldve az értesítések, amikor elérik/átadják a tervezett kezdési időt vagy más időértékeket.';
+    $Self->{Translation}->{'Create Change'} = 'Változás létrehozása';
+    $Self->{Translation}->{'Create Change (from Template)'} = 'Változás létrehozása (sablonból)';
+    $Self->{Translation}->{'Create a change (from template) from this ticket.'} = 'Változás létrehozása (sablonból) ebből a jegyből.';
+    $Self->{Translation}->{'Create a change from this ticket.'} = 'Változás létrehozása ebből a jegyből.';
+    $Self->{Translation}->{'Create and manage ITSM Change Management notifications.'} = 'ITSM változásmenedzsment értesítések létrehozása és kezelése.';
+    $Self->{Translation}->{'Create and manage change notifications.'} = 'Változás értesítések létrehozása és kezelése.';
+    $Self->{Translation}->{'Default type for a workorder. This entry must exist in general catalog class \'ITSM::ChangeManagement::WorkOrder::Type\'.'} =
+        'Egy munkamegrendelés alapértelmezett típusa. Ennek a bejegyzésnek léteznie kell az „ITSM::ChangeManagement::WorkOrder::Type” általános katalógus osztályban.';
+    $Self->{Translation}->{'Define Actions where a settings button is available in the linked objects widget (LinkObject::ViewMode = "complex"). Please note that these Actions must have registered the following JS and CSS files: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js and Core.Agent.LinkObject.js.'} =
+        'Műveletek meghatározása, ahol egy beállítások gomb érhető el a kapcsolt objektumok felületi elemen (LinkObject::ViewMode = „összetett”). Ne feledje, hogy ezeknek a műveleteknek rendelkezniük kell a következő JS és CSS fájlok regisztrálásával: Core.AllocationList.css, Core.UI.AllocationList.js, Core.UI.Table.Sort.js, Core.Agent.TableFilters.js és Core.Agent.LinkObject.js.';
+    $Self->{Translation}->{'Define the signals for each workorder state.'} = 'A szignálok meghatározása minden munkamegrendelés-állapotnál.';
+    $Self->{Translation}->{'Define which columns are shown in the linked Changes widget (LinkObject::ViewMode = "complex"). Note: Only Change attributes are allowed for DefaultColumns. Possible settings: 0 = Disabled, 1 = Available, 2 = Enabled by default.'} =
+        'Annak meghatározása, hogy mely oszlopok legyenek láthatók a kapcsolt változások felületi elemen (LinkObject::ViewMode = „összetett”). Megjegyzés: csak változás attribútumok engedélyezettek az alapértelmezett oszlopoknál. Lehetséges beállítások: 0 = letiltva, 1 = elérhető, 2 = alapértelmezetten engedélyezett.';
+    $Self->{Translation}->{'Define which columns are shown in the linked Workorder widget (LinkObject::ViewMode = "complex"). Note: Only Workorder attributes are allowed for DefaultColumns. Possible settings: 0 = Disabled, 1 = Available, 2 = Enabled by default.'} =
+        'Annak meghatározása, hogy mely oszlopok legyenek láthatók a kapcsolt munkamegrendelés felületi elemen (LinkObject::ViewMode = „összetett”). Megjegyzés: csak munkamegrendelés attribútumok engedélyezettek az alapértelmezett oszlopoknál. Lehetséges beállítások: 0 = letiltva, 1 = elérhető, 2 = alapértelmezetten engedélyezett.';
+    $Self->{Translation}->{'Defines an overview module to show the small view of a change list.'} =
+        'Egy áttekintő modult határoz meg egy változáslista kis nézetének megjelenítéséhez.';
+    $Self->{Translation}->{'Defines an overview module to show the small view of a template list.'} =
+        'Egy áttekintő modult határoz meg egy sablonlista kis nézetének megjelenítéséhez.';
+    $Self->{Translation}->{'Defines if it will be possible to print the accounted time.'} = 'Meghatározza, hogy lehetséges lesz-e kinyomtatni az elszámolt időt.';
+    $Self->{Translation}->{'Defines if it will be possible to print the planned effort.'} = 'Meghatározza, hogy lehetséges lesz-e kinyomtatni a tervezett ráfordítást.';
+    $Self->{Translation}->{'Defines if reachable (as defined by the state machine) change end states should be allowed if a change is in a locked state.'} =
+        'Meghatározza, hogy az elérhető (ahogy az állapotgép meghatározta) változás befejezési állapotait el kell-e fogadni, ha egy változás zárolt állapotban van.';
+    $Self->{Translation}->{'Defines if reachable (as defined by the state machine) workorder end states should be allowed if a workorder is in a locked state.'} =
+        'Meghatározza, hogy az elérhető (ahogy az állapotgép meghatározta) munkamegrendelés befejezési állapotait el kell-e fogadni, ha egy munkamegrendelés zárolt állapotban van.';
+    $Self->{Translation}->{'Defines if the accounted time should be shown.'} = 'Meghatározza, hogy az elszámolt időt meg kell-e jeleníteni.';
+    $Self->{Translation}->{'Defines if the actual start and end times should be set.'} = 'Meghatározza, hogy a tényleges kezdési és befejezési időket be kell-e állítani.';
+    $Self->{Translation}->{'Defines if the change search and the workorder search functions could use the mirror DB.'} =
+        'Meghatározza, hogy a változáskeresés és a munkamegrendelés-keresés funkciók használhatják-e a tükör adatbázist.';
+    $Self->{Translation}->{'Defines if the change state can be set in the change edit screen of the agent interface.'} =
+        'Meghatározza, hogy a változás állapota beállítható-e az ügyintézői felület változás szerkesztése képernyőjén.';
+    $Self->{Translation}->{'Defines if the planned effort should be shown.'} = 'Meghatározza, hogy a tervezett ráfordítást meg kell-e jeleníteni.';
+    $Self->{Translation}->{'Defines if the requested date should be print by customer.'} = 'Meghatározza, hogy a kért dátumot ügyfél szerint kell-e kinyomtatni.';
+    $Self->{Translation}->{'Defines if the requested date should be searched by customer.'} =
+        'Meghatározza, hogy a kért dátumot ügyfél szerint kell-e keresni.';
+    $Self->{Translation}->{'Defines if the requested date should be set by customer.'} = 'Meghatározza, hogy a kért dátumot ügyfél szerint kell-e beállítani.';
+    $Self->{Translation}->{'Defines if the requested date should be shown by customer.'} = 'Meghatározza, hogy a kért dátumot ügyfél szerint kell-e megjeleníteni.';
+    $Self->{Translation}->{'Defines if the workorder state should be shown.'} = 'Meghatározza, hogy a munkamegrendelés állapotát meg kell-e jeleníteni.';
+    $Self->{Translation}->{'Defines if the workorder title should be shown.'} = 'Meghatározza, hogy a munkamegrendelés címét meg kell-e jeleníteni.';
+    $Self->{Translation}->{'Defines shown graph attributes.'} = 'Meghatározza a megjelenített grafikonattribútumokat.';
+    $Self->{Translation}->{'Defines that only changes containing Workorders linked with services, which the customer user has permission to use will be shown. Any other changes will not be displayed.'} =
+        'Meghatározza, hogy csak azok a szolgáltatásokkal összekapcsolt munkamegrendeléseket tartalmazó változások lesznek megjelenítve, amelyekre az ügyfélfelhasználónak használati jogosultsága van. Minden egyéb változás nem kerül megjelenítésre.';
+    $Self->{Translation}->{'Defines the change states that will be allowed to delete.'} = 'Meghatározza azokat a változásállapotokat, amelyek engedélyezettek lesznek törlésre.';
+    $Self->{Translation}->{'Defines the change states that will be used as filters in the Change PSA overview.'} =
+        'Meghatározza azokat a változásállapotokat, amelyek szűrőkként lesznek használva a változás PSA áttekintőjében.';
+    $Self->{Translation}->{'Defines the change states that will be used as filters in the Change Schedule overview.'} =
+        'Meghatározza azokat a változásállapotokat, amelyek szűrőkként lesznek használva a változtatási ütemterv áttekintőjében.';
+    $Self->{Translation}->{'Defines the change states that will be used as filters in the MyCAB overview.'} =
+        'Meghatározza azokat a változásállapotokat, amelyek szűrőkként lesznek használva a saját CAB áttekintőjében.';
+    $Self->{Translation}->{'Defines the change states that will be used as filters in the MyChanges overview.'} =
+        'Meghatározza azokat a változásállapotokat, amelyek szűrőkként lesznek használva a saját változások áttekintőjében.';
+    $Self->{Translation}->{'Defines the change states that will be used as filters in the change manager overview.'} =
+        'Meghatározza azokat a változásállapotokat, amelyek szűrőkként lesznek használva a változásmenedzser áttekintőjében.';
+    $Self->{Translation}->{'Defines the change states that will be used as filters in the change overview.'} =
+        'Meghatározza azokat a változásállapotokat, amelyek szűrőkként lesznek használva a változás áttekintőjében.';
+    $Self->{Translation}->{'Defines the change states that will be used as filters in the customer change schedule overview.'} =
+        'Meghatározza azokat a változásállapotokat, amelyek szűrőkként lesznek használva az ügyfél változtatási ütemterv áttekintőjében.';
+    $Self->{Translation}->{'Defines the default change title for a dummy change which is needed to edit a workorder template.'} =
+        'Meghatározza egy üres változás alapértelmezett változáscímét, amely egy munkamegrendelés-sablon szerkesztéséhez szükséges.';
+    $Self->{Translation}->{'Defines the default sort criteria in the change PSA overview.'} =
+        'Meghatározza az alapértelmezett rendezési feltételt a változás PSA áttekintőjében.';
+    $Self->{Translation}->{'Defines the default sort criteria in the change manager overview.'} =
+        'Meghatározza az alapértelmezett rendezési feltételt a változásmenedzser áttekintőjében.';
+    $Self->{Translation}->{'Defines the default sort criteria in the change overview.'} = 'Meghatározza az alapértelmezett rendezési feltételt a változás áttekintőjében.';
+    $Self->{Translation}->{'Defines the default sort criteria in the change schedule overview.'} =
+        'Meghatározza az alapértelmezett rendezési feltételt a változtatási ütemterv áttekintőjében.';
+    $Self->{Translation}->{'Defines the default sort criteria of the changes in the MyCAB overview.'} =
+        'Meghatározza a változások alapértelmezett rendezési feltételét a saját CAB áttekintőjében.';
+    $Self->{Translation}->{'Defines the default sort criteria of the changes in the MyChanges overview.'} =
+        'Meghatározza a változások alapértelmezett rendezési feltételét a saját változások áttekintőjében.';
+    $Self->{Translation}->{'Defines the default sort criteria of the changes in the MyWorkorders overview.'} =
+        'Meghatározza a változások alapértelmezett rendezési feltételét a saját munkamegrendelések áttekintőjében.';
+    $Self->{Translation}->{'Defines the default sort criteria of the changes in the PIR overview.'} =
+        'Meghatározza a változások alapértelmezett rendezési feltételét a PIR áttekintőjében.';
+    $Self->{Translation}->{'Defines the default sort criteria of the changes in the customer change schedule overview.'} =
+        'Meghatározza a változások alapértelmezett rendezési feltételét az ügyfél változtatási ütemterv áttekintőjében.';
+    $Self->{Translation}->{'Defines the default sort criteria of the changes in the template overview.'} =
+        'Meghatározza a változások alapértelmezett rendezési feltételét a sablon áttekintőjében.';
+    $Self->{Translation}->{'Defines the default sort order in the MyCAB overview.'} = 'Meghatározza az alapértelmezett rendezési sorrendet a saját CAB áttekintőjében.';
+    $Self->{Translation}->{'Defines the default sort order in the MyChanges overview.'} = 'Meghatározza az alapértelmezett rendezési sorrendet a saját változások áttekintőjében.';
+    $Self->{Translation}->{'Defines the default sort order in the MyWorkorders overview.'} =
+        'Meghatározza az alapértelmezett rendezési sorrendet a saját munkamegrendelések áttekintőjében.';
+    $Self->{Translation}->{'Defines the default sort order in the PIR overview.'} = 'Meghatározza az alapértelmezett rendezési sorrendet a PIR áttekintőjében.';
+    $Self->{Translation}->{'Defines the default sort order in the change PSA overview.'} = 'Meghatározza az alapértelmezett rendezési sorrendet a változás PSA áttekintőjében.';
+    $Self->{Translation}->{'Defines the default sort order in the change manager overview.'} =
+        'Meghatározza az alapértelmezett rendezési sorrendet a változásmenedzser áttekintőjében.';
+    $Self->{Translation}->{'Defines the default sort order in the change overview.'} = 'Meghatározza az alapértelmezett rendezési sorrendet a változás áttekintőjében.';
+    $Self->{Translation}->{'Defines the default sort order in the change schedule overview.'} =
+        'Meghatározza az alapértelmezett rendezési sorrendet a változtatási ütemterv áttekintőjében.';
+    $Self->{Translation}->{'Defines the default sort order in the customer change schedule overview.'} =
+        'Meghatározza az alapértelmezett rendezési sorrendet az ügyfél változtatási ütemterv áttekintőjében.';
+    $Self->{Translation}->{'Defines the default sort order in the template overview.'} = 'Meghatározza az alapértelmezett rendezési sorrendet a sablon áttekintőjében.';
+    $Self->{Translation}->{'Defines the default value for the category of a change.'} = 'Meghatározza egy változás kategóriájának alapértelmezett értékét.';
+    $Self->{Translation}->{'Defines the default value for the impact of a change.'} = 'Meghatározza egy változás hatásának alapértelmezett értékét.';
+    $Self->{Translation}->{'Defines the field type of CompareValue fields for change attributes used in the change condition edit screen of the agent interface. Valid values are Selection, Text and Date. If a type is not defined, the field will not be shown.'} =
+        'Meghatározza az „Összehasonlítás érték” mezők mezőtípusát az ügyintézői felület változás feltételének szerkesztése képernyőjén használt változás attribútumainál. Az érvényes értékek: Selection, Text és Date. Ha a típus nincs meghatározva, akkor a mező nem lesz látható.';
+    $Self->{Translation}->{'Defines the field type of CompareValue fields for workorder attributes used in the change condition edit screen of the agent interface. Valid values are Selection, Text and Date. If a type is not defined, the field will not be shown.'} =
+        'Meghatározza az „Összehasonlítás érték” mezők mezőtípusát az ügyintézői felület változás feltételének szerkesztése képernyőjén használt munkamegrendelés attribútumainál. Az érvényes értékek: Selection, Text és Date. Ha a típus nincs meghatározva, akkor a mező nem lesz látható.';
+    $Self->{Translation}->{'Defines the object attributes that are selectable for change objects in the change condition edit screen of the agent interface.'} =
+        'Meghatározza azokat az objektumattribútumokat, amelyek kiválaszthatók a változásobjektumoknál az ügyintézői felület változás feltételének szerkesztése képernyőjén.';
+    $Self->{Translation}->{'Defines the object attributes that are selectable for workorder objects in the change condition edit screen of the agent interface.'} =
+        'Meghatározza azokat az objektumattribútumokat, amelyek kiválaszthatók a munkamegrendelés objektumoknál az ügyintézői felület változás feltételének szerkesztése képernyőjén.';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute AccountedTime in the change condition edit screen of the agent interface.'} =
+        'Meghatározza azokat az operátorokat, amelyek kiválaszthatók az „Elszámolt idő” attribútumnál az ügyintézői felület változás feltételének szerkesztése képernyőjén.';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute ActualEndTime in the change condition edit screen of the agent interface.'} =
+        'Meghatározza azokat az operátorokat, amelyek kiválaszthatók a „Tényleges befejezési idő” attribútumnál az ügyintézői felület változás feltételének szerkesztése képernyőjén.';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute ActualStartTime in the change condition edit screen of the agent interface.'} =
+        'Meghatározza azokat az operátorokat, amelyek kiválaszthatók a „Tényleges kezdési idő” attribútumnál az ügyintézői felület változás feltételének szerkesztése képernyőjén.';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute CategoryID in the change condition edit screen of the agent interface.'} =
+        'Meghatározza azokat az operátorokat, amelyek kiválaszthatók a „Kategóriaazonosító” attribútumnál az ügyintézői felület változás feltételének szerkesztése képernyőjén.';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute ChangeBuilderID in the change condition edit screen of the agent interface.'} =
+        'Meghatározza azokat az operátorokat, amelyek kiválaszthatók a „Változásösszeállító-azonosító” attribútumnál az ügyintézői felület változás feltételének szerkesztése képernyőjén.';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute ChangeManagerID in the change condition edit screen of the agent interface.'} =
+        'Meghatározza azokat az operátorokat, amelyek kiválaszthatók a „Változásmenedzser-azonosító” attribútumnál az ügyintézői felület változás feltételének szerkesztése képernyőjén.';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute ChangeStateID in the change condition edit screen of the agent interface.'} =
+        'Meghatározza azokat az operátorokat, amelyek kiválaszthatók a „Változásállapot-azonosító” attribútumnál az ügyintézői felület változás feltételének szerkesztése képernyőjén.';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute ChangeTitle in the change condition edit screen of the agent interface.'} =
+        'Meghatározza azokat az operátorokat, amelyek kiválaszthatók a „Változáscím” attribútumnál az ügyintézői felület változás feltételének szerkesztése képernyőjén.';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute DynamicField in the change condition edit screen of the agent interface.'} =
+        'Meghatározza azokat az operátorokat, amelyek kiválaszthatók a „Dinamikus mező” attribútumnál az ügyintézői felület változás feltételének szerkesztése képernyőjén.';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute ImpactID in the change condition edit screen of the agent interface.'} =
+        'Meghatározza azokat az operátorokat, amelyek kiválaszthatók a „Hatásazonosító” attribútumnál az ügyintézői felület változás feltételének szerkesztése képernyőjén.';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute PlannedEffort in the change condition edit screen of the agent interface.'} =
+        'Meghatározza azokat az operátorokat, amelyek kiválaszthatók a „Tervezett ráfordítás” attribútumnál az ügyintézői felület változás feltételének szerkesztése képernyőjén.';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute PlannedEndTime in the change condition edit screen of the agent interface.'} =
+        'Meghatározza azokat az operátorokat, amelyek kiválaszthatók a „Tervezett befejezési idő” attribútumnál az ügyintézői felület változás feltételének szerkesztése képernyőjén.';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute PlannedStartTime in the change condition edit screen of the agent interface.'} =
+        'Meghatározza azokat az operátorokat, amelyek kiválaszthatók a „Tervezett kezdési idő” attribútumnál az ügyintézői felület változás feltételének szerkesztése képernyőjén.';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute PriorityID in the change condition edit screen of the agent interface.'} =
+        'Meghatározza azokat az operátorokat, amelyek kiválaszthatók a „Prioritásazonosító” attribútumnál az ügyintézői felület változás feltételének szerkesztése képernyőjén.';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute RequestedTime in the change condition edit screen of the agent interface.'} =
+        'Meghatározza azokat az operátorokat, amelyek kiválaszthatók a „Kért idő” attribútumnál az ügyintézői felület változás feltételének szerkesztése képernyőjén.';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute WorkOrderAgentID in the change condition edit screen of the agent interface.'} =
+        'Meghatározza azokat az operátorokat, amelyek kiválaszthatók a „Munkamegrendelésügyintéző-azonosító” attribútumnál az ügyintézői felület változás feltételének szerkesztése képernyőjén.';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute WorkOrderNumber in the change condition edit screen of the agent interface.'} =
+        'Meghatározza azokat az operátorokat, amelyek kiválaszthatók a „Munkamegrendelés-szám” attribútumnál az ügyintézői felület változás feltételének szerkesztése képernyőjén.';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute WorkOrderStateID in the change condition edit screen of the agent interface.'} =
+        'Meghatározza azokat az operátorokat, amelyek kiválaszthatók a „Munkamegrendelésállapot-azonosító” attribútumnál az ügyintézői felület változás feltételének szerkesztése képernyőjén.';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute WorkOrderTitle in the change condition edit screen of the agent interface.'} =
+        'Meghatározza azokat az operátorokat, amelyek kiválaszthatók a „Munkamegrendelés-cím” attribútumnál az ügyintézői felület változás feltételének szerkesztése képernyőjén.';
+    $Self->{Translation}->{'Defines the operators that are selectable for the attribute WorkOrderTypeID in the change condition edit screen of the agent interface.'} =
+        'Meghatározza azokat az operátorokat, amelyek kiválaszthatók a „Munkamegrendeléstípus-azonosító” attribútumnál az ügyintézői felület változás feltételének szerkesztése képernyőjén.';
+    $Self->{Translation}->{'Defines the period (in years), in which start and end times can be selected.'} =
+        'Meghatározza (években) azt az időszakot, amelyben a kezdési és befejezési idők kiválaszthatók.';
+    $Self->{Translation}->{'Defines the shown attributes of a workorder in the tooltip of the workorder graph in the change zoom. To show workorder dynamic fields in the tooltip, they must be specified like DynamicField_WorkOrderFieldName1, DynamicField_WorkOrderFieldName2, etc.'} =
+        'Meghatározza egy munkamegrendelés megjelenített attribútumait a változásnagyításban lévő munkamegrendelés-grafikon buboréksúgójában. Ahhoz, hogy a munkamegrendelés dinamikus mezői megjelenjenek a buboréksúgóban, meg kell adni azokat a következőképpen: DynamicField_WorkOrderFieldName1, DynamicField_WorkOrderFieldName2, stb.';
+    $Self->{Translation}->{'Defines the shown columns in the Change PSA overview. This option has no effect on the position of the column.'} =
+        'Meghatározza a megjelenített oszlopokat a változás PSA áttekintőjében. Ennek a beállításnak nincs hatása az oszlop helyzetére.';
+    $Self->{Translation}->{'Defines the shown columns in the Change Schedule overview. This option has no effect on the position of the column.'} =
+        'Meghatározza a megjelenített oszlopokat a változtatási ütemterv áttekintőjében. Ennek a beállításnak nincs hatása az oszlop helyzetére.';
+    $Self->{Translation}->{'Defines the shown columns in the MyCAB overview. This option has no effect on the position of the column.'} =
+        'Meghatározza a megjelenített oszlopokat a saját CAB áttekintőjében. Ennek a beállításnak nincs hatása az oszlop helyzetére.';
+    $Self->{Translation}->{'Defines the shown columns in the MyChanges overview. This option has no effect on the position of the column.'} =
+        'Meghatározza a megjelenített oszlopokat a saját változások áttekintőjében. Ennek a beállításnak nincs hatása az oszlop helyzetére.';
+    $Self->{Translation}->{'Defines the shown columns in the MyWorkorders overview. This option has no effect on the position of the column.'} =
+        'Meghatározza a megjelenített oszlopokat a saját munkamegrendelések áttekintőjében. Ennek a beállításnak nincs hatása az oszlop helyzetére.';
+    $Self->{Translation}->{'Defines the shown columns in the PIR overview. This option has no effect on the position of the column.'} =
+        'Meghatározza a megjelenített oszlopokat a PIR áttekintőjében. Ennek a beállításnak nincs hatása az oszlop helyzetére.';
+    $Self->{Translation}->{'Defines the shown columns in the change manager overview. This option has no effect on the position of the column.'} =
+        'Meghatározza a megjelenített oszlopokat a változásmenedzser áttekintőjében. Ennek a beállításnak nincs hatása az oszlop helyzetére.';
+    $Self->{Translation}->{'Defines the shown columns in the change overview. This option has no effect on the position of the column.'} =
+        'Meghatározza a megjelenített oszlopokat a változás áttekintőjében. Ennek a beállításnak nincs hatása az oszlop helyzetére.';
+    $Self->{Translation}->{'Defines the shown columns in the change search. This option has no effect on the position of the column.'} =
+        'Meghatározza a megjelenített oszlopokat a változáskeresőben. Ennek a beállításnak nincs hatása az oszlop helyzetére.';
+    $Self->{Translation}->{'Defines the shown columns in the customer change schedule overview. This option has no effect on the position of the column.'} =
+        'Meghatározza a megjelenített oszlopokat az ügyfél változtatási ütemterv áttekintőjében. Ennek a beállításnak nincs hatása az oszlop helyzetére.';
+    $Self->{Translation}->{'Defines the shown columns in the template overview. This option has no effect on the position of the column.'} =
+        'Meghatározza a megjelenített oszlopokat a sablon áttekintőjében. Ennek a beállításnak nincs hatása az oszlop helyzetére.';
+    $Self->{Translation}->{'Defines the signals for each ITSM change state.'} = 'Meghatározza a szignálokat minden egyes ITSM változás állapotához.';
+    $Self->{Translation}->{'Defines the template types that will be used as filters in the template overview.'} =
+        'Meghatározza azokat a sablontípusokat, amelyek szűrőkként lesznek használva a sablon áttekintőjében.';
+    $Self->{Translation}->{'Defines the workorder states that will be used as filters in the MyWorkorders overview.'} =
+        'Meghatározza azokat a munkamegrendelés-állapotokat, amelyek szűrőkként lesznek használva a saját munkamegrendelések áttekintőjében.';
+    $Self->{Translation}->{'Defines the workorder states that will be used as filters in the PIR overview.'} =
+        'Meghatározza azokat a munkamegrendelés-állapotokat, amelyek szűrőkként lesznek használva a PIR áttekintőjében.';
+    $Self->{Translation}->{'Defines the workorder types that will be used to show the PIR overview.'} =
+        'Meghatározza azokat a munkamegrendelés-típusokat, amelyek a PIR áttekintő megjelenítéshez lesznek használva.';
+    $Self->{Translation}->{'Defines whether notifications should be sent.'} = 'Meghatározza, hogy az értesítéseket el kell-e küldeni.';
+    $Self->{Translation}->{'Delete a change.'} = 'Egy változás törlése.';
+    $Self->{Translation}->{'Delete the change.'} = 'A változás törlése.';
+    $Self->{Translation}->{'Delete the workorder.'} = 'A munkamegrendelés törlése.';
+    $Self->{Translation}->{'Details of a change history entry.'} = 'Egy változástörténet-bejegyzés részletei.';
+    $Self->{Translation}->{'Determines if an agent can exchange the X-axis of a stat if he generates one.'} =
+        'Meghatározza, hogy egy ügyintéző kicserélheti-e egy statisztika X-tengelyét, ha létrehozott egyet.';
+    $Self->{Translation}->{'Determines if the common stats module may generate stats about changes done for config item classes.'} =
+        'Meghatározza, hogy a közös statisztikák modul előállíthat-e statisztikákat az elvégzett változásokról a konfigurációelem osztályoknál.';
+    $Self->{Translation}->{'Determines if the common stats module may generate stats about changes regarding change state updates within a timeperiod.'} =
+        'Meghatározza, hogy a közös statisztikák modul előállíthat-e statisztikákat egy időszakon belüli változásállapot frissítésekre vonatkozó változásokról.';
+    $Self->{Translation}->{'Determines if the common stats module may generate stats about changes regarding the relation between changes and incident tickets.'} =
+        'Meghatározza, hogy a közös statisztikák modul előállíthat-e statisztikákat a változások és incidensjegyek közötti kapcsolatra vonatkozó változásokról.';
+    $Self->{Translation}->{'Determines if the common stats module may generate stats about changes.'} =
+        'Meghatározza, hogy a közös statisztikák modul előállíthat-e statisztikákat a változásokról.';
+    $Self->{Translation}->{'Determines if the common stats module may generate stats about the number of Rfc tickets a requester created.'} =
+        'Meghatározza, hogy a közös statisztikák modul előállíthat-e statisztikákat egy kérő által létrehozott változáskérelem jegyek számáról.';
+    $Self->{Translation}->{'Dynamic fields (for changes and workorders) shown in the change print screen of the agent interface.'} =
+        'Az ügyintézői felület változás nyomtatás képernyőjén megjelenített dinamikus mezők (változásokhoz és munkamegrendelésekhez).';
+    $Self->{Translation}->{'Dynamic fields shown in the change add screen of the agent interface.'} =
+        'Az ügyintézői felület változás hozzáadása képernyőjén megjelenített dinamikus mezők.';
+    $Self->{Translation}->{'Dynamic fields shown in the change edit screen of the agent interface.'} =
+        'Az ügyintézői felület változás szerkesztése képernyőjén megjelenített dinamikus mezők.';
+    $Self->{Translation}->{'Dynamic fields shown in the change search screen of the agent interface.'} =
+        'Az ügyintézői felület változás keresése képernyőjén megjelenített dinamikus mezők.';
+    $Self->{Translation}->{'Dynamic fields shown in the change zoom screen of the agent interface.'} =
+        'Az ügyintézői felület változás nagyítása képernyőjén megjelenített dinamikus mezők.';
+    $Self->{Translation}->{'Dynamic fields shown in the workorder add screen of the agent interface.'} =
+        'Az ügyintézői felület munkamegrendelés hozzáadása képernyőjén megjelenített dinamikus mezők.';
+    $Self->{Translation}->{'Dynamic fields shown in the workorder edit screen of the agent interface.'} =
+        'Az ügyintézői felület munkamegrendelés szerkesztése képernyőjén megjelenített dinamikus mezők.';
+    $Self->{Translation}->{'Dynamic fields shown in the workorder report screen of the agent interface.'} =
+        'Az ügyintézői felület munkamegrendelés jelentése képernyőjén megjelenített dinamikus mezők.';
+    $Self->{Translation}->{'Dynamic fields shown in the workorder zoom screen of the agent interface.'} =
+        'Az ügyintézői felület munkamegrendelés nagyítása képernyőjén megjelenített dinamikus mezők.';
+    $Self->{Translation}->{'DynamicField event module to handle the update of conditions if dynamic fields are added, updated or deleted.'} =
+        'Dinamikus mező eseménymodul a feltételek frissítésének kezeléséhez, ha dinamikus mezők kerülnek hozzáadásra, frissítésre vagy törlésre.';
+    $Self->{Translation}->{'Edit a change.'} = 'Egy változás szerkesztése.';
+    $Self->{Translation}->{'Edit the change.'} = 'A változás szerkesztése.';
+    $Self->{Translation}->{'Edit the conditions of the change.'} = 'A változás feltételeinek szerkesztése.';
+    $Self->{Translation}->{'Edit the workorder.'} = 'A munkamegrendelés szerkesztése.';
+    $Self->{Translation}->{'Enables the minimal change counter size (if "Date" was selected as ITSMChange::NumberGenerator).'} =
+        'Engedélyezi a legkisebb változásszámláló méretet (ha „Date” lett kiválasztva az ITSMChange::NumberGenerator beállításaként).';
+    $Self->{Translation}->{'Forward schedule of changes. Overview over approved changes.'} =
+        'Változások előjegyzési terve. A jóváhagyott változások áttekintése.';
+    $Self->{Translation}->{'History Zoom'} = 'Előzménynagyítás';
+    $Self->{Translation}->{'ITSM Change CAB Templates.'} = 'ITSM változás CAB sablonok.';
+    $Self->{Translation}->{'ITSM Change Condition Edit.'} = 'ITSM változásfeltétel szerkesztés.';
+    $Self->{Translation}->{'ITSM Change Condition Overview.'} = 'ITSM változásfeltétel áttekintés.';
+    $Self->{Translation}->{'ITSM Change Manager Overview.'} = 'ITSM változásmenedzser áttekintés.';
+    $Self->{Translation}->{'ITSM Change Notifications'} = 'ITSM változás értesítések';
+    $Self->{Translation}->{'ITSM Change PIR Overview.'} = 'ITSM változás PIR áttekintés.';
+    $Self->{Translation}->{'ITSM Change notification rules'} = 'ITSM változás értesítési szabályok';
+    $Self->{Translation}->{'ITSM Changes'} = 'ITSM változások';
+    $Self->{Translation}->{'ITSM MyCAB Overview.'} = 'ITSM saját CAB áttekintés.';
+    $Self->{Translation}->{'ITSM MyChanges Overview.'} = 'ITSM saját változások áttekintés.';
+    $Self->{Translation}->{'ITSM MyWorkorders Overview.'} = 'ITSM saját munkamegrendelések áttekintés.';
+    $Self->{Translation}->{'ITSM Template Delete.'} = 'ITSM sablon törlés.';
+    $Self->{Translation}->{'ITSM Template Edit CAB.'} = 'ITSM sablon szerkesztés CAB.';
+    $Self->{Translation}->{'ITSM Template Edit Content.'} = 'ITSM sablon szerkesztés tartalom.';
+    $Self->{Translation}->{'ITSM Template Edit.'} = 'ITSM sablon szerkesztés.';
+    $Self->{Translation}->{'ITSM Template Overview.'} = 'ITSM sablon áttekintés.';
+    $Self->{Translation}->{'ITSM event module that cleans up conditions.'} = 'ITSM eseménymodul, amely törli a feltételeket.';
+    $Self->{Translation}->{'ITSM event module that deletes the cache for a toolbar.'} = 'ITSM eseménymodul, amely törli a gyorsítótárat egy eszköztárnál.';
+    $Self->{Translation}->{'ITSM event module that deletes the history of changes.'} = 'ITSM eseménymodul, amely törli a változások előzményeit.';
+    $Self->{Translation}->{'ITSM event module that matches conditions and executes actions.'} =
+        'ITSM eseménymodul, amely feltételeket illeszt és műveleteket hajt végre.';
+    $Self->{Translation}->{'ITSM event module that sends notifications.'} = 'ITSM eseménymodul, amely értesítéseket küld.';
+    $Self->{Translation}->{'ITSM event module that updates the history of changes.'} = 'ITSM eseménymodul, amely frissíti a változások előzményeit.';
+    $Self->{Translation}->{'ITSM event module that updates the history of conditions.'} = 'ITSM eseménymodul, amely frissíti a feltételek előzményeit.';
+    $Self->{Translation}->{'ITSM event module that updates the history of workorders.'} = 'ITSM eseménymodul, amely frissíti a munkamegrendelések előzményeit.';
+    $Self->{Translation}->{'ITSM event module to recalculate the workorder numbers.'} = 'ITSM eseménymodul a munkamegrendelés számainak újraszámolásához.';
+    $Self->{Translation}->{'ITSM event module to set the actual start and end times of workorders.'} =
+        'ITSM eseménymodul a munkamegrendelések tényleges kezdési és befejezési idejének beállításához.';
+    $Self->{Translation}->{'ITSMChange'} = 'ITSM változás';
+    $Self->{Translation}->{'ITSMWorkOrder'} = 'ITSM munkamegrendelés';
+    $Self->{Translation}->{'If frequency is \'regularly\', you can configure how often the notifications are sent (every X hours).'} =
+        'Ha a gyakoriság „rendszeresen”, akkor beállíthatja, hogy az értesítések milyen gyakran legyenek elküldve (minden X. órában).';
+    $Self->{Translation}->{'Link another object to the change.'} = 'Másik objektum összekapcsolása a változással.';
+    $Self->{Translation}->{'Link another object to the workorder.'} = 'Másik objektum összekapcsolása a munkamegrendeléssel.';
+    $Self->{Translation}->{'List of all change events to be displayed in the GUI.'} = 'Az összes változásesemény listája, amelyek megjelennek a grafikus felületen.';
+    $Self->{Translation}->{'List of all workorder events to be displayed in the GUI.'} = 'Az összes munkamegrendelés-esemény listája, amelyek megjelennek a grafikus felületen.';
+    $Self->{Translation}->{'Lookup of CAB members for autocompletion.'} = 'CAB-tagok kikeresése az automatikus kiegészítéshez.';
+    $Self->{Translation}->{'Lookup of agents, used for autocompletion.'} = 'Ügyintézők kikeresése az automatikus kiegészítés használatához.';
+    $Self->{Translation}->{'Manage ITSM Change Management state machine.'} = 'ITSM változásmenedzsment állapotgép kezelése.';
+    $Self->{Translation}->{'Manage the category ↔ impact ↔ priority matrix.'} = 'A kategória ↔ hatás ↔ prioritás mátrix kezelése.';
+    $Self->{Translation}->{'Module to check if WorkOrderAdd or WorkOrderAddFromTemplate should be permitted.'} =
+        'Egy modul annak ellenőrzéséhez, hogy a „Munkamegrendelés hozzáadása” vagy a „Munkamegrendelés hozzáadása sablonból” osztályokat engedélyezni kell-e.';
+    $Self->{Translation}->{'Module to check the CAB members.'} = 'Egy modul a CAB-tagok ellenőrzéséhez.';
+    $Self->{Translation}->{'Module to check the agent.'} = 'Egy modul az ügyintéző ellenőrzéséhez.';
+    $Self->{Translation}->{'Module to check the change builder.'} = 'Egy modul a változás-összeállító ellenőrzéséhez.';
+    $Self->{Translation}->{'Module to check the change manager.'} = 'Egy modul a változásmenedzser ellenőrzéséhez.';
+    $Self->{Translation}->{'Module to check the workorder agent.'} = 'Egy modul a munkamegrendelés ügyintézőjének ellenőrzéséhez.';
+    $Self->{Translation}->{'Module to check whether no workorder agent is set.'} = 'Egy modul annak ellenőrzéséhez, hogy van-e munkamegrendelés-ügyintéző beállítva.';
+    $Self->{Translation}->{'Module to check whether the agent is contained in the configured list.'} =
+        'Egy modul annak ellenőrzéséhez, hogy az ügyintézőt tartalmazza-e a beállítási lista.';
+    $Self->{Translation}->{'Module to show a link to create a change from this ticket. The ticket will be automatically linked with the new change.'} =
+        'Egy modul egy hivatkozás megjelenítéséhez, amely egy változás létrehozására mutat ebből a jegyből. A jegy automatikusan össze lesz kapcsolva az új változással.';
+    $Self->{Translation}->{'Move Time Slot.'} = 'Időrés áthelyezése.';
+    $Self->{Translation}->{'Move all workorders in time.'} = 'Minden munkamegrendelés áthelyezése az időben.';
+    $Self->{Translation}->{'New (from template)'} = 'Új (sablonból)';
+    $Self->{Translation}->{'Only users of these groups have the permission to use the ticket types as defined in "ITSMChange::AddChangeLinkTicketTypes" if the feature "Ticket::Acl::Module###200-Ticket::Acl::Module" is enabled.'} =
+        'Csak ezen csoportok felhasználóinak van jogosultsága az „ITSMChange::AddChangeLinkTicketTypes” beállításban meghatározott jegytípusok használatára, ha a „Ticket::Acl::Module###200-Ticket::Acl::Module” szolgáltatás engedélyezve van.';
+    $Self->{Translation}->{'Other Settings'} = 'Egyéb beállítások';
+    $Self->{Translation}->{'Overview over all Changes.'} = 'Az összes változás áttekintése.';
+    $Self->{Translation}->{'PIR'} = 'PIR';
+    $Self->{Translation}->{'PIR (Post Implementation Review)'} = 'PIR (megvalósítás utáni vizsgálat)';
+    $Self->{Translation}->{'PSA'} = 'PSA';
+    $Self->{Translation}->{'Parameters for the UserCreateWorkOrderNextMask object in the preference view of the agent interface.'} =
+        'A UserCreateWorkOrderNextMask objektum paraméterei az ügyintézői felület beállítás nézetében.';
+    $Self->{Translation}->{'Parameters for the pages (in which the changes are shown) of the small change overview.'} =
+        'Paraméterek a kis változás áttekintő oldalaihoz (amelyekben a változások megjelennek).';
+    $Self->{Translation}->{'Performs the configured action for each event (as an Invoker) for each configured Webservice.'} =
+        'Végrehajtja a beállított műveletet minden eseménynél (mint egy meghívó) minden egyes beállított webszolgáltatáshoz.';
+    $Self->{Translation}->{'Planned end time'} = 'Tervezett befejezési idő';
+    $Self->{Translation}->{'Planned start time'} = 'Tervezett kezdési idő';
+    $Self->{Translation}->{'Print the change.'} = 'A változás nyomtatása.';
+    $Self->{Translation}->{'Print the workorder.'} = 'A munkamegrendelés nyomtatása.';
+    $Self->{Translation}->{'Projected Service Availability'} = 'Tervezett szolgáltatáselérhetőség';
+    $Self->{Translation}->{'Projected Service Availability (PSA)'} = 'Tervezett szolgáltatáselérhetőség (PSA)';
+    $Self->{Translation}->{'Projected Service Availability (PSA) of changes. Overview of approved changes and their services.'} =
+        'A változás tervezett szolgáltatáselérhetősége (PSA). A jóváhagyott változások és azok szolgáltatásainak áttekintése.';
+    $Self->{Translation}->{'Requested time'} = 'Kért idő';
+    $Self->{Translation}->{'Required privileges in order for an agent to take a workorder.'} =
+        'A szükséges jogosultságok annak érdekében, hogy egy ügyintéző felvehessen egy munkamegrendelést.';
+    $Self->{Translation}->{'Required privileges to access the overview of all changes.'} = 'A szükséges jogosultságok az összes változás áttekintőjének hozzáféréséhez.';
+    $Self->{Translation}->{'Required privileges to add a workorder.'} = 'A szükséges jogosultságok egy munkamegrendelés hozzáadásához.';
+    $Self->{Translation}->{'Required privileges to change the workorder agent.'} = 'A szükséges jogosultságok egy munkamegrendelés ügyintézőjének megváltoztatásához.';
+    $Self->{Translation}->{'Required privileges to create a template from a change.'} = 'A szükséges jogosultságok egy sablon létrehozásához egy változásból.';
+    $Self->{Translation}->{'Required privileges to create a template from a changes\' CAB.'} =
+        'A szükséges jogosultságok egy sablon létrehozásához a változások CAB-jéből.';
+    $Self->{Translation}->{'Required privileges to create a template from a workorder.'} = 'A szükséges jogosultságok egy sablon létrehozásához egy munkamegrendelésből.';
+    $Self->{Translation}->{'Required privileges to create changes from templates.'} = 'A szükséges jogosultságok változások létrehozásához sablonokból.';
+    $Self->{Translation}->{'Required privileges to create changes.'} = 'A szükséges jogosultságok változások létrehozásához.';
+    $Self->{Translation}->{'Required privileges to delete a template.'} = 'A szükséges jogosultságok egy sablon törléséhez.';
+    $Self->{Translation}->{'Required privileges to delete a workorder.'} = 'A szükséges jogosultságok egy munkamegrendelés törléséhez.';
+    $Self->{Translation}->{'Required privileges to delete changes.'} = 'A szükséges jogosultságok változások törléséhez.';
+    $Self->{Translation}->{'Required privileges to edit a template.'} = 'A szükséges jogosultságok egy sablon szerkesztéséhez.';
+    $Self->{Translation}->{'Required privileges to edit a workorder.'} = 'A szükséges jogosultságok egy munkamegrendelés szerkesztéséhez.';
+    $Self->{Translation}->{'Required privileges to edit changes.'} = 'A szükséges jogosultságok változások szerkesztéséhez.';
+    $Self->{Translation}->{'Required privileges to edit the conditions of changes.'} = 'A szükséges jogosultságok változások feltételeinek szerkesztéséhez.';
+    $Self->{Translation}->{'Required privileges to edit the content of a template.'} = 'A szükséges jogosultságok egy sablon tartalmának szerkesztéséhez.';
+    $Self->{Translation}->{'Required privileges to edit the involved persons of a change.'} =
+        'A szükséges jogosultságok egy változásban érintett személyek szerkesztéséhez.';
+    $Self->{Translation}->{'Required privileges to move changes in time.'} = 'A szükséges jogosultságok a változások áthelyezéséhez az időben.';
+    $Self->{Translation}->{'Required privileges to print a change.'} = 'A szükséges jogosultságok egy változás kinyomtatásához.';
+    $Self->{Translation}->{'Required privileges to reset changes.'} = 'A szükséges jogosultságok változások visszaállításához.';
+    $Self->{Translation}->{'Required privileges to view a workorder.'} = 'A szükséges jogosultságok egy munkamegrendelés megtekintéséhez.';
+    $Self->{Translation}->{'Required privileges to view changes.'} = 'A szükséges jogosultságok változások megtekintéséhez.';
+    $Self->{Translation}->{'Required privileges to view list of changes where the user is a CAB member.'} =
+        'A szükséges jogosultságok azon változások listájának megtekintéséhez, ahol a felhasználó egy CAB-tag.';
+    $Self->{Translation}->{'Required privileges to view list of changes where the user is the change manager.'} =
+        'A szükséges jogosultságok azon változások listájának megtekintéséhez, ahol a felhasználó a változásmenedzser.';
+    $Self->{Translation}->{'Required privileges to view overview over all templates.'} = 'A szükséges jogosultságok az összes sablon áttekintőjének megtekintéséhez.';
+    $Self->{Translation}->{'Required privileges to view the conditions of changes.'} = 'A szükséges jogosultságok változások feltételeinek megtekintéséhez.';
+    $Self->{Translation}->{'Required privileges to view the history of a change.'} = 'A szükséges jogosultságok egy változás előzményeinek megtekintéséhez.';
+    $Self->{Translation}->{'Required privileges to view the history of a workorder.'} = 'A szükséges jogosultságok egy munkamegrendelés előzményeinek megtekintéséhez.';
+    $Self->{Translation}->{'Required privileges to view the history zoom of a change.'} = 'A szükséges jogosultságok egy változás előzményei nagyításának megtekintéséhez.';
+    $Self->{Translation}->{'Required privileges to view the history zoom of a workorder.'} =
+        'A szükséges jogosultságok egy munkamegrendelés előzményei nagyításának megtekintéséhez.';
+    $Self->{Translation}->{'Required privileges to view the list of Change Schedule.'} = 'A szükséges jogosultságok a változtatási ütemterv listájának megtekintéséhez.';
+    $Self->{Translation}->{'Required privileges to view the list of change PSA.'} = 'A szükséges jogosultságok a változás PSA listájának megtekintéséhez.';
+    $Self->{Translation}->{'Required privileges to view the list of changes with an upcoming PIR (Post Implementation Review).'} =
+        'A szükséges jogosultságok egy közelgő PIR-rel (megvalósítás utáni vizsgálattal) rendelkező változások listájának megtekintéséhez.';
+    $Self->{Translation}->{'Required privileges to view the list of own changes.'} = 'A szükséges jogosultságok a saját változások listájának megtekintéséhez.';
+    $Self->{Translation}->{'Required privileges to view the list of own workorders.'} = 'A szükséges jogosultságok a saját munkamegrendelések listájának megtekintéséhez.';
+    $Self->{Translation}->{'Required privileges to write a report for the workorder.'} = 'A szükséges jogosultságok egy jelentés írásához a munkamegrendelésnél.';
+    $Self->{Translation}->{'Reset a change and its workorders.'} = 'Egy változás és a munkamegrendeléseinek visszaállítása.';
+    $Self->{Translation}->{'Reset change and its workorders.'} = 'A változás és munkamegrendeléseinek visszaállítása.';
+    $Self->{Translation}->{'Run task to check if specific times have been reached in changes and workorders.'} =
+        'Feladat futtatása annak ellenőrzéséhez, hogy a meghatározott időpontokat elérték-e a változásokban és a munkamegrendelésekben.';
+    $Self->{Translation}->{'Save change as a template.'} = 'Változás mentése sablonként.';
+    $Self->{Translation}->{'Save workorder as a template.'} = 'Munkamegrendelés mentése sablonként.';
+    $Self->{Translation}->{'Schedule'} = 'Ütemterv';
+    $Self->{Translation}->{'Screen after creating a workorder'} = 'Egy munkamegrendelés létrehozása utáni képernyő';
+    $Self->{Translation}->{'Search Changes'} = 'Változások keresése';
+    $Self->{Translation}->{'Search Changes.'} = 'Változások keresése.';
+    $Self->{Translation}->{'Selects the change number generator module. "AutoIncrement" increments the change number, the SystemID and the counter are used with SystemID.counter format (e.g. 100118, 100119). With "Date", the change numbers will be generated by the current date and a counter; this format looks like Year.Month.Day.counter, e.g. 2010062400001, 2010062400002. With "DateChecksum", the counter will be appended as checksum to the string of date plus the SystemID. The checksum will be rotated on a daily basis. This format looks like Year.Month.Day.SystemID.Counter.CheckSum, e.g. 2010062410000017, 2010062410000026.'} =
+        'Kiválasztja a változásszám előállító modult. Az „AutoIncrement” növeli a változásszámot, ahol a rendszer-azonosítót és a számlálót a RendszerID.számláló formátummal használja (például 100118, 100119). A „Date” értékkel a változásszámokat az aktuális dátum és a számláló fogja előállítani. A formátum így néz ki: Év.Hónap.Nap.számláló (például 2010062400001, 2010062400002). A „DateChecksum” használatával a számláló ellenőrzőösszegként lesz hozzáfűzve a dátum és a rendszer-azonosító szövegéhez. Az ellenőrzőösszeg naponta fog átfordulni. A formátum így néz ki: Év.Hónap.Nap.RendszerID.Számláló.EllÖsszeg (például 2010062410000017, 2010062410000026).';
+    $Self->{Translation}->{'Set the agent for the workorder.'} = 'Az ügyintéző beállítása a munkamegrendeléshez.';
+    $Self->{Translation}->{'Set the default height (in pixels) of inline HTML fields in the change zoom screen and workorder zoom screen of the agent interface.'} =
+        'A beágyazott HTML mezők alapértelmezett magasságának beállítása (képpontban) az ügyintézői felület változásnagyítás képernyőjén és munkamegrendelés-nagyítás képernyőjén.';
+    $Self->{Translation}->{'Set the maximum height (in pixels) of inline HTML fields in the change zoom screen and workorder zoom screen of the agent interface.'} =
+        'A beágyazott HTML mezők legnagyobb magasságának beállítása (képpontban) az ügyintézői felület változásnagyítás képernyőjén és munkamegrendelés-nagyítás képernyőjén.';
+    $Self->{Translation}->{'Sets the minimal change counter size (if "AutoIncrement" was selected as ITSMChange::NumberGenerator). Default is 5, this means the counter starts from 10000.'} =
+        'Beállítja a legkisebb változásszámláló méretet (ha „AutoIncrement” lett kiválasztva ITSM változás::Számelőállítóként) Az alapértelmezett 5, amely azt jelenti, hogy a számláló 10000-től fog indulni.';
+    $Self->{Translation}->{'Sets up the state machine for changes.'} = 'Beállítja az állapotgépet a változásoknál.';
+    $Self->{Translation}->{'Sets up the state machine for workorders.'} = 'Beállítja az állapotgépet a munkamegrendeléseknél.';
+    $Self->{Translation}->{'Shows a checkbox in the workorder edit screen of the agent interface that defines if the the following workorders should also be moved if a workorder is modified and the planned end time has changed.'} =
+        'Egy jelölőnégyzetet jelenít meg az ügyintézői felület munkamegrendelés szerkesztése képernyőjén, amely azt határozza meg, hogy a következő munkamegrendeléseket is át kell-e helyezni, ha egy munkamegrendelés módosult és a tervezett befejezési idő megváltozott.';
+    $Self->{Translation}->{'Shows a link in the menu that allows changing the workorder agent, in the zoom view of the workorder of the agent interface.'} =
+        'Egy hivatkozást jelenít meg a menüben, amely lehetővé teszi a munkamegrendelés ügyintézőjének megváltoztatását az ügyintézői felület munkamegrendelésének nagyítási nézetén.';
+    $Self->{Translation}->{'Shows a link in the menu that allows defining a change as a template in the zoom view of the change, in the agent interface.'} =
+        'Egy hivatkozást jelenít meg a menüben, amely lehetővé teszi egy változás sablonként való meghatározását a változás nagyítás nézetében az ügyintézői felületen.';
+    $Self->{Translation}->{'Shows a link in the menu that allows defining a workorder as a template in the zoom view of the workorder, in the agent interface.'} =
+        'Egy hivatkozást jelenít meg a menüben, amely lehetővé teszi egy munkamegrendelés sablonként való meghatározását a munkamegrendelés nagyított nézetében az ügyintézői felületen.';
+    $Self->{Translation}->{'Shows a link in the menu that allows editing the report of a workorder, in the zoom view of the workorder of the agent interface.'} =
+        'Egy hivatkozást jelenít meg a menüben, amely lehetővé teszi egy munkamegrendelés jelentésének szerkesztését az ügyintézői felület munkamegrendelésének nagyítási nézetén.';
+    $Self->{Translation}->{'Shows a link in the menu that allows linking a change with another object in the change zoom view of the agent interface.'} =
+        'Egy hivatkozást jelenít meg a menüben, amely lehetővé teszi egy változás összekapcsolását egy másik objektummal az ügyintézői felület változás nagyítás nézetében.';
+    $Self->{Translation}->{'Shows a link in the menu that allows linking a workorder with another object in the zoom view of the workorder of the agent interface.'} =
+        'Egy hivatkozást jelenít meg a menüben, amely lehetővé teszi egy munkamegrendelés összekapcsolását egy másik objektummal az ügyintézői felület munkamegrendelésének nagyítási nézetén.';
+    $Self->{Translation}->{'Shows a link in the menu that allows moving the time slot of a change in its zoom view of the agent interface.'} =
+        'Egy hivatkozást jelenít meg a menüben, amely lehetővé teszi egy változás időrésének áthelyezését az ügyintézői felületen az elem nagyítási nézetében.';
+    $Self->{Translation}->{'Shows a link in the menu that allows taking a workorder in the its zoom view of the agent interface.'} =
+        'Egy hivatkozást jelenít meg a menüben, amely lehetővé teszi egy munkamegrendelés felvételét annak nagyítási nézetén az ügyintézői felületen.';
+    $Self->{Translation}->{'Shows a link in the menu to access the conditions of a change in the its zoom view of the agent interface.'} =
+        'Egy hivatkozást jelenít meg a menüben egy változás feltételeinek eléréséhez az ügyintézői felületen az elem nagyítási nézetében.';
+    $Self->{Translation}->{'Shows a link in the menu to access the history of a change in the its zoom view of the agent interface.'} =
+        'Egy hivatkozást jelenít meg a menüben egy változás előzményeinek eléréséhez az ügyintézői felületen az elem nagyítási nézetében.';
+    $Self->{Translation}->{'Shows a link in the menu to access the history of a workorder in the its zoom view of the agent interface.'} =
+        'Egy hivatkozást jelenít meg a menüben egy munkamegrendelés előzményeinek hozzáféréséhez annak nagyítási nézetén az ügyintézői felületen.';
+    $Self->{Translation}->{'Shows a link in the menu to add a workorder in the change zoom view of the agent interface.'} =
+        'Egy hivatkozást jelenít meg a menüben egy munkamegrendelés hozzáadásához az ügyintézői felület változásnagyítás nézetén.';
+    $Self->{Translation}->{'Shows a link in the menu to delete a change in its zoom view of the agent interface.'} =
+        'Egy hivatkozást jelenít meg a menüben egy változás törléséhez az ügyintézői felületen az elem nagyítási nézetében.';
+    $Self->{Translation}->{'Shows a link in the menu to delete a workorder in its zoom view of the agent interface.'} =
+        'Egy hivatkozást jelenít meg a menüben egy munkamegrendelés törléséhez annak nagyítási nézetén az ügyintézői felületen.';
+    $Self->{Translation}->{'Shows a link in the menu to edit a change in the its zoom view of the agent interface.'} =
+        'Egy hivatkozást jelenít meg a menüben egy változás szerkesztéséhez az ügyintézői felületen az elem nagyítási nézetében.';
+    $Self->{Translation}->{'Shows a link in the menu to edit a workorder in the its zoom view of the agent interface.'} =
+        'Egy hivatkozást jelenít meg a menüben egy munkamegrendelés szerkesztéséhez annak nagyítási nézetén az ügyintézői felületen.';
+    $Self->{Translation}->{'Shows a link in the menu to go back in the change zoom view of the agent interface.'} =
+        'Egy hivatkozást jelenít meg a menüben az ügyintézői felület változás nagyítási nézetébe való visszatéréshez.';
+    $Self->{Translation}->{'Shows a link in the menu to go back in the workorder zoom view of the agent interface.'} =
+        'Egy hivatkozást jelenít meg a menüben az ügyintézői felület munkamegrendelés nagyítási nézethez való visszatéréshez.';
+    $Self->{Translation}->{'Shows a link in the menu to print a change in the its zoom view of the agent interface.'} =
+        'Egy hivatkozást jelenít meg a menüben egy változás nyomtatásához az ügyintézői felületen az elem nagyítási nézetében.';
+    $Self->{Translation}->{'Shows a link in the menu to print a workorder in the its zoom view of the agent interface.'} =
+        'Egy hivatkozást jelenít meg a menüben egy munkamegrendelés nyomtatásához annak nagyítási nézetén az ügyintézői felületen.';
+    $Self->{Translation}->{'Shows a link in the menu to reset a change and its workorders in its zoom view of the agent interface.'} =
+        'Egy hivatkozást jelenít meg a menüben egy változás és annak munkamegrendelései visszaállításához az ügyintézői felületen az elem nagyítási nézetében.';
+    $Self->{Translation}->{'Shows a link in the menu to show the involved persons in a change, in the zoom view of the change in the agent interface.'} =
+        'Egy hivatkozást jelenít meg a menüben egy változásban érintett személyek megjelenítéséhez a változás nagyítás nézetében az ügyintézői felületen.';
+    $Self->{Translation}->{'Shows the change history (reverse ordered) in the agent interface.'} =
+        'Megjeleníti a változás előzményeit (fordított sorrendben) az ügyintézői felületen.';
+    $Self->{Translation}->{'State Machine'} = 'Állapotgép';
+    $Self->{Translation}->{'Stores change and workorder ids and their corresponding template id, while a user is editing a template.'} =
+        'Változás- és munkamegrendelés-azonosítókat, valamint a nekik megfelelő sablonazonosítót tárolja, miközben egy felhasználó szerkeszt egy sablont.';
+    $Self->{Translation}->{'Take Workorder'} = 'Munkamegrendelés felvétele';
+    $Self->{Translation}->{'Take Workorder.'} = 'Munkamegrendelés felvétele.';
+    $Self->{Translation}->{'Take the workorder.'} = 'A munkamegrendelés felvétele.';
+    $Self->{Translation}->{'Template Overview'} = 'Sablon áttekintő';
+    $Self->{Translation}->{'Template type'} = 'Sablontípus';
+    $Self->{Translation}->{'Template.'} = 'Sablon.';
+    $Self->{Translation}->{'The identifier for a change, e.g. Change#, MyChange#. The default is Change#.'} =
+        'Egy változás azonosítója, például Change#, MyChange#. Az alapértelmezett: Change#.';
+    $Self->{Translation}->{'The identifier for a workorder, e.g. Workorder#, MyWorkorder#. The default is Workorder#.'} =
+        'Egy munkamegrendelés azonosítója, például Workorder#, MyWorkorder#. Az alapértelmezett: Workorder#.';
+    $Self->{Translation}->{'This ACL module restricts the usuage of the ticket types that are defined in the sysconfig option \'ITSMChange::AddChangeLinkTicketTypes\', to users of the groups as defined in "ITSMChange::RestrictTicketTypes::Groups". As this ACL could collide with other ACLs which are also related to the ticket type, this sysconfig option is disabled by default and should only be activated if needed.'} =
+        'Ez az ACL modul korlátozza az „ITSMChange::AddChangeLinkTicketTypes” rendszerbeállítási lehetőségben meghatározott jegytípusok használatát az „ITSMChange::RestrictTicketTypes::Groups” csoportban meghatározott felhasználókra. Mivel ez az ACL ütközhet más olyan ACL-ekkel, amelyek szintén a jegytípussal vannak összefüggésben, ezért ez a rendszerbeállítási lehetőség alapértelmezetten le van tiltva, és csak akkor kell aktiválni, ha szükséges.';
+    $Self->{Translation}->{'Time Slot'} = 'Időrés';
+    $Self->{Translation}->{'Types of tickets, where in the ticket zoom view a link to add a change will be displayed.'} =
+        'Jegyek típusai, ahol a jegy nagyítás nézetben egy változás hozzáadására mutató hivatkozás lesz megjelenítve.';
+    $Self->{Translation}->{'User Search'} = 'Felhasználókeresés';
+    $Self->{Translation}->{'Workorder Add (from template).'} = 'Munkamegrendelés hozzáadása (sablonból).';
+    $Self->{Translation}->{'Workorder Add.'} = 'Munkamegrendelés hozzáadása.';
+    $Self->{Translation}->{'Workorder Agent.'} = 'Munkamegrendelés ügyintézője.';
+    $Self->{Translation}->{'Workorder Delete.'} = 'Munkamegrendelés törlése.';
+    $Self->{Translation}->{'Workorder Edit.'} = 'Munkamegrendelés szerkesztése.';
+    $Self->{Translation}->{'Workorder History Zoom.'} = 'Munkamegrendelés előzményeinek nagyítása.';
+    $Self->{Translation}->{'Workorder History.'} = 'Munkamegrendelés előzményei.';
+    $Self->{Translation}->{'Workorder Report.'} = 'Munkamegrendelés jelentése.';
+    $Self->{Translation}->{'Workorder Zoom'} = 'Munkamegrendelés nagyítása';
+    $Self->{Translation}->{'Workorder Zoom.'} = 'Munkamegrendelés nagyítása.';
+    $Self->{Translation}->{'once'} = 'egyszer';
+    $Self->{Translation}->{'regularly'} = 'rendszeresen';
 
 
     push @{ $Self->{JavaScriptStrings} // [] }, (
